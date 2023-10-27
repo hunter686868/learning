@@ -11,6 +11,6 @@ def func(s1, s2):
             elif j == len(s2) - 1:
                 return True
     return False
-
+7
 
 print(func(a, b))
