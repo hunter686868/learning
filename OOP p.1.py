@@ -35,6 +35,7 @@ squad1.name = 'hunter686'
 squad1.gold = 10000
 
 soldier = Unit()
+soldier.name = 'Soldier'
 soldier.cost = 100
 soldier.health = 150
 soldier.damage = 10
