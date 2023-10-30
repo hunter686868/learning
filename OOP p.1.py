@@ -57,19 +57,3 @@ print(soldier, "\n", soldier1, "\n", mine, "\n", squad1)
 soldier.cost = 1000
 
 print(soldier, '\n', soldier1)
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
