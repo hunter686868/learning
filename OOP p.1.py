@@ -13,6 +13,10 @@ class Unit:
     damage = 0 # урон юнита
     health = 0 # здоровье юнита
     armor = 0 # броня юнита
+
+    def prnt(self):
+        return f"Юнит {self.name}, Стоимость - {self.cost}, Урон - {self.damage}, Здоровье - {self.health}, Броня - {self.armor}"
+
 # Здание:
 class Building:
     name = 'mine' # название здания
@@ -20,12 +24,18 @@ class Building:
     cost = 0 # стоимость здания
     production_rate = 0 # сколько ресурсов производит здание
     training_rate = 0 # как быстро здание производит юниты
-#
+
+    def prnt(self):
+        return f"Здание - {self.name}, Стоимость - {self.cost}, Здоровье - {self.health}, Производство ресурсов - {self.production_rate}, Скорость обучения - {self.training_rate}"
+
 # Отряд игрока:
 class Squad:
     player = "Player1" # чей отряд
     name = 'Winner' # название отряда
     gold = 0 # количество золота на старте
+
+    def prnt(self):
+        return f"Игрок - {self.player}, Название - {self.name}, Золото - {self.gold}"
 
 
 # Создадим несколько объектов
@@ -48,7 +58,7 @@ mine.health = 1000
 mine.cost = 1000
 mine.production_rate = 10
 
-print(soldier, "\n", soldier1, "\n", mine, "\n", squad1)
+print(soldier.prnt(), "\n", soldier1.prnt(), "\n", mine.prnt(), "\n", squad1.prnt())
 #
 #1.3
 # Ранее мы записали в переменную soldier объект Unit().
@@ -57,4 +67,4 @@ print(soldier, "\n", soldier1, "\n", mine, "\n", squad1)
 # изменится и у soldier1:
 soldier.cost = 1000
 
-print(soldier, '\n', soldier1)
+print(soldier.prnt(), '\n', soldier1.prnt())
