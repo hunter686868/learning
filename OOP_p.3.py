@@ -140,7 +140,7 @@ mine.product(squad)
 mine.upgrade(squad)
 
 # 5.2
-# Построим иерархию - Юнит1 - Самолет/Корабль
+# Построим первую иерархию - Юнит1 - Самолет/Корабль
 
 
 class Unit1:
@@ -210,4 +210,70 @@ airplane.landing()
 
 ship.load(airplane)
 
+#Построим вторую иерархию - Здание - Казармы/шахта
 
+
+class Building1:
+
+    def __init__(self, name, health, cost, player):
+        self.name = name # название здания
+        self.health = health # здоровье здания
+        self.cost = cost # стоимость здания
+        self.player = player
+
+    def take_damage(self, damage):
+        self.health -= damage
+
+    def repair(self, amount):
+        self.health += amount
+
+
+# Шахта
+
+class Mine(Building1):
+    def __init__(self, name, health, cost, player):
+        super().__init__(name, health, cost, player)
+        self.pr_rate = 10
+
+    def upgrade(self, amount):
+        if self.player.get_gold() >= amount:
+            self.player.set_gold(-amount)
+            self.pr_rate *= 2
+            print(f'{self.player.get_name()} улучшает {self.name}, производство ресурсов удвоено')
+        else:
+            print(f'Нужно больше золота')
+
+    def product(self):
+        self.player.set_gold(self.pr_rate)
+
+
+class Barracks(Building1):
+    def __init__(self, name, health, cost, player):
+        super().__init__(name, health, cost, player)
+        self.tr_rate = 10
+
+    def upgrade(self, amount):
+        if self.player.get_gold() >= amount:
+            self.player.set_gold(-amount)
+            self.tr_rate *= 2
+            print(f'{self.player.get_name()} улучшает {self.name}, производство войск удвоено')
+        else:
+            print(f'Нужно больше золота')
+
+    def produce(self, unit):
+        if self.player.get_gold() >= unit.get_cost():
+            self.player.set_gold(- unit.get_cost())
+            self.player.add_unit(unit)
+            days = unit.get_cost() / self.tr_rate
+            print(f'{self.player.get_name()} обучил {unit.get_name()} за {days} дней')
+        else:
+            print(f'Нужно больше золота')
+
+
+mine2 = Mine('Mine', 500, 1000, squad)
+mine2.upgrade(50)
+
+barracks2 = Barracks('Бараки', 1500, 1000, squad)
+barracks2.produce(soldier2)
+barracks2.upgrade(50)
+barracks2.produce(soldier2)
