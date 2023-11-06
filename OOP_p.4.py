@@ -155,6 +155,7 @@ class Barracks(Building1):
         else:
             print(f'Нужно больше золота')
 
+
 # Создадим массив объектов
 import random as rnd
 
@@ -176,6 +177,35 @@ for unit in units:
 # при помощи разных параметров и выдавать разный результат.
 # В теории в качестве примера был метод сложения.
 
+# В качестве наглядного примера я хочу добавить метод speed_up классу поезд
+# Если параметр будет не числом, выведем "Введите число"
+# Так один и тот же метод сработает по разному при разных параметрах
+
+
 class Train:
-    def __init__(self):
+
+    def __init__(self, name, speed):
+        self.weight = 1000
+        self.name = name
+        self.speed = speed
+
+    def speed_up(self, spd):
+        if type(spd) is int:
+            self.speed += spd
+            print(f'Поезд ускорился и едет {self.speed} километров в час')
+        elif type(spd) is str:
+            print('Введите число')
+        else:
+            print('Ошибка')
+
+
+
+
+train = Train('Choo', 100)
+
+train.speed_up(10)
+train.speed_up('choo')
+train.speed_up(1.2)
+
+
 
