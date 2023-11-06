@@ -1,5 +1,8 @@
-# В
+# 4.1 Как я понимаю, ранее я применял композицию, когда указывал игрока в параметрах задния.
+# Также здания могут производить юнитов для определенных игроков.
 
+# 4.2 Для этого задания выберем иерархию Юнит- Корабль/Самолет.
+# Методы внутри будут печатать названия классов
 
 
 class Squad:
@@ -46,6 +49,9 @@ class Unit1:
     def heal(self, heal):
         self.health += heal
 
+    def func(self):
+        print('Unit')
+
 
 # Самолет
 class Airplane(Unit1):
@@ -63,6 +69,9 @@ class Airplane(Unit1):
 
     def height_change(self, height):
         self.height += height
+
+    def func(self):
+        print('Airplane')
 
 
 # Корабль
@@ -84,8 +93,11 @@ class Ship(Unit1):
         self.load -= 1
         self.aboard.remove(unit.get_name())
 
+    def func(self):
+        print('Ship')
 
-#Построим вторую иерархию - Здание - Казармы/шахта
+
+# Вторая иерархия - Здание - Казармы/шахта
 
 class Building1:
 
@@ -142,3 +154,28 @@ class Barracks(Building1):
             print(f'{self.player.get_name()} обучил {unit.get_name()} за {days} дней')
         else:
             print(f'Нужно больше золота')
+
+# Создадим массив объектов
+import random as rnd
+
+units = []
+for i in range(0,499):
+    random_number = rnd.randint(1,2)
+    if random_number == 1:
+        units.append(Airplane('Airplane', 1000, 100, 100, 0.1))
+    elif random_number == 2:
+        units.append(Ship('Ship', 1500, 10, 1000, 0.5, 10))
+
+for unit in units:
+    unit.func()
+
+# Соответственно для каждого класса вызывается свой метод, так как мы переопределили
+# ранее отдельно. Полиморфизм в действии.
+
+# 4.3 При ad hoc полиморфизме методы с одинаковыми названиями  могут применяться
+# при помощи разных параметров и выдавать разный результат.
+# В теории в качестве примера был метод сложения.
+
+class Train:
+    def __init__(self):
+
