@@ -282,4 +282,3 @@
 Результат представлен на скриншоте
 
 !\[Скриншот]\(https://i.postimg.cc/yYLZxnQG/2023-11-10-11-48-21.png)
-image src="https://i.postimg.cc/yYLZxnQG/2023-11-10-11-48-21.png" alt="Скриншот">
