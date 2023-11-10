@@ -281,4 +281,4 @@
 ## Далее через консоль изменил папку и запустил файл.
 Результат представлен на скриншоте
 
-!\[Скриншот]\(https://disk.yandex.ru/i/ka9oe85hbGUhXg)
+!\[Скриншот]\(https://downloader.disk.yandex.ru/preview/96e03daa61d20563dde14ce5799042dafeb3ff127bc2028a697e8ebbd9b93bca/654e2bbc/IWCTImpOjKISN78ca9Vk8QAanphuyzMe6GD-sjzHGp1ndgsxGT_LiFRDySORDF_grZWG75Hg5vjPXyPQ05VhxQ%3D%3D?uid=0&filename=%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-11-10%20%D0%B2%2011.48.21.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048)
