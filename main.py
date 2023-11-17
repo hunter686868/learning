@@ -2,6 +2,7 @@ import building.damage.take_damage as damage
 import actions.agressive as agr
 import actions.economics as ecnm
 
+
 class Squad:
 
     def __init__(self, player, name, gold):
