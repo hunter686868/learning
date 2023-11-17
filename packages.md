@@ -13,9 +13,11 @@ actions с действиями(аггресивные и влияющие на 
 ![Снимок экрана 2023-11-17 в 15.30.58.png](https://i.imgur.com/3Wj1DY0.png)
 
 ### В основном файле задаем классы, создаем объекты
-import building.damage.take_damage as damage
-import actions.agressive as agr
-import actions.economics as ecnm
+
+<code>
+import building.damage.take_damage as damage  
+import actions.agressive as agr  
+import actions.economics as ecnm  
 
 
 class Squad:
@@ -55,5 +57,6 @@ damage.receive_damage(building, 100)
 
 ecnm.income(squad,100)
 
+</code>
 ### В итоге выдача:
 ![Снимок экрана 2023-11-17 в 15.31.22.png](https://i.imgur.com/JUnSqeK.png)
