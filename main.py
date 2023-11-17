@@ -1,6 +1,6 @@
 import building.damage.take_damage as damage
 import actions.agressive as agr
-import actions.economics as ecnm
+import actions.economics as economy
 
 
 class Squad:
@@ -38,4 +38,4 @@ building = Building('Barracks', 1500, 1000, 'player1')
 agr.attack(unit, building)
 damage.receive_damage(building, 100)
 
-ecnm.income(squad,100)
+economy.income(squad,100)
