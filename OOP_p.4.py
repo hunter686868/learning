@@ -199,8 +199,6 @@ class Train:
             print('Ошибка')
 
 
-
-
 train = Train('Choo', 100)
 
 train.speed_up(10)
