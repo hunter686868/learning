@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/actions/agressive.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/actions/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attack/attack.py" beforeDir="false" afterPath="$PROJECT_DIR$/building/damage/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/damage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/damage/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/building/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/damage/attack.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/damage/take_damage.py" beforeDir="false" afterPath="$PROJECT_DIR$/building/damage/take_damage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700219741434</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update">
+      <option name="closed" value="true" />
+      <created>1700222729925</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700222729925</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
