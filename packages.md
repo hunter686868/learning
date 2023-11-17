@@ -13,7 +13,7 @@ actions с действиями(аггресивные и влияющие на 
 ![Снимок экрана 2023-11-17 в 15.30.58.png](https://i.imgur.com/3Wj1DY0.png)
 
 ### В основном файле задаем классы, создаем объекты
-
+```
 import building.damage.take_damage as damage
 import actions.agressive as agr
 import actions.economics as economy
@@ -55,6 +55,6 @@ agr.attack(unit, building)
 damage.receive_damage(building, 100)
 
 economy.income(squad,100)
-
+```
 ### В итоге выдача:
 ![Снимок экрана 2023-11-17 в 15.31.22.png](https://i.imgur.com/JUnSqeK.png)
