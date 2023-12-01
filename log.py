@@ -80,7 +80,7 @@ class Squad:
 
 
 # Создадим отряд игрока
-player1 = Squad("player1", "hunter686", 100)
+player1 = Squad("player1", "hunter686", 1000)
 
 # Создадим двух юнитов
 soldier_1 = Unit("Солдат 1", 100, 10, 100, 0.2)
