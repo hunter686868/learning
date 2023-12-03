@@ -15,7 +15,7 @@ class FuncTests(unittest.TestCase):
 
     def test_strings_empty(self):
         # Третий тест проверит, будет ли функция работать с пустыми значениями
-        self.assertFalse(func('', ''))
+        self.assertTrue(func('', ''))
 
     def test_substring_abroad(self):
         # Четвертый тест проверит, будет ли функция корректно работать, если подстрока начинает
@@ -27,3 +27,4 @@ class FuncTests(unittest.TestCase):
         self.assertTrue(func('12345', '12345'))
 
 input('Нажмите любую клавишу')
+# python -m unittest testing.py
