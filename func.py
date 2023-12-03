@@ -1,7 +1,3 @@
-a = input('Строка')
-b = input('Подстрока')
-
-
 def func(s1, s2):
     for i in range(len(s1) - len(s2) + 1):
         for j in range(len(s2)):
@@ -12,4 +8,7 @@ def func(s1, s2):
     return False
 
 
-print(func(a, b))
+if __name__ == "__main__":
+    a = input('Строка: ')
+    b = input('Подстрока: ')
+    print(func(a, b))
