@@ -25,3 +25,5 @@ class FuncTests(unittest.TestCase):
     def test_substring_full_string(self):
         # Пятый тест проверит, вернет ли функция True, если строка и подстрока равны
         self.assertTrue(func('12345', '12345'))
+
+input('Нажмите любую клавишу')
