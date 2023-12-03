@@ -1,4 +1,3 @@
-
 a = input('Строка')
 b = input('Подстрока')
 
@@ -11,5 +10,6 @@ def func(s1, s2):
             elif j == len(s2) - 1:
                 return True
     return False
+
 
 print(func(a, b))
