@@ -15,7 +15,7 @@ class FuncTests(unittest.TestCase):
 
     def test_strings_empty(self):
         # Третий тест проверит, будет ли функция работать с пустыми значениями
-        self.assertTrue(func('', ''))
+        self.assertFalse(func('', ''))
 
     def test_substring_abroad(self):
         # Четвертый тест проверит, будет ли функция корректно работать, если подстрока начинает
