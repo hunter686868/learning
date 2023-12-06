@@ -17,8 +17,8 @@ def func(a,b, path):
     try:
         s = 0
         for j in [a,b]:
-            full_path = f'{path} {j}.txt'
-            with open(f'{j}.txt', 'rt') as file:
+            f_path = f'{path}{j}.txt'
+            with open(f_path, 'rt') as file:
                 for i in file:
                     s+= int(i.rstrip())
         print(f'Сумма шести чисел: {s}')
