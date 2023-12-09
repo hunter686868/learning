@@ -6,15 +6,16 @@ for i in range(1, 11):
         file.write(f'{randint(1, 999)}\n')
 
 
-def func(a,b, path):
+def func(a, b, path):
     try:
         s = 0
-        for j in [a,b]:
+        for j in [a, b]:
             f_path = f'{path}{j}.txt'
             with open(f_path, 'rt') as file:
                 for i in file:
                     s+= int(i.rstrip())
         print(f'Сумма шести чисел: {s}')
+
     except:
         print('Ошибка')
     finally:
@@ -61,4 +62,4 @@ def read_file(path):
         file.close()
 
 
-units = read_file('test.txt')
+#units = read_file('test.txt')
