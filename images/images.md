@@ -1,3 +1,6 @@
+Обработка изображений
+
+```
 import os
 from PIL import Image, ImageDraw, ImageColor, ImageFont
 
@@ -52,3 +55,8 @@ def img_chng_draw(ext_1, ext_2):
 img_chng('.jpeg', '.bmp')
 
 img_chng_draw('.bmp', '.jpeg')
+```
+
+# Вывод функции:
+
+![func](https://i.imgur.com/WjptXQo.png)
