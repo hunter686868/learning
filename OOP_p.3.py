@@ -31,16 +31,20 @@ class Unit:
         return self.__armor
 
     def attack(self, target):
-        print(f'{self.__name} атакует {target.get_name()}')
+        #print(f'{self.__name} атакует {target.get_name()}')
         target.take_damage(self.__damage)
 
     def take_damage(self, damage):
         self.__health -= damage * (1 - self.__armor)
-        print(f'У {self.__name} осталось {self.__health} здоровья')
+        if self.__health > 0:
+            return True
+        else:
+            return False
+        #print(f'У {self.__name} осталось {self.__health} здоровья')
 
     def heal(self, heal):
         self.__health += heal
-        print(f'{self.__name} восстанавливает {heal} здоровья')
+        #print(f'{self.__name} восстанавливает {heal} здоровья')
 
 
 # Здание:
@@ -70,7 +74,7 @@ class Building:
 
     def product(self, player):
         player.set_gold(self.__production_rate)
-        print(f'{player.get_name()} получает {self.__production_rate} золота от {self.__name}')
+        #print(f'{player.get_name()} получает {self.__production_rate} золота от {self.__name}')
 
     def upgrade(self, player):
         cost = 1000
@@ -78,18 +82,22 @@ class Building:
             player.set_gold(-cost)
             self.__production_rate *= 2
             self.__training_rate *= 2
-            print(f'{player.get_name()} улучшает {self.__name}, производство ресурсов удвоено')
+            return True
+            #print(f'{player.get_name()} улучшает {self.__name}, производство ресурсов удвоено')
         else:
-            print(f'Нужно больше золота')
+            return False
+            #print(f'Нужно больше золота')
 
     def train(self, player, unit):
         if player.get_gold() >= unit.get_cost():
             player.set_gold(- unit.get_cost())
             player.add_unit(unit)
             days = unit.get_cost() / self.__training_rate
-            print(f'{player.get_name()} обучил {unit.get_name()} за {days} дней')
+            return True
+            #print(f'{player.get_name()} обучил {unit.get_name()} за {days} дней')
         else:
-            print(f'Нужно больше золота')
+            return False
+            #print(f'Нужно больше золота')
 
 
 # Отряд
@@ -115,7 +123,7 @@ class Squad:
 
     def add_unit(self, unit):
         self.__units.append(unit.get_name())
-        print(f'{unit.get_name()} добавляется к отряду {self.__name}')
+        #print(f'{unit.get_name()} добавляется к отряду {self.__name}')
 
     def delete_unit(self, unit):
         self.__units.remove(unit)
@@ -190,13 +198,18 @@ class Ship(Unit1):
         self.aboard = []
 
     def load(self, unit):
-        self.units += 1
-        self.aboard.append(unit.name)
-        print(f'{unit.name} погружен на борт {self.name}')
+        if len(self.aboard) < self.capacity:
+            self.units += 1
+            self.aboard.append(unit.name)
+            return True
+        else:
+            return False
+        #print(f'{unit.name} погружен на борт {self.name}')
 
     def unload(self, unit):
         self.load -= 1
         self.aboard.remove(unit.get_name())
+        return True
 
 
 airplane = Airplane('Самолет', 1000, 50, 100, 0.1)
@@ -239,9 +252,11 @@ class Mine(Building1):
         if self.player.get_gold() >= amount:
             self.player.set_gold(-amount)
             self.pr_rate *= 2
-            print(f'{self.player.get_name()} улучшает {self.name}, производство ресурсов удвоено')
+            return True
+            #print(f'{self.player.get_name()} улучшает {self.name}, производство ресурсов удвоено')
         else:
-            print(f'Нужно больше золота')
+            return False
+            #print(f'Нужно больше золота')
 
     def product(self):
         self.player.set_gold(self.pr_rate)
@@ -256,18 +271,22 @@ class Barracks(Building1):
         if self.player.get_gold() >= amount:
             self.player.set_gold(-amount)
             self.tr_rate *= 2
-            print(f'{self.player.get_name()} улучшает {self.name}, производство войск удвоено')
+            return True
+            #print(f'{self.player.get_name()} улучшает {self.name}, производство войск удвоено')
         else:
-            print(f'Нужно больше золота')
+            return False
+            #print(f'Нужно больше золота')
 
     def produce(self, unit):
         if self.player.get_gold() >= unit.get_cost():
             self.player.set_gold(- unit.get_cost())
             self.player.add_unit(unit)
             days = unit.get_cost() / self.tr_rate
-            print(f'{self.player.get_name()} обучил {unit.get_name()} за {days} дней')
+            return True
+            #print(f'{self.player.get_name()} обучил {unit.get_name()} за {days} дней')
         else:
-            print(f'Нужно больше золота')
+            return False
+            #print(f'Нужно больше золота')
 
 
 mine2 = Mine('Mine', 500, 1000, squad)
@@ -275,5 +294,6 @@ mine2.upgrade(50)
 
 barracks2 = Barracks('Бараки', 1500, 1000, squad)
 barracks2.produce(soldier2)
-barracks2.upgrade(50)
+print(barracks2.upgrade(50))
+print(barracks2.upgrade(5000))
 barracks2.produce(soldier2)
