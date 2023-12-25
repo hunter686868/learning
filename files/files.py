@@ -1,4 +1,8 @@
 from random import randint
+import logging
+
+logging.basicConfig(filename='log', level=logging.INFO)
+
 for i in range(1, 11):
     with open(f'{i}.txt', 'wt') as file:
         file.write(f'{randint(1, 999)}\n')
@@ -10,19 +14,18 @@ def func(a, b, path):
     try:
         s = 0
         for j in [a, b]:
-            f_path = f'{path}{j}.txt'
-            with open(f_path, 'rt') as file:
-                for i in file:
-                    s+= int(i.rstrip())
+            f_path = f'{path}\\{j}.txt'
+            with open(f_path, 'rt') as fle:
+                for i in fle:
+                    logging.info(i)
+                    s += int(i.rstrip())
         print(f'Сумма шести чисел: {s}')
 
     except:
         print('Ошибка')
-    finally:
-        file.close()
 
 
-func(2,10,'/Users/Sergei/Documents/GitHub/learning/files/')
+func(2,10,r'C:\Users\hunter\PycharmProjects\learning\files')
 
 # Возьмем класс Unit из предыдущего задания
 class Unit:
@@ -62,4 +65,4 @@ def read_file(path):
         file.close()
 
 
-#units = read_file('test.txt')
+units = read_file('test.txt')
