@@ -14,10 +14,12 @@ def func(a, b, path):
             with open(f_path, 'rt') as file:
                 for i in file:
                     s+= int(i.rstrip())
-        print(f'Сумма шести чисел: {s}')
+        return True
+        #print(f'Сумма шести чисел: {s}')
 
     except:
-        print('Ошибка')
+        return False
+        #print('Ошибка')
     finally:
         file.close()
 
