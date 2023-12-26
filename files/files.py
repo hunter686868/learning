@@ -41,7 +41,7 @@ def read_file(path):
 
     units = []
     try:
-        with open(path, 'rt') as file:
+        with (open(path, 'rt') as file):
             count = 0
             for i in file:
                 dt = i.rstrip().split(' ')
@@ -55,11 +55,14 @@ def read_file(path):
                     units.append(unit)
                     count += 1
                 else:
-                    print('Ошибка в строке')
-        print(f'Добавлено юнитов: {count}')
+                    return False
+                    #('Ошибка в строке')
+        return True
+        #print(f'Добавлено юнитов: {count}')
         return units
     except:
-        print('Ошибка, проблема с файлом')
+        return False
+        #print('Ошибка, проблема с файлом')
     finally:
         file.close()
 
