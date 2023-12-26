@@ -14,7 +14,7 @@ def func(a, b, path):
             with open(f_path, 'rt') as file:
                 for i in file:
                     s+= int(i.rstrip())
-        return True
+        return s
         #print(f'Сумма шести чисел: {s}')
 
     except:
@@ -24,7 +24,7 @@ def func(a, b, path):
         file.close()
 
 
-func(2,10,'/Users/Sergei/Documents/GitHub/learning/files/')
+print(func(2,10,'/Users/Sergei/Documents/GitHub/learning/files/'))
 
 # Возьмем класс Unit из предыдущего задания
 class Unit:
