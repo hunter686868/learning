@@ -44,7 +44,7 @@ class Building:
             self.training_rate *= 2
             print(f'{player.name} улучшает {self.name}, производство ресурсов удвоено')
         else:
-            print(f'Нужно больше золота')
+            print('Нужно больше золота')
 
     def train(self, player, unit):
         if player.gold >= unit.cost:
@@ -52,7 +52,7 @@ class Building:
             player.units.append(unit.name)
             print(f'{player.name} обучил {unit.name}')
         else:
-            print(f'Нужно больше золота')
+            print('Нужно больше золота')
 
 class Squad:
 

@@ -1,5 +1,5 @@
 import os
-from PIL import Image, ImageDraw, ImageColor, ImageFont
+    from PIL import Image, ImageDraw, ImageColor, ImageFont
 
 #3.1. Напишите программу, которая получает на вход два типа (расширения) графических форматов,
 # находит в текущем каталоге все графические файлы, соответствующие первому расширению,

@@ -3,7 +3,7 @@ def func(s1, s2):
         for j in range(len(s2)):
             if s1[i + j] != s2[j]:
                 break
-            elif j == len(s2) - 1:
+            if j == len(s2) - 1:
                 return True
     return False
 
