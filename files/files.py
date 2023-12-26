@@ -14,11 +14,11 @@ def func(a, b, path):
             with open(f_path, 'rt') as file:
                 for i in file:
                     s+= int(i.rstrip())
-        return s
+        return [s, 0]
         #print(f'Сумма шести чисел: {s}')
 
     except:
-        return False
+        return [0, 1]
         #print('Ошибка')
     finally:
         file.close()
@@ -57,10 +57,10 @@ def read_file(path):
                 else:
                     return False
                     #('Ошибка в строке')
-        return units
+        return [units, 0]
         #print(f'Добавлено юнитов: {count}')
     except:
-        return False
+        return [0, 1]
         #print('Ошибка, проблема с файлом')
     finally:
         file.close()
