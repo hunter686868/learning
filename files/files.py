@@ -57,9 +57,8 @@ def read_file(path):
                 else:
                     return False
                     #('Ошибка в строке')
-        return True
-        #print(f'Добавлено юнитов: {count}')
         return units
+        #print(f'Добавлено юнитов: {count}')
     except:
         return False
         #print('Ошибка, проблема с файлом')
