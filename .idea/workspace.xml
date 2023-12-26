@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/6.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/7.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/9.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/9.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/func_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/func_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +43,16 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2XyaSp0pI5L3sXFuqOEsBFzB9VJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -534,7 +548,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703506663396</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update">
+      <option name="closed" value="true" />
+      <created>1703597853508</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1703597853508</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,6 +571,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;testing.py" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
