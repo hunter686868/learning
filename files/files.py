@@ -23,7 +23,6 @@ def func(a, b, path):
     finally:
         file.close()
 
-
 print(func(2,10,'/Users/Sergei/Documents/GitHub/learning/files/'))
 
 # Возьмем класс Unit из предыдущего задания

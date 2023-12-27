@@ -16,8 +16,8 @@ def names(path, extension, flag):
         subdirs1 = []
         for j in subdirs:
             subitems = names(os.path.join(path, j), extension, False)
-            files1.append(subitems[0])
-            subdirs1.append(subitems[1])
+            files1.extend(subitems[0])
+            subdirs1.extend(subitems[1])
         files_ext.extend(files1)
         subdirs.extend(subdirs1)
 
