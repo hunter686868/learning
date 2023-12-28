@@ -13,15 +13,19 @@ def dct():
         dictionary[key] = f'key_{key}'
 
 # По ключам выводим значения и в конце очищаем словарь
+    key_list = []
     for key in dictionary.keys():
-        print(dictionary[key])
+        key_list.append(key)
+        #print(dictionary[key])
 
     dictionary.clear()
+    return key_list
 
 
 dct()
 
-# 2. Напишите функцию, которая получает список из 100 значений (сгенерируйте его заранее с числами в диапазоне от 1 до 10) и число N, и выдаёт список из тех значений в этом списке,
+# 2. Напишите функцию, которая получает список из 100 значений (сгенерируйте его заранее с числами в диапазоне от 1 до 10)
+# и число N, и выдаёт список из тех значений в этом списке,
 # которые повторяются не менее N раз. Используйте словарь для этого.
 
 # Создаем список из 100 значений
@@ -37,11 +41,12 @@ def hundred_values(lst, n):
     for item in lst:
         dictionary_1[item] = dictionary_1.get(item, 0) + 1
     result = []
-    # Смотрим значения, которые повторились больше n и добавляем ключи в список, который в итоге печатаем.
+    # Смотрим значения, которые повторились n раз и добавляем ключи в список, который в итоге печатаем.
     for key, vle in dictionary_1.items():
-        if vle >= n:
+        if vle == n:
             result.append(key)
-    print(result)
+    #print(result)
+    return result
 
 
 hundred_values(values, 10)
