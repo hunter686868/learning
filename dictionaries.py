@@ -41,7 +41,7 @@ def hundred_values(lst, n):
     result = []
     for item in lst:
         dictionary_1[item] = dictionary_1.get(item, 0) + 1
-        if dictionary_1[item] >= n and item not in result:
+        if dictionary_1[item] == n:
             result.append(item)
     return result
 
