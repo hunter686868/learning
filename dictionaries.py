@@ -38,14 +38,11 @@ for j in range(100):
 def hundred_values(lst, n):
     # Добавляем в словарь к значениям, соответствующим ключам по +1 за итерацию. По умолчанию стоит None, нам нужен 0, добавим.
     dictionary_1 = {}
+    result = []
     for item in lst:
         dictionary_1[item] = dictionary_1.get(item, 0) + 1
-    result = []
-    # Смотрим значения, которые повторились n раз и добавляем ключи в список, который в итоге печатаем.
-    for key, vle in dictionary_1.items():
-        if vle == n:
-            result.append(key)
-    #print(result)
+        if dictionary_1[item] >= n and item not in result:
+            result.append(item)
     return result
 
 
