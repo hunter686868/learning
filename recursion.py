@@ -18,4 +18,13 @@ def digits_sum(number):
 print(digits_sum(13333))
 
 
+def list_len(lst):
+    if not lst:
+        return 0
+    else:
+        lst.pop()
+        return 1 + list_len(lst)
+
+
+print(list_len([1, 2, 4, 1, 3, 2, 5, 6, 8]))
 
