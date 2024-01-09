@@ -38,3 +38,7 @@ def palindrome(string):
 
 
 print(palindrome('3334444333'))
+
+
+def even_numbers(lst):
+#    if
