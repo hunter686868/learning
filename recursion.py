@@ -28,4 +28,13 @@ def list_len(lst):
 
 print(list_len([1, 2, 4, 1, 2, 5, 6, 8]))
 
-#def palindrome(string):
+
+def palindrome(string):
+    if len(string) < 2:
+        return True
+    if string[0] != string[-1]:
+        return False
+    return palindrome(string[1: -1])
+
+
+print(palindrome('3334444333'))

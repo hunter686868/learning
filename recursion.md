@@ -30,7 +30,12 @@ def list_len(lst):
 ```
 ### 4. Проверка, является ли строка палиндромом
 ```
-
+def palindrome(string):
+    if len(string) < 2:
+        return True
+    if string[0] != string[-1]:
+        return False
+    return palindrome(string[1: -1])
 ```
 ### 5. Печать только чётных значений из списка
 ```
