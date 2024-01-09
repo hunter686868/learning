@@ -25,7 +25,7 @@ def list_len(lst):
     if not lst:
         return 0
     else:
-        lst.pop()
+        lst.pop(0)
         return 1 + list_len(lst)
 ```
 ### 4. Проверка, является ли строка палиндромом
