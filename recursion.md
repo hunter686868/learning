@@ -7,8 +7,8 @@
 def exponentiation(n, m):
     if m == 0:
         return 1
-    else:
-        return n * exponentiation(n, m - 1)
+
+    return n * exponentiation(n, m - 1)
 ```
 
 ### 2. Вычисление суммы цифр числа
@@ -16,17 +16,17 @@ def exponentiation(n, m):
 def digits_sum(number):
     if number < 10:
         return number
-    else:
-        return number % 10 + digits_sum(number // 10)
+
+    return number % 10 + digits_sum(number // 10)
 ```
 ### 3. Расчёт длины списка, для которого разрешена только операция удаления первого элемента pop(0) (и получение длины конечно)
 ```
 def list_len(lst):
     if not lst:
         return 0
-    else:
-        lst.pop(0)
-        return 1 + list_len(lst)
+
+    lst.pop(0)
+    return 1 + list_len(lst)
 ```
 ### 4. Проверка, является ли строка палиндромом
 ```
