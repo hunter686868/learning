@@ -30,28 +30,28 @@ def list_len(lst):
 ```
 ### 4. Проверка, является ли строка палиндромом
 ```
-def palindrome(string):
-    if len(string) < 2:
+def palindrome(string, index=0):
+    if index >= len(string):
         return True
-    if string[0] != string[-1]:
+    if string[index] != string[-index - 1]:
         return False
-    return palindrome(string[1: -1])
+    return palindrome(string, index + 1)
 ```
 ### 5. Печать только чётных значений из списка
 ```
-def even_numbers(lst):
-    if not lst:
+def even_numbers(lst, index=0):
+    if index >= len(lst):
         return []
-    if lst[0] % 2 == 0:
-        return [lst[0]] + even_numbers(lst[1:])
-    return even_numbers(lst[1:])
+    if lst[index] % 2 == 0:
+        return [lst[index]] + even_numbers(lst, index + 1)
+    return even_numbers(lst, index + 1)
 ```
 ### 6. Печать элементов списка с чётными индексами
 ```
-def even_index(lst):
-    if not lst:
+def even_index(lst, index=0):
+    if lst[index] >= len(lst):
         return []
-    return [lst[0]] + even_index(lst[2:])
+    return [lst[index]] + even_index(lst, index + 2)
 ```
 ### 7. Нахождение второго максимального числа в списке (с учётом, что максимальных может быть несколько, если они равны).
 ```
