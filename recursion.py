@@ -29,32 +29,38 @@ def list_len(lst):
 print(list_len([1, 2, 4, 1, 2, 5, 6, 8]))
 
 
-def palindrome(string, index=0):
-    if index >= len(string)/2:
+def palindrome(string):
+    if len(string) <= 2:
         return True
-    if string[index] != string[-index - 1]:
+    if string[0] != string[-1]:
         return False
-    return palindrome(string, index + 1)
+    string.pop(0,-1)
+    return palindrome(string)
 
 
 print(palindrome('оппаааппо'))
 
 
-def even_numbers(lst, index=0):
-    if index >= len(lst):
+def even_numbers(lst):
+    if not lst:
         return []
-    if lst[index] % 2 == 0:
-        return [lst[index]] + even_numbers(lst, index + 1)
-    return even_numbers(lst, index + 1)
+    if lst[0] % 2 == 0:
+        return [lst.pop(0)] + even_numbers(lst)
+    lst.pop(0)
+    return even_numbers(lst)
 
 
 print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15]))
 
 
-def even_index(lst, index=0):
-    if lst[index] >= len(lst):
+def even_index(lst):
+    if not lst:
         return []
-    return [lst[index]] + even_index(lst, index + 2)
+    even = lst.pop(0)
+    if not lst:
+        return [even]
+    lst.pop(0)
+    return [even] + even_index(lst)
 
 
 print(even_index([1,2,3,4,5,6,7,8,9]))

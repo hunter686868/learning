@@ -39,19 +39,24 @@ def palindrome(string, index=0):
 ```
 ### 5. Печать только чётных значений из списка
 ```
-def even_numbers(lst, index=0):
-    if index >= len(lst):
+def even_numbers(lst):
+    if not lst:
         return []
-    if lst[index] % 2 == 0:
-        return [lst[index]] + even_numbers(lst, index + 1)
-    return even_numbers(lst, index + 1)
+    if lst[0] % 2 == 0:
+        return [lst.pop(0)] + even_numbers(lst)
+    lst.pop(0)
+    return even_numbers(lst)
 ```
 ### 6. Печать элементов списка с чётными индексами
 ```
-def even_index(lst, index=0):
-    if lst[index] >= len(lst):
+def even_index(lst):
+    if not lst:
         return []
-    return [lst[index]] + even_index(lst, index + 2)
+    even = lst.pop(0)
+    if not lst:
+        return [even]
+    lst.pop(0)
+    return [even] + even_index(lst)
 ```
 ### 7. Нахождение второго максимального числа в списке (с учётом, что максимальных может быть несколько, если они равны).
 ```
