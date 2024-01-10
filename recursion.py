@@ -49,3 +49,12 @@ def even_numbers(lst):
 
 
 print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15]))
+
+
+def even_index(lst):
+    if not lst:
+        return []
+    return [lst[0]] + even_index(lst[2:])
+
+
+print(even_index([1,2,3,4,5,6,7,8,9]))
