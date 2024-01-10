@@ -39,7 +39,12 @@ def palindrome(string):
 ```
 ### 5. Печать только чётных значений из списка
 ```
-
+def even_numbers(lst):
+    if not lst:
+        return []
+    if lst[0] % 2 == 0:
+        return [lst[0]] + even_numbers(lst[1:])
+    return even_numbers(lst[1:])
 ```
 ### 6. Печать элементов списка с чётными индексами
 ```

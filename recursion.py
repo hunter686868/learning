@@ -41,4 +41,11 @@ print(palindrome('3334444333'))
 
 
 def even_numbers(lst):
-#    if
+    if not lst:
+        return []
+    if lst[0] % 2 == 0:
+        return [lst[0]] + even_numbers(lst[1:])
+    return even_numbers(lst[1:])
+
+
+print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15]))
