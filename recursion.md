@@ -31,7 +31,7 @@ def list_len(lst):
 ### 4. Проверка, является ли строка палиндромом
 ```
 def palindrome(string, index=0):
-    if index >= len(string):
+    if index >= len(string)/2:
         return True
     if string[index] != string[-index - 1]:
         return False

@@ -30,14 +30,14 @@ print(list_len([1, 2, 4, 1, 2, 5, 6, 8]))
 
 
 def palindrome(string, index=0):
-    if index >= len(string):
+    if index >= len(string)/2:
         return True
     if string[index] != string[-index - 1]:
         return False
     return palindrome(string, index + 1)
 
 
-print(palindrome('123321'))
+print(palindrome('оппаааппо'))
 
 
 def even_numbers(lst, index=0):
