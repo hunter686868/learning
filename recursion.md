@@ -30,12 +30,14 @@ def list_len(lst):
 ```
 ### 4. Проверка, является ли строка палиндромом
 ```
-def palindrome(string, index=0):
-    if index >= len(string)/2:
-        return True
-    if string[index] != string[-index - 1]:
-        return False
-    return palindrome(string, index + 1)
+def palindrome(string):
+    def subfnc(index=0):
+        if index >= len(string)/2:
+            return True
+        if string[index] != string[-index - 1]:
+            return False
+        return subfnc(index + 1)
+    return subfnc()
 ```
 ### 5. Печать только чётных значений из списка
 ```
