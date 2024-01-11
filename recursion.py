@@ -29,24 +29,30 @@ def list_len(lst):
 
 
 def palindrome(string):
-    def subfnc(index=0):
-        if index >= len(string)/2:
-            return True
-        if string[index] != string[-index - 1]:
-            return False
-        return subfnc(index + 1)
-    return subfnc()
+    if len(string) < 2:
+        return True
+    return chk_plndr(string, 0)
 
 
-print(palindrome('оgпааппо'))
+def chk_plndr(string, i):
+    if i >= len(string)/2:
+        return True
+    if string[i] == string[-i - 1]:
+        return chk_plndr(string, i + 1)
+    return False
+
+
+print(palindrome('ооопооо'))
 
 
 def even_numbers(lst):
+    a = lst
     if not lst:
         return []
+    a.pop(0)
     if lst[0] % 2 == 0:
-        return [lst[0]] + even_numbers(lst+1)
-    return even_numbers(lst)
+        return [lst[0]] + even_numbers(a)
+    return even_numbers(a)
 
 
 #print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15]))
@@ -63,5 +69,12 @@ def even_index(lst):
 
 
 #print(even_index([1,2,3,4,5,6,7,8,9]))
+
+def second_max(lst):
+    if len(lst) < 2:
+        return False
+    return max()
+
+#def max(sl):
 
 
