@@ -45,11 +45,27 @@ def chk_plndr(string, i):
 ```
 ### 5. Печать только чётных значений из списка
 ```
+def even_numbers(lst):
+    return chk_even_n(lst, 0)
 
+
+def chk_even_n(lst, i):
+    if i == len(lst):
+        return []
+    if lst[i] % 2 == 0:
+        return [lst[i]] + chk_even_n(lst, i + 1)
+    return chk_even_n(lst, i + 1)
 ```
 ### 6. Печать элементов списка с чётными индексами
 ```
+def even_index(lst):
+    return chk_even_i(lst, 0)
 
+
+def chk_even_i(lst, i):
+    if i >= len(lst):
+        return []
+    return [lst[i]] + chk_even_i(lst, i + 2)
 ```
 ### 7. Нахождение второго максимального числа в списке (с учётом, что максимальных может быть несколько, если они равны).
 ```

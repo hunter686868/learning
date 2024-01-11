@@ -46,29 +46,32 @@ print(palindrome('lev3el'))
 
 
 def even_numbers(lst):
-    a = lst
-    if not lst:
+    return chk_even_n(lst, 0)
+
+
+def chk_even_n(lst, i):
+    if i == len(lst):
         return []
-    a.pop(0)
-    if lst[0] % 2 == 0:
-        return [lst[0]] + even_numbers(a)
-    return even_numbers(a)
+    if lst[i] % 2 == 0:
+        return [lst[i]] + chk_even_n(lst, i + 1)
+    return chk_even_n(lst, i + 1)
 
 
-#print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15]))
+print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15,2,2,2,2,2]))
+print(even_numbers([]))
 
 
 def even_index(lst):
-    if not lst:
+    return chk_even_i(lst, 0)
+
+
+def chk_even_i(lst, i):
+    if i >= len(lst):
         return []
-    even = lst.pop(0)
-    if not lst:
-        return [even]
-    lst.pop(0)
-    return [even] + even_index(lst)
+    return [lst[i]] + chk_even_i(lst, i + 2)
 
 
-#print(even_index([1,2,3,4,5,6,7,8,9]))
+print(even_index([1,2,3,4,5,6,7,8,9,1,2,3,4]))
 
 def second_max(lst):
     if len(lst) < 2:
