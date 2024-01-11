@@ -39,9 +39,9 @@ def palindrome(string):
 def chk_plndr(string, i):
     if i >= len(string)/2:
         return True
-    if string[i] == string[-i - 1]:
-        return chk_plndr(string, i + 1)
-    return False
+    if string[i] != string[-i - 1]:
+        return False
+    return chk_plndr(string, i + 1)
 ```
 ### 5. Печать только чётных значений из списка
 ```
