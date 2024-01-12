@@ -74,28 +74,29 @@ def chk_even_i(lst, i):
 #print(even_index([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4]))
 
 
-def second_max(lst):
+def second_max(lst: list):
     if len(lst) < 2:
-        return False
-    return find_second_max(lst, 0, lst[0], lst[0])
+        return 0
+    return find_second_max(lst, 0, 0, 0)
 
 
-def find_second_max(lst, i, m1, m2):
+def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
     if i == len(lst):
         return m2
     n = lst[i]
     if n > m1:
-        return find_second_max(lst, i + 1, n, m2)
-    if n > m2:
-        return find_second_max(lst, i + 1, m1, n)
+        m2 = m1
+        m1 = n
+    elif n > m2:
+        m2 = n
     return find_second_max(lst, i + 1, m1, m2)
 
 
-#print(second_max([11, 2, 10, 10, 4, 5, 12, 7]))
+print(second_max([122, 2, 133, 15, 45, 545, 121, 7]))
 
 
 import os
-def files(path)
-    os.
+#def files(path)
+#    os.
 
-def find_files(path, )
+#def find_files(path, )
