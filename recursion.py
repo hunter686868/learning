@@ -93,11 +93,25 @@ def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
     return find_second_max(lst, i, m1, m2)
 
 
-print(second_max([1, 6, 1, 1, 7, 7, 4, 5]))
+#print(second_max([11, 10, 13, 15, 9, 7, 4, 5]))
 
 
 import os
-#def files(path)
-#    os.
 
-#def find_files(path, )
+
+def files(path):
+    lst = []
+    find_files(path, lst)
+    return lst
+
+
+def find_files(path, lst):
+    for i in os.listdir(path):
+        i_path = os.path.join(path, i)
+        if os.path.isfile(i_path):
+            lst.append(i_path)
+        elif os.path.isdir(i_path):
+            find_files(i_path, lst)
+
+
+print(files('/Users/Sergei/Documents/GitHub/learning/files'))
