@@ -42,7 +42,7 @@ def chk_plndr(string, i):
     return chk_plndr(string, i + 1)
 
 
-print(palindrome('lev3el'))
+#print(palindrome('lev3el'))
 
 
 def even_numbers(lst):
@@ -57,8 +57,8 @@ def chk_even_n(lst, i):
     return chk_even_n(lst, i + 1)
 
 
-print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15,2,2,2,2,2]))
-print(even_numbers([]))
+#print(even_numbers([1,2,3,4,5,6,7,8,9, 14, 16, 15,2,2,2,2,2]))
+#print(even_numbers([]))
 
 
 def even_index(lst):
@@ -71,13 +71,26 @@ def chk_even_i(lst, i):
     return [lst[i]] + chk_even_i(lst, i + 2)
 
 
-print(even_index([1,2,3,4,5,6,7,8,9,1,2,3,4]))
+#print(even_index([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4]))
+
 
 def second_max(lst):
     if len(lst) < 2:
         return False
-    return max()
+    return find_second_max(lst, 0, 0, 0)
 
-#def max(sl):
+
+def find_second_max(lst, i, m1, m2):
+    if i == len(lst):
+        return m2
+    n = lst[i]
+    if n > m1:
+        return find_second_max(lst, i + 1, n, m2)
+    if n > m2:
+        return find_second_max(lst, i + 1, m1, n)
+    return find_second_max(lst, i + 1, m1, m2)
+
+
+print(second_max([1, 2, 10, 10, 4, 5, 12, 11, 7]))
 
 

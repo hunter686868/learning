@@ -69,7 +69,21 @@ def chk_even_i(lst, i):
 ```
 ### 7. Нахождение второго максимального числа в списке (с учётом, что максимальных может быть несколько, если они равны).
 ```
+def second_max(lst):
+    if len(lst) < 2:
+        return False
+    return find_second_max(lst, 0, 0, 0)
 
+
+def find_second_max(lst, i, m1, m2):
+    if i == len(lst):
+        return m2
+    n = lst[i]
+    if n > m1:
+        return find_second_max(lst, i + 1, n, m2)
+    if n > m2:
+        return find_second_max(lst, i + 1, m1, n)
+    return find_second_max(lst, i + 1, m1, m2)
 ```
 ### 8. Поиск всех файлов в заданном каталоге, включая файлы, расположенные в подкаталогах произвольной вложенности.
 ```
