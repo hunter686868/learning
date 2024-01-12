@@ -72,7 +72,7 @@ def chk_even_i(lst, i):
 def second_max(lst):
     if len(lst) < 2:
         return False
-    return find_second_max(lst, 0, 0, 0)
+    return find_second_max(lst, 0, lst[0], lst[0])
 
 
 def find_second_max(lst, i, m1, m2):

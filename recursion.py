@@ -93,7 +93,9 @@ def find_second_max(lst, i, m1, m2):
 
 #print(second_max([11, 2, 10, 10, 4, 5, 12, 7]))
 
-#def files(path)
 
+import os
+def files(path)
+    os.
 
-#def find_files(path, )
+def find_files(path, )
