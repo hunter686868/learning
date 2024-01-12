@@ -74,7 +74,7 @@ def chk_even_i(lst, i):
 #print(even_index([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4]))
 
 
-def second_max(lst: list):
+def second_max(lst: list) -> int:
     if len(lst) < 2:
         return 0
     return find_second_max(lst, 0, 0, 0)
