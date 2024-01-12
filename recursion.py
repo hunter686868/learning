@@ -89,7 +89,8 @@ def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
         m1 = n
     elif n > m2:
         m2 = n
-    return find_second_max(lst, i + 1, m1, m2)
+    i += 1
+    return find_second_max(lst, i, m1, m2)
 
 
 print(second_max([122, 2, 133, 15, 45, 545, 121, 7]))
