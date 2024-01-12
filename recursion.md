@@ -69,10 +69,13 @@ def chk_even_i(lst, i):
 ```
 ### 7. Нахождение второго максимального числа в списке (с учётом, что максимальных может быть несколько, если они равны).
 ```
+import sys
+
+
 def second_max(lst: list) -> int:
     if len(lst) < 2:
         return 0
-    return find_second_max(lst, 0, 0, 0)
+    return find_second_max(lst, 0, - sys.maxsize - 1, - sys.maxsize - 1)
 
 
 def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
