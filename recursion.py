@@ -77,7 +77,7 @@ def chk_even_i(lst, i):
 def second_max(lst):
     if len(lst) < 2:
         return False
-    return find_second_max(lst, 0, 0, 0)
+    return find_second_max(lst, 0, lst[0], lst[0])
 
 
 def find_second_max(lst, i, m1, m2):
@@ -91,6 +91,9 @@ def find_second_max(lst, i, m1, m2):
     return find_second_max(lst, i + 1, m1, m2)
 
 
-print(second_max([1, 2, 10, 10, 4, 5, 12, 11, 7]))
+#print(second_max([11, 2, 10, 10, 4, 5, 12, 7]))
+
+#def files(path)
 
 
+#def find_files(path, )
