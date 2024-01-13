@@ -95,15 +95,11 @@ import os
 
 def files(path):
     lst = []
-    find_files(path, lst)
-    return lst
-
-
-def find_files(path, lst):
     for i in os.listdir(path):
         i_path = os.path.join(path, i)
         if os.path.isfile(i_path):
             lst.append(i_path)
         elif os.path.isdir(i_path):
-            find_files(i_path, lst)
+            lst.extend(files(i_path))
+    return lst
 ```

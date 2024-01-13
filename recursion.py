@@ -99,10 +99,10 @@ def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
 import os
 
 
-def files(path):
-    lst = []
-    find_files(path, lst)
-    return lst
+#def files(path):
+#    lst = []
+#    find_files(path, lst)
+#    return lst
 
 
 def find_files(path, lst):
@@ -112,6 +112,17 @@ def find_files(path, lst):
             lst.append(i_path)
         elif os.path.isdir(i_path):
             find_files(i_path, lst)
+
+
+def files(path):
+    lst = []
+    for i in os.listdir(path):
+        i_path = os.path.join(path, i)
+        if os.path.isfile(i_path):
+            lst.append(i_path)
+        elif os.path.isdir(i_path):
+            lst.extend(files(i_path))
+    return lst
 
 
 print(files('/Users/Sergei/Documents/GitHub/learning/files'))
