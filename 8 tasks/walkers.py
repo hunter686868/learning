@@ -15,4 +15,4 @@ def find_stalkers(village, i, sum_d, sum_v):
     return find_stalkers(village, i+1, sum_d, sum_v)
 
 
-print(white_stalkers('abc=7==hdjs=3gg1=======5'))
+print(white_stalkers('axxb6===4xaf5===eee5'))
