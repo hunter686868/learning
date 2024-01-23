@@ -16,3 +16,6 @@ def digital_rain(col):
                 max_str = col[i:i + curr_len]
 
     return max_str
+
+
+print(digital_rain('101010110000110'))
