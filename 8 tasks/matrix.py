@@ -17,5 +17,3 @@ def digital_rain(col):
 
     return max_str
 
-
-print(digital_rain('101010110000110'))
