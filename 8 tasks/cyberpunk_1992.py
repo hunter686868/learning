@@ -1,5 +1,11 @@
 def massdriver(activate: list) -> int:
+    dct = {}
+    lst = []
     for i in range(len(activate)):
-        if activate.count(activate[i]) > 1:
-            return i
+        if activate[i] in dct:
+            lst.append(dct[activate[i]])
+        else:
+            dct[activate[i]] = i
+    if lst:
+        return min(lst)
     return -1
