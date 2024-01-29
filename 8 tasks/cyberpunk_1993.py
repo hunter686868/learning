@@ -1,6 +1,7 @@
-def TRC_sort(trc:list) -> list:
+def TRC_sort(trc: list) -> list:
     if len(trc) < 2:
         return trc
-    return TRC_helper ()
-
-def TRC_helper():
+    result = [[], [], []]
+    for i in trc:
+        result[i].append(i)
+    return result[0] + result[1] + result[2]
