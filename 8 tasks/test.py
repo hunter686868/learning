@@ -47,7 +47,7 @@ def max_submatrix2(matrix):
           subsum0[y-1][x-1] + matrix[y][x])
 
   # Поиск подматрицы с максимальной суммой элементов
-  maxsum = None
+  maxsum = -999
   for y1 in range(height):
     for x1 in range(width):
       for y2 in range(y1, height):
@@ -62,7 +62,7 @@ def max_submatrix2(matrix):
           else:
             subsum = subsum0[y2][x2] + subsum0[y1-1][x1-1] - \
               subsum0[y1-1][x2] - subsum0[y2][x1-1]
-          if subsum > maxsum and x2 - x1 < width:
+          if subsum > maxsum and x2 - x1 == y2 - x1:
             maxsum = subsum
             x1max = x1
             y1max = y1
