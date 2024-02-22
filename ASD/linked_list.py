@@ -1,6 +1,3 @@
-import unittest
-
-
 class Node:
 
     def __init__(self, v):
@@ -40,7 +37,7 @@ class LinkedList:
         node = self.head
         while node is not None:
             if node.value == val:
-                lst.append(node)
+                lst.append(node.value)
             node = node.next
         return lst
 
@@ -77,34 +74,18 @@ class LinkedList:
 
     def insert(self, afterNode, newNode):
         if afterNode is None:
-            afterNode.next = self.head
+            newNode.next = self.head
             self.head = newNode
             if self.tail is None:
                 self.tail = newNode
-        else:
-            newNode.next = afterNode
-
-
-class TestsLinkedList(unittest.TestCase):
-
-    def initialization(self):
-        self.linked_list = LinkedList()
-        self.linked_list.add_in_tail(Node(0))
-        self.linked_list.add_in_tail(Node(1))
-        self.linked_list.add_in_tail(Node(2))
-        self.linked_list.add_in_tail(Node(1))
-
-    # test delete (False, True)
-    def test_delete(self):
-        self.linked_list.delete(1)
-        self.assertEqual([0,2,2], self.linked_list)
-    # test clean
-    def test_clean(self):
-    # test find_all
-    def test_find_all(self):
-    # test len
-    def test_len(self):
-    # test insert
-    def test_insert(self):
-
+            return
+        node = self.head
+        while node is not None:
+            if node.value == afterNode.value:
+                newNode.next = node.next
+                node.next = newNode
+                if newNode.next is None:
+                    self.tail = newNode
+                return
+            node = node.next
 
