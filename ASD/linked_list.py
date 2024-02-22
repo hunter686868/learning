@@ -1,8 +1,12 @@
-lass Node:
+import unittest
+
+
+class Node:
 
     def __init__(self, v):
         self.value = v
         self.next = None
+
 
 class LinkedList:
 
@@ -32,18 +36,75 @@ class LinkedList:
         return None
 
     def find_all(self, val):
-        return [] # здесь будет ваш код
+        lst = []
+        node = self.head
+        while node is not None:
+            if node.value == val:
+                lst.append(node)
+            node = node.next
+        return lst
 
     def delete(self, val, all=False):
-        pass # здесь будет ваш код
+        if not self.head:
+            return
+        i = None
+        node = self.head
+        while node is not None:
+            if node.value == val:
+                if i is None:
+                    self.head = node.next
+                else:
+                    i.next = node.next
+                if node == self.tail:
+                    self.tail = i
+                if not all:
+                    return
+            else:
+                i = node
+            node = node.next
 
     def clean(self):
-        pass # здесь будет ваш код
+        self.head = None
+        self.tail = None
 
     def len(self):
-        return 0 # здесь будет ваш код
+        count = 0
+        node = self.head
+        while node is not None:
+            count += 1
+            node = node.next
+        return count
 
     def insert(self, afterNode, newNode):
-        pass # здесь будет ваш код
+        if afterNode is None:
+            afterNode.next = self.head
+            self.head = newNode
+            if self.tail is None:
+                self.tail = newNode
+        else:
+            newNode.next = afterNode
+
+
+class TestsLinkedList(unittest.TestCase):
+
+    def initialization(self):
+        self.linked_list = LinkedList()
+        self.linked_list.add_in_tail(Node(0))
+        self.linked_list.add_in_tail(Node(1))
+        self.linked_list.add_in_tail(Node(2))
+        self.linked_list.add_in_tail(Node(1))
+
+    # test delete (False, True)
+    def test_delete(self):
+        self.linked_list.delete(1)
+        self.assertEqual([0,2,2], self.linked_list)
+    # test clean
+    def test_clean(self):
+    # test find_all
+    def test_find_all(self):
+    # test len
+    def test_len(self):
+    # test insert
+    def test_insert(self):
 
 
