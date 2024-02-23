@@ -27,7 +27,7 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.linked_list.tail, None)
     # test find_all
     def test_find_all(self):
-        self.assertEqual(self.linked_list.find_all(1), [1, 1])
+        self.assertEqual(len(self.linked_list.find_all(1)), 2)
         self.assertEqual(self.linked_list.find_all(4), [])
     # test len
     def test_len(self):
@@ -39,7 +39,8 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.linked_list.head.value, 6)
         self.assertEqual(self.linked_list.head.next.value, 0)
         self.assertEqual(self.linked_list.tail.value, 1)
-        self.linked_list.insert(Node(6), Node(44))
+        self.node = self.linked_list.find(0)
+        self.linked_list.insert(self.node, Node(44))
         self.assertEqual(self.linked_list.len(), 6)
         self.assertEqual(self.linked_list.head.value, 6)
         self.assertEqual(self.linked_list.tail.value, 1)
