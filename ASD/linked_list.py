@@ -37,7 +37,7 @@ class LinkedList:
         node = self.head
         while node is not None:
             if node.value == val:
-                lst.append(node.value)
+                lst.append(node)
             node = node.next
         return lst
 
@@ -76,16 +76,11 @@ class LinkedList:
         if afterNode is None:
             newNode.next = self.head
             self.head = newNode
-            if self.tail is None:
+            if self.head.next is None:
+                self.tail = self.head
+        else:
+            newNode.next = afterNode.next
+            afterNode.next = newNode
+            if newNode.next is None:
                 self.tail = newNode
-            return
-        node = self.head
-        while node is not None:
-            if node.value == afterNode.value:
-                newNode.next = node.next
-                node.next = newNode
-                if newNode.next is None:
-                    self.tail = newNode
-                return
-            node = node.next
 
