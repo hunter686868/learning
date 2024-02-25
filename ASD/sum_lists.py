@@ -8,8 +8,7 @@ def sum_lists(list1, list2):
     node1 = list1.head
     node2 = list2.head
     while node1 is not None:
-        n_sum = node1.value + node2.value
-        result_list.add_in_tail(Node(n_sum))
+        result_list.add_in_tail(node1.value + node2.value)
         node1 = node1.next
         node2 = node2.next
     return result_list
