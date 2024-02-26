@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASD/linked_list2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/linked_list2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASD/test_linked_list2.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/test_linked_list2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +34,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="7f548334-3b68-48d8-908d-1fa6ab7d3a71" />
+        <option name="accountId" value="bb16b9c7-cc85-445b-ae8f-7f98824a17e3" />
         <option name="url" value="https://github.com/hunter686868/learning.git" />
       </UrlAndAccount>
     </option>
@@ -58,10 +59,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_linked_list2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
+    &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sum_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_linked_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.walkers.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -76,13 +89,13 @@
   <component name="RunManager">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -96,15 +109,61 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="files" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="cyberpunk" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8 tasks/cyberpunk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cyberpunk_1993" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8 tasks/cyberpunk_1993.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="files" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/files" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -120,13 +179,13 @@
     </configuration>
     <configuration name="files_and_catalogues" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -140,8 +199,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ASD/linked_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (pythonProject)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ASD/linked_list2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="log" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -161,15 +267,61 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+    <configuration name="test_linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ASD/test_linked_list.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.11 (pythonProject)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ASD/test_linked_list2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="learning" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -183,25 +335,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for linked_list.TestsLinkedList" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="walkers" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;linked_list.TestsLinkedList&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8 tasks/walkers.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests for linked_list.TestsLinkedList" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13135.95" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,6 +374,94 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
+    </task>
+    <task id="LOCAL-00039" summary="update">
+      <option name="closed" value="true" />
+      <created>1702412960409</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1702412960409</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update">
+      <option name="closed" value="true" />
+      <created>1702669871310</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702669871311</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update">
+      <option name="closed" value="true" />
+      <created>1702673823375</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1702673823375</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update">
+      <option name="closed" value="true" />
+      <created>1702885263707</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1702885263707</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update">
+      <option name="closed" value="true" />
+      <created>1702892242042</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1702892242042</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update">
+      <option name="closed" value="true" />
+      <created>1703199793316</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1703199793316</updated>
+    </task>
+    <task id="LOCAL-00045" summary="update">
+      <option name="closed" value="true" />
+      <created>1703506663396</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1703506663396</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update">
+      <option name="closed" value="true" />
+      <created>1703597853508</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1703597853508</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598169283</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598169283</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598244971</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598244971</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598431325</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598431325</updated>
     </task>
     <task id="LOCAL-00050" summary="update">
       <option name="closed" value="true" />
@@ -446,165 +697,77 @@
     </task>
     <task id="LOCAL-00079" summary="update">
       <option name="closed" value="true" />
-      <created>1705067328132</created>
+      <created>1707154885788</created>
       <option name="number" value="00079" />
       <option name="presentableId" value="LOCAL-00079" />
       <option name="project" value="LOCAL" />
-      <updated>1705067328132</updated>
+      <updated>1707154885788</updated>
     </task>
     <task id="LOCAL-00080" summary="update">
       <option name="closed" value="true" />
-      <created>1705093576880</created>
+      <created>1708623793612</created>
       <option name="number" value="00080" />
       <option name="presentableId" value="LOCAL-00080" />
       <option name="project" value="LOCAL" />
-      <updated>1705093576880</updated>
+      <updated>1708623793613</updated>
     </task>
     <task id="LOCAL-00081" summary="update">
       <option name="closed" value="true" />
-      <created>1705153256605</created>
+      <created>1708676127426</created>
       <option name="number" value="00081" />
       <option name="presentableId" value="LOCAL-00081" />
       <option name="project" value="LOCAL" />
-      <updated>1705153256605</updated>
+      <updated>1708676127426</updated>
     </task>
     <task id="LOCAL-00082" summary="update">
       <option name="closed" value="true" />
-      <created>1705233624101</created>
+      <created>1708677040235</created>
       <option name="number" value="00082" />
       <option name="presentableId" value="LOCAL-00082" />
       <option name="project" value="LOCAL" />
-      <updated>1705233624101</updated>
+      <updated>1708677040235</updated>
     </task>
     <task id="LOCAL-00083" summary="update">
       <option name="closed" value="true" />
-      <created>1705314661885</created>
+      <created>1708677518160</created>
       <option name="number" value="00083" />
       <option name="presentableId" value="LOCAL-00083" />
       <option name="project" value="LOCAL" />
-      <updated>1705314661885</updated>
+      <updated>1708677518160</updated>
     </task>
     <task id="LOCAL-00084" summary="update">
       <option name="closed" value="true" />
-      <created>1705314707935</created>
+      <created>1708677970094</created>
       <option name="number" value="00084" />
       <option name="presentableId" value="LOCAL-00084" />
       <option name="project" value="LOCAL" />
-      <updated>1705314707935</updated>
+      <updated>1708677970094</updated>
     </task>
     <task id="LOCAL-00085" summary="update">
       <option name="closed" value="true" />
-      <created>1705561076909</created>
+      <created>1708678664704</created>
       <option name="number" value="00085" />
       <option name="presentableId" value="LOCAL-00085" />
       <option name="project" value="LOCAL" />
-      <updated>1705561076910</updated>
+      <updated>1708678664704</updated>
     </task>
     <task id="LOCAL-00086" summary="update">
       <option name="closed" value="true" />
-      <created>1706044742409</created>
+      <created>1708858930469</created>
       <option name="number" value="00086" />
       <option name="presentableId" value="LOCAL-00086" />
       <option name="project" value="LOCAL" />
-      <updated>1706044742409</updated>
+      <updated>1708858930469</updated>
     </task>
     <task id="LOCAL-00087" summary="update">
       <option name="closed" value="true" />
-      <created>1706044772458</created>
+      <created>1708861040363</created>
       <option name="number" value="00087" />
       <option name="presentableId" value="LOCAL-00087" />
       <option name="project" value="LOCAL" />
-      <updated>1706044772458</updated>
+      <updated>1708861040363</updated>
     </task>
-    <task id="LOCAL-00088" summary="update">
-      <option name="closed" value="true" />
-      <created>1706209986318</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1706209986318</updated>
-    </task>
-    <task id="LOCAL-00089" summary="update">
-      <option name="closed" value="true" />
-      <created>1706210404750</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1706210404750</updated>
-    </task>
-    <task id="LOCAL-00090" summary="update">
-      <option name="closed" value="true" />
-      <created>1706254277275</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1706254277275</updated>
-    </task>
-    <task id="LOCAL-00091" summary="update">
-      <option name="closed" value="true" />
-      <created>1706276706983</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1706276706983</updated>
-    </task>
-    <task id="LOCAL-00092" summary="update">
-      <option name="closed" value="true" />
-      <created>1706913560749</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1706913560749</updated>
-    </task>
-    <task id="LOCAL-00093" summary="update">
-      <option name="closed" value="true" />
-      <created>1706913588506</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1706913588506</updated>
-    </task>
-    <task id="LOCAL-00094" summary="update">
-      <option name="closed" value="true" />
-      <created>1708509389760</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1708509389760</updated>
-    </task>
-    <task id="LOCAL-00095" summary="update">
-      <option name="closed" value="true" />
-      <created>1708952343106</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1708952343106</updated>
-    </task>
-    <task id="LOCAL-00096" summary="update">
-      <option name="closed" value="true" />
-      <created>1708952574078</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1708952574078</updated>
-    </task>
-    <task id="LOCAL-00097" summary="update">
-      <option name="closed" value="true" />
-      <created>1708953738431</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1708953738431</updated>
-    </task>
-    <task id="LOCAL-00098" summary="update">
-      <option name="closed" value="true" />
-      <created>1708955069009</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1708955069009</updated>
-    </task>
-    <option name="localTasksCounter" value="99" />
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -668,13 +831,6 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
