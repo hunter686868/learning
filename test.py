@@ -5,6 +5,14 @@ def fibonacci(n):
     return a
 
 
-result = fibonacci(543340)
+#result = fibonacci(543340)
 
-print(result)
+#print(result)
+
+a = 10
+
+b = a
+
+a = 5
+
+print(a, b)
