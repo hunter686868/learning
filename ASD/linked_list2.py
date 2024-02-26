@@ -81,7 +81,7 @@ class LinkedList2:
                 self.tail = newNode
                 self.tail.next = None
         else:
-            if afterNode.next is None:
+            if afterNode == self.tail:
                 afterNode.next = newNode
                 newNode.prev = afterNode
                 self.tail = newNode

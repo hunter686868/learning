@@ -31,6 +31,7 @@ class TestsLinkedList(unittest.TestCase):
         self.linked_list.add_in_tail(self.node5)
         self.linked_list.delete(5)
         self.assertEqual(3, self.linked_list.len())
+        self.assertEqual(self.linked_list.tail.value, 1)
 
     def test_del_true(self):
         self.linked_list.delete(1, True)
@@ -60,8 +61,9 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.linked_list.tail.prev.value, 1)
         self.node = self.linked_list.find(6)
         self.assertEqual(self.linked_list.tail.value, 6)
-        self.linked_list.insert(self.node, Node(44))
-        self.assertEqual(self.linked_list.len(), 6)
+        self.linked_list.insert(self.linked_list.tail, Node(44))
+        self.linked_list.insert(self.node, Node(5))
+        self.assertEqual(self.linked_list.len(), 7)
         self.assertEqual(self.linked_list.head.value, 0)
         self.assertEqual(self.linked_list.tail.value, 44)
         self.assertEqual(self.linked_list.head.value, 0)
@@ -72,7 +74,7 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.linked_list1.tail.value, 10)
         self.linked_list1.insert(self.node10, self.node5)
         self.assertEqual(self.linked_list1.tail.value, 5)
-        self.assertEqual(self.linked_list.len(), 6)
+        self.assertEqual(self.linked_list.len(), 7)
         self.assertEqual(self.linked_list1.len(), 2)
     def test_add_head(self):
         self.linked_list.add_in_head(Node(10))
