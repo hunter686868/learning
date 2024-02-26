@@ -6,14 +6,30 @@ class TestsLinkedList(unittest.TestCase):
 
     def setUp(self):
         self.linked_list = LinkedList2()
+        self.node1 = Node(1)
+        self.node5 = Node(5)
+        self.node10 = Node(10)
         self.linked_list.add_in_tail(Node(0))
         self.linked_list.add_in_tail(Node(1))
         self.linked_list.add_in_tail(Node(2))
         self.linked_list.add_in_tail(Node(1))
 
+    # test add in tail
+    def test_add_in_tail(self):
+        self.linked_list.add_in_tail(Node(0))
+        self.linked_list.add_in_tail(Node(1))
+        self.linked_list.add_in_tail(Node(2))
+        self.linked_list.add_in_tail(Node(1))
+        self.linked_list.add_in_tail(self.node5)
+        self.assertEqual(self.linked_list.len(), 9)
+        self.assertEqual(self.linked_list.head.value, 0)
+        self.assertEqual(self.linked_list.tail.value, 5)
     # test delete (False, True)
     def test_delete(self):
         self.linked_list.delete(1)
+        self.assertEqual(3, self.linked_list.len())
+        self.linked_list.add_in_tail(self.node5)
+        self.linked_list.delete(5)
         self.assertEqual(3, self.linked_list.len())
 
     def test_del_true(self):
@@ -43,11 +59,17 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.linked_list.tail.value, 6)
         self.assertEqual(self.linked_list.tail.prev.value, 1)
         self.node = self.linked_list.find(6)
+        self.assertEqual(self.linked_list.tail.value, 6)
         self.linked_list.insert(self.node, Node(44))
         self.assertEqual(self.linked_list.len(), 6)
         self.assertEqual(self.linked_list.head.value, 0)
         self.assertEqual(self.linked_list.tail.value, 44)
-
+        self.assertEqual(self.linked_list.head.value, 0)
+        self.assertEqual(self.linked_list.tail.value, 44)
+        self.linked_list1 = LinkedList2()
+        self.linked_list1.insert(None, Node(6))
+        self.assertEqual(self.linked_list1.head.value, 6)
+        self.assertEqual(self.linked_list1.tail.value, 6)
     def test_add_head(self):
         self.linked_list.add_in_head(Node(10))
         self.assertEqual(self.linked_list.head.value, 10)
