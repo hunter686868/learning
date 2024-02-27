@@ -46,6 +46,8 @@ class LinkedList2:
                         node.next.prev = None
                     else:
                         self.tail = None
+                else:
+                    node.prev.next = node.next
                 if node.next is None:
                     self.tail = node.prev
                     if self.tail is not None:
@@ -53,7 +55,6 @@ class LinkedList2:
                     else:
                         self.head = None
                 else:
-                    node.prev.next = node.next
                     node.next.prev = node.prev
                 if not all:
                     return

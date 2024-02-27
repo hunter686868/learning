@@ -43,14 +43,16 @@ class TestsLinkedList(unittest.TestCase):
         self.linked_list.delete(self.linked_list.head.value)
         self.linked_list.delete(5)
         self.assertEqual(3, self.linked_list.len())
-        self.assertEqual(self.linked_list.tail.value, 1)
+        self.assertEqual(self.linked_list.tail.value, 6)
         self.linked_list1 = LinkedList2()
         self.linked_list1.insert(None, self.node10)
         self.linked_list1.delete(10)
         self.assertEqual(0, self.linked_list1.len())
         self.linked_list1.delete(10)
+        self.linked_list1.insert(None, self.node10)
+        self.linked_list1.insert(None, Node(3))
         self.linked_list1.delete(10)
-        self.linked_list1.delete(10)
+        self.linked_list1.delete(3)
         self.assertEqual(0, self.linked_list1.len())
 
     def test_del_true(self):
