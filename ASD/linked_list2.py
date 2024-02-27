@@ -37,19 +37,21 @@ class LinkedList2:
         return nodes
 
     def delete(self, val, all=False):
-        if not self.head:
-            return
         node = self.head
         while node is not None:
             if node.value == val:
                 if node.prev is None:
                     self.head = node.next
                     if self.head is not None:
-                        self.head.prev = None
+                        node.next.prev = None
+                    else:
+                        self.tail = None
                 if node.next is None:
                     self.tail = node.prev
                     if self.tail is not None:
-                        self.tail.next = None
+                        node.prev.next = None
+                    else:
+                        self.head = None
                 else:
                     node.prev.next = node.next
                     node.next.prev = node.prev
