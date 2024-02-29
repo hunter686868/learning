@@ -6,22 +6,21 @@ class Node:
 
 class LinkedList2:
     def __init__(self):
-        self.head = None
-        self.tail = None
+        self.head = Node(None)
+        self.tail = Node(None)
+        self.head.next = self.tail
+        self.tail.prev = self.head
 
     def add_in_tail(self, item):
-        if self.head is None:
-            self.head = item
-            item.prev = None
-            item.next = None
-        else:
-            self.tail.next = item
-            item.prev = self.tail
-        self.tail = item
+        self.tail.prev.next = item
+        item.prev = self.tail.prev
+        self.tail.prev = item
+        item.next = self.tail
+
 
     def find(self, val):
-        node = self.head
-        while node is not None:
+        node = self.head.next
+        while node != self.tail:
             if node.value == val:
                 return node
             node = node.next
@@ -29,82 +28,58 @@ class LinkedList2:
 
     def find_all(self, val):
         nodes = []
-        node = self.head
-        while node is not None:
+        node = self.head.next
+        while node != self.tail:
             if node.value == val:
                 nodes.append(node)
             node = node.next
         return nodes
 
     def delete(self, val, all=False):
-        node = self.head
-        while node is not None:
+        node = self.head.next
+        while node != self.tail:
             if node.value == val:
-                if node.prev is None:
-                    self.head = node.next
-                    if self.head is not None:
-                        node.next.prev = None
-                    else:
-                        self.tail = None
-                else:
-                    node.prev.next = node.next
-                if node.next is None:
-                    self.tail = node.prev
-                    if self.tail is not None:
-                        node.prev.next = None
-                    else:
-                        self.head = None
-                else:
-                    node.next.prev = node.prev
+                node.prev.next = node.next
+                node.next.prev = node.prev
                 if not all:
                     return
             node = node.next
         return
 
     def clean(self):
-        self.head = None
-        self.tail = None
+        self.head.next = self.tail
+        self.tail.prev = self.head
 
     def len(self):
         count = 0
-        node = self.head
-        while node is not None:
+        node = self.head.next
+        while node != self.tail:
             count += 1
             node = node.next
         return count
 
     def insert(self, afterNode, newNode):
         if afterNode is None:
-            if self.head is None and self.tail is None:
-                self.head = newNode
-                self.tail = newNode
-                newNode.next = None
-                newNode.prev = None
+            if self.head.next == self.tail:
+                self.head.next = newNode
+                self.tail.prev = newNode
+                newNode.next = self.tail
+                newNode.prev = self.head
             else:
-                newNode.prev = self.tail
-                self.tail.next = newNode
-                self.tail = newNode
-                newNode.next = None
+                newNode.prev = self.tail.prev
+                self.tail.prev.next = newNode
+                self.tail.prev = newNode
+                newNode.next = self.tail
         else:
-            if afterNode.next is None:
-                afterNode.next = newNode
-                newNode.prev = afterNode
-                self.tail = newNode
-                newNode.next = None
-            else:
-                afterNode.next.prev = newNode
-                newNode.next = afterNode.next
-                afterNode.next = newNode
-                newNode.prev = afterNode
+            afterNode.next.prev = newNode
+            newNode.next = afterNode.next
+            afterNode.next = newNode
+            newNode.prev = afterNode
         return
 
     def add_in_head(self, newNode):
-        if self.tail is None:
-            self.tail = newNode
-            newNode.next = None
-            newNode.prev = None
-        else:
-            self.head.prev = newNode
-            newNode.next = self.head
-        self.head = newNode
+        newNode.next = self.head.next
+        self.head.next.prev = newNode
+        self.head.next = newNode
+        newNode.prev = self.head
 
