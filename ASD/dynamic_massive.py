@@ -51,9 +51,9 @@ class DynArray:
         for j in range(i, self.count - 1):
             self.array[j] = self.array[j + 1]
         self.count -= 1
-        new_len = int(round(self.capacity / 1.5, 0))
-        if self.count <= new_len and new_len > 16:
-            self.capacity = int(round(self.capacity/1.5, 0))
-        elif self.count <= new_len and new_len < 16:
+        new_len = self.capacity // 1.5
+        if self.count * 2 <= self.capacity and new_len > 16:
+            self.capacity = new_len
+        elif self.count <= self.capacity and new_len < 16:
             self.capacity = 16
         return
