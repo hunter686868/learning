@@ -39,6 +39,7 @@ class DynArray:
             self.resize(2 * self.capacity)
         if i == self.count:
             self.append(itm)
+            return
         for j in reversed(range(i, self.count + 1)):
             self.array[j] = self.array[j - 1]
         self.array[i] = itm
@@ -50,5 +51,9 @@ class DynArray:
         for j in range(i, self.count - 1):
             self.array[j] = self.array[j + 1]
         self.count -= 1
-        if self.count <= round(self.capacity / 1.5, 0):
-            self.capacity = round(self.capacity/1.5, 0)
+        new_len = int(round(self.capacity / 1.5, 0))
+        if self.count <= new_len and new_len > 16:
+            self.capacity = int(round(self.capacity/1.5, 0))
+        elif self.count <= new_len and new_len < 16:
+            self.capacity = 16
+        return
