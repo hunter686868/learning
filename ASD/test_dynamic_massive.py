@@ -34,4 +34,6 @@ class TestsLinkedList(unittest.TestCase):
         self.massive.delete(0)
         self.assertEqual(self.massive.capacity, 16)
         self.massive.delete(20)
+        self.massive1 = DynArray()
+        self.massive1.delete(0)
 
