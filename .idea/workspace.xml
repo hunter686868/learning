@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/ASD/test_stack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ASD/stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/stack.py" afterDir="false" />
     </list>
@@ -402,14 +399,6 @@
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
     </task>
-    <task id="LOCAL-00039" summary="update">
-      <option name="closed" value="true" />
-      <created>1702412960409</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1702412960409</updated>
-    </task>
     <task id="LOCAL-00040" summary="update">
       <option name="closed" value="true" />
       <created>1702669871310</created>
@@ -794,7 +783,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708861040363</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="update">
+      <option name="closed" value="true" />
+      <created>1709582996564</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1709582996564</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

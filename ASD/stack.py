@@ -28,3 +28,15 @@ class Stack:
             return None
         return self.stack[0]
 
+    def brackets(self, string):
+        if self.stack:
+            raise IndexError('Stack is not empty')
+        for i in string:
+            if i == '(':
+                self.push(i)
+            elif i == ')':
+                if self.size() == 0 or self.pop() != '(':
+                    return False
+        return self.size() == 0
+
+

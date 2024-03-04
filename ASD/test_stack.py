@@ -28,3 +28,9 @@ class TestsLinkedList(unittest.TestCase):
         self.stack.push(2)
         self.stack.push(3)
         self.assertEqual(self.stack.peek(), 3)
+
+    def test_brackets(self):
+        self.assertEqual(self.stack.brackets('(()((())()))'), True)
+        self.assertEqual(self.stack.brackets('())('), False)
+        self.assertEqual(self.stack.brackets('))(('), False)
+        self.assertEqual(self.stack.brackets('((())'), False)
