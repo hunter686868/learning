@@ -3,15 +3,28 @@ class Stack:
         self.stack = []
 
     def size(self):
-        return len(self.stack)
+        if not self.stack:
+            return 0
+        count = 0
+        for _ in self.stack:
+            count += 1
+        return count
 
     def pop(self):
-        # ваш код
-        return None # если стек пустой
+        if self.size() == 0:
+            return None
+        value = self.stack[0]
+        new_stack = []
+        for i in range(1, self.size()):
+            new_stack.append(self.stack[i])
+        self.stack = new_stack
+        return value
 
     def push(self, value):
-        # ваш код
+        self.stack = [value] + self.stack
 
     def peek(self):
-        # ваш код
-        return None # если стек пустой
+        if self.size() == 0:
+            return None
+        return self.stack[0]
+
