@@ -2,10 +2,10 @@ class Queue:
     def __init__(self):
         self.queue = []
 
-    def enqueue(self, item): # O(1)
+    def enqueue(self, item):
         self.queue = self.queue + [item]
 
-    def dequeue(self): # O(n)
+    def dequeue(self):
         if self.size() == 0:
             return None
         value = self.queue[0]
@@ -21,10 +21,10 @@ class Queue:
     def size(self):
         if not self.queue:
             return 0
-        cnt = 0
+        count = 0
         for _ in self.queue:
-            cnt += 1
-        return cnt
+            count += 1
+        return count
 
     def rotation(self, n):
         if self.size() == 0:
