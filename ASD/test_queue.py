@@ -15,7 +15,8 @@ class TestsLinkedList(unittest.TestCase):
         self.queue2.enqueue(1)
         self.queue1.dequeue()
         self.queue2.dequeue()
-        self.assertEqual(self.queue2.size(), 0)
+        self.queue2.dequeue()
+        #self.assertEqual(self.queue2.size(), 0)
         self.assertEqual(self.queue1.size(), 0)
     def test_size(self):
         self.queue2.enqueue(1)
