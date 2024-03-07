@@ -9,10 +9,13 @@ class Queue:
         if self.size() == 0:
             return None
         value = self.queue[0]
-        new_queue = []
-        for i in range(1, self.size()):
-            new_queue.append(self.queue[i])
-        self.queue = new_queue
+        if self.size() > 1:
+            new_queue = []
+            for i in range(1, self.size()):
+                new_queue.append(self.queue[i])
+            self.queue = new_queue
+        elif self.size() == 1:
+            self.queue = []
         return value
 
     def size(self):
