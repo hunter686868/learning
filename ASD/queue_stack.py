@@ -2,7 +2,7 @@ from stack import Stack
 
 class Queue_stack:
     def __init__(self):
-       self.stack1 = Stack()
+        self.stack1 = Stack()
         self.stack2 = Stack()
 
     def enqueue(self, item):
