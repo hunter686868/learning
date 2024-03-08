@@ -19,5 +19,3 @@ class Queue:
         for i in range(n):
             self.enqueue(self.dequeue())
 
-
-
