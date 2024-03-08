@@ -16,9 +16,8 @@ class Queue:
     def rotate(self, n):
         if self.size() == 0:
             raise IndexError('Nothing to rotate')
-        for _ in range(n):
-            val = self.dequeue()
-            self.enqueue(val)
+        for i in range(n):
+            self.enqueue(self.dequeue())
 
 
 
