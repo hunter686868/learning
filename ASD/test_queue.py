@@ -31,6 +31,7 @@ class TestsLinkedList(unittest.TestCase):
         self.assertEqual(self.queue1.dequeue(), 3)
         self.assertEqual(self.queue1.dequeue(), 1)
         self.assertEqual(self.queue1.dequeue(), 2)
+        #self.queue1.rotate(2)
         self.queue1.enqueue(1)
         self.queue1.enqueue(2)
         self.queue1.enqueue(3)
