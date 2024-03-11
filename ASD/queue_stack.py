@@ -19,5 +19,5 @@ class Queue_stack:
             return None
 
     def size(self):
-        return self.stack1.size() + self.stack2.size(
+        return self.stack1.size() + self.stack2.size()
 
