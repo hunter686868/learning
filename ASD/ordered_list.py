@@ -31,7 +31,6 @@ class OrderedList:
                                          (not self.__ascending and self.compare(value, curr_node.value) == -1)):
             prev = curr_node
             curr_node = curr_node.next
-
         if prev is None:
             new_node.next = self.head
             self.head.prev = new_node
