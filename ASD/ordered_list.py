@@ -24,20 +24,26 @@ class OrderedList:
         if self.head is None:
             self.head = new_node
             self.tail = new_node
-
+            return
         curr_node = self.head
-        while curr_node.next is not None and ((self.__ascending and self.compare(value, curr_node.value) == 1) or\
+        prev = None
+        while curr_node is not None and ((self.__ascending and self.compare(value, curr_node.value) == 1) or
                                          (not self.__ascending and self.compare(value, curr_node.value) == -1)):
+            prev = curr_node
             curr_node = curr_node.next
 
-        if curr_node is None:
-            curr_node.prev.next = new_node
-            new_node.prev = curr_node.prev
-        if curr_node.prev is None:
+        if prev is None:
             new_node.next = self.head
             self.head.prev = new_node
             self.head = new_node
-        #elif
+        elif curr_node is None:
+            prev.next = new_node
+            new_node.prev = prev
+        else:
+            prev.next = new_node
+            new_node.prev = curr_node.prev
+            new_node.next = curr_node
+            curr_node.prev = new_node
 
     def find(self, val):
         curr_node = self.head
@@ -45,7 +51,7 @@ class OrderedList:
             comparison = self.compare(val, curr_node.value)
             if comparison == 0:
                 return curr_node
-            elif (self.__ascending and comparison == 1) or (not self.__ascending and comparison == -1):
+            elif (self.__ascending and comparison == -1) or (not self.__ascending and comparison == 1):
                 return None
             curr_node = curr_node.next
         return None
@@ -65,6 +71,7 @@ class OrderedList:
                     self.tail = curr_node.prev
                 return
             curr_node = curr_node.next
+        return
 
     def clean(self, asc):
         self.__ascending = asc
@@ -102,10 +109,3 @@ class OrderedStringList(OrderedList):
         else:
             return 1
 
-lst = OrderedList(asc=True)
-lst.add(3)
-print([node.value for node in lst.get_all()])
-lst.add(1)
-print([node.value for node in lst.get_all()])
-lst.add(2)
-print([node.value for node in lst.get_all()])
