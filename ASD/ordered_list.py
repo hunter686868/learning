@@ -24,40 +24,20 @@ class OrderedList:
         if self.head is None:
             self.head = new_node
             self.tail = new_node
-        elif (self.compare(value, self.head.value) == -1 and self.__ascending) or (self.compare(value, self.head.value) == 1 and not self.__ascending):
+
+        curr_node = self.head
+        while curr_node.next is not None and ((self.__ascending and self.compare(value, curr_node.value) == 1) or\
+                                         (not self.__ascending and self.compare(value, curr_node.value) == -1)):
+            curr_node = curr_node.next
+
+        if curr_node is None:
+            curr_node.prev.next = new_node
+            new_node.prev = curr_node.prev
+        if curr_node.prev is None:
             new_node.next = self.head
             self.head.prev = new_node
             self.head = new_node
-            return
-        elif (self.compare(value, self.tail.value) == 1 and not self.__ascending) or (self.compare(value, self.tail.value) == -1 and self.__ascending):
-            self.tail.next = new_node
-            new_node.prev = self.tail
-            self.tail = new_node
-            return
-        curr_node = self.head
-        while curr_node is not None:
-            comparison = self.compare(value, curr_node.value)
-            if comparison == 0:
-                new_node.prev = curr_node
-                new_node.next = curr_node.next
-                if curr_node.next is not None:
-                    curr_node.next.prev = new_node
-                curr_node.next = new_node
-                return
-            elif comparison == 1 and self.__ascending:
-                new_node.prev = curr_node
-                new_node.next = curr_node.next
-                if curr_node.next is not None:
-                    curr_node.next.prev = new_node
-                curr_node.next = new_node
-                return
-            elif comparison == -1 and not self.__ascending:
-                new_node.next = curr_node
-                new_node.prev = curr_node.prev
-                curr_node.prev.next = new_node
-                curr_node.prev = new_node
-                return
-            curr_node = curr_node.next
+        #elif
 
     def find(self, val):
         curr_node = self.head
@@ -121,3 +101,11 @@ class OrderedStringList(OrderedList):
             return 0
         else:
             return 1
+
+lst = OrderedList(asc=True)
+lst.add(3)
+print([node.value for node in lst.get_all()])
+lst.add(1)
+print([node.value for node in lst.get_all()])
+lst.add(2)
+print([node.value for node in lst.get_all()])
