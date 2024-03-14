@@ -24,12 +24,12 @@ class OrderedList:
         if self.head is None:
             self.head = new_node
             self.tail = new_node
-        if (self.compare(value, self.head.value) == -1 and self.__ascending) or (self.compare(value, self.head.value) == 1 and not self.__ascending):
+        elif (self.compare(value, self.head.value) == -1 and self.__ascending) or (self.compare(value, self.head.value) == 1 and not self.__ascending):
             new_node.next = self.head
             self.head.prev = new_node
             self.head = new_node
             return
-        if (self.compare(value, self.tail.value) == 1 and not self.__ascending) or (self.compare(value, self.tail.value) == -1 and self.__ascending):
+        elif (self.compare(value, self.tail.value) == 1 and not self.__ascending) or (self.compare(value, self.tail.value) == -1 and self.__ascending):
             self.tail.next = new_node
             new_node.prev = self.tail
             self.tail = new_node
