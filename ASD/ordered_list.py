@@ -64,7 +64,6 @@ class OrderedList:
                     curr_node.prev.next = curr_node.next
                 else:
                     self.head = curr_node.next
-
                 if curr_node.next is not None:
                     curr_node.next.prev = curr_node.prev
                 else:
