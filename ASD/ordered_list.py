@@ -38,6 +38,7 @@ class OrderedList:
         elif curr_node is None:
             prev.next = new_node
             new_node.prev = prev
+            self.tail = new_node
         else:
             prev.next = new_node
             new_node.prev = curr_node.prev
