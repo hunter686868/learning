@@ -29,6 +29,8 @@ class NativeDictionary:
                     self.slots[index] = key
                     self.values[index] = value
                     return
+                if index == f_index:
+                    return
 
     def get(self, key):
         f_index = self.hash_fun(key)
@@ -40,5 +42,7 @@ class NativeDictionary:
                 index = (index + 1) % self.size
                 if self.slots[index] == key:
                     return self.values[index]
+                if index == f_index:
+                    return None
         return None
 
