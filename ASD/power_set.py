@@ -44,7 +44,7 @@ class HashTable:
 class PowerSet(HashTable):
 
     def size(self):
-        return self.size()
+        return self.size
 
     def put(self, value):
         if self.find(value) is not None:
@@ -56,7 +56,7 @@ class PowerSet(HashTable):
         return None
 
     def get(self, value):
-        for i in range(self.size()):
+        for i in range(self.size):
             if self.slots[i] == value:
                 return True
         return False
@@ -72,8 +72,8 @@ class PowerSet(HashTable):
         if self.size == 0 or set2.size == 0:
             return None
         new_set = PowerSet(self.size, self.step)
-        for i in range(self.size()):
-            if self.slots[i] is not None and set2.get(i) is True:
+        for i in self.slots:
+            if i is not None and set2.get(i) is True:
                 new_set.put(i)
         return new_set
 
@@ -81,11 +81,11 @@ class PowerSet(HashTable):
         if self.size == 0 and set2.size == 0:
             return None
         new_set = PowerSet(self.size, self.step)
-        for i in range(self.size()):
-            if self.slots[i] is not None:
+        for i in self.slots:
+            if i is not None:
                 new_set.put(i)
-        for i in range(set2.size()):
-            if set2.slots[i] is not None:
+        for i in set2.slots:
+            if i is not None:
                 new_set.put(i)
         return new_set
 
@@ -93,13 +93,15 @@ class PowerSet(HashTable):
         if self.size == 0 or set2.size == 0:
             return None
         new_set = PowerSet(self.size, self.step)
-        for i in range(self.size()):
+        for i in self.slots:
             if i is not None and set2.get(i) is False:
                 new_set.put(i)
         return new_set
 
     def issubset(self, set2):
-        for i in range(set2.size()):
+        if set2.size is None:
+            return True
+        for i in set2.slots:
             if i is not None and self.get(i) is False:
                 return False
         return True

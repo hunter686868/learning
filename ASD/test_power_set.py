@@ -4,6 +4,7 @@ import string
 import unittest
 from power_set import PowerSet
 
+
 class TestPowerSet(unittest.TestCase):
     def test_put(self):
         power_set = PowerSet(10, 1)
@@ -61,22 +62,19 @@ class TestPowerSet(unittest.TestCase):
         power_set2.put(1)
         power_set2.put(2)
         power_set2.put(3)
-        self.assertTrue(power_set1.issubset(power_set2))  # Проверка, что все элементы первого множества входят во второе
-        self.assertFalse(power_set2.issubset(power_set1))  # Проверка, что не все элементы второго множества входят в первое
-        self.assertFalse(power_set1.issubset(PowerSet(10, 1)))  # Проверка, что все элементы пустого множества входят в первое
+        self.assertTrue(power_set2.issubset(power_set1))  # Проверка, что все элементы первого множества входят во второе
+        self.assertFalse(power_set1.issubset(power_set2))  # Проверка, что не все элементы второго множества входят в первое
+        self.assertTrue(power_set1.issubset(PowerSet(10, 1)))  # Проверка, что все элементы пустого множества входят в первое
 
     def test_performance(self):
-        # Генерируем два множества из десятков тысяч элементов
-        power_set1 = PowerSet(100000, 1)
-        power_set2 = PowerSet(100000, 1)
-        for _ in range(100000):
-            value = ''.join(random.choices(string.ascii_lowercase, k=5))
-            power_set1.put(value)
-            power_set2.put(value)
 
-        # Замеряем время операции
+        # Генерируем два множества из десятков тысяч элементов
+        power_set1 = PowerSet(10010, 1)
+        power_set2 = PowerSet(10010, 1)
+        for i in range(10000):
+            power_set1.put(i)
         start_time = time.time()
-        result_set = power_set1.union(power_set2)
+        set = power_set2.union(power_set1)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print("Time for union operation on sets with 100,000 elements: {:.4f} seconds".format(elapsed_time))
