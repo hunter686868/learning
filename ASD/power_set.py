@@ -42,6 +42,9 @@ class HashTable:
 
 
 class PowerSet(HashTable):
+    def __init__(self, sz, stp):
+        super().__init__(sz, stp)
+        self.slots = [None] * sz
 
     def size(self):
         return self.size
