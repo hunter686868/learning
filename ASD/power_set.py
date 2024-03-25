@@ -69,7 +69,7 @@ class PowerSet(HashTable):
         return False
 
     def intersection(self, set2):
-        if self.size == 0 or set2.size == 0:
+        if self.slots is None or set2.slots is None:
             return None
         new_set = PowerSet(self.size, self.step)
         for i in self.slots:
@@ -78,7 +78,7 @@ class PowerSet(HashTable):
         return new_set
 
     def union(self, set2):
-        if self.size == 0 and set2.size == 0:
+        if self.slots is None and set2.slots is None:
             return None
         new_set = PowerSet(self.size, self.step)
         for i in self.slots:
@@ -90,7 +90,7 @@ class PowerSet(HashTable):
         return new_set
 
     def difference(self, set2):
-        if self.size == 0 or set2.size == 0:
+        if self.slots is None or set2.slots is None:
             return None
         new_set = PowerSet(self.size, self.step)
         for i in self.slots:
@@ -99,7 +99,7 @@ class PowerSet(HashTable):
         return new_set
 
     def issubset(self, set2):
-        if set2.size is None:
+        if set2.slots is None:
             return True
         for i in set2.slots:
             if i is not None and self.get(i) is False:

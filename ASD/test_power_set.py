@@ -74,7 +74,7 @@ class TestPowerSet(unittest.TestCase):
         for i in range(10000):
             power_set1.put(i)
         start_time = time.time()
-        set = power_set2.union(power_set1)
+        set = power_set2.issubset(power_set1)
         end_time = time.time()
         elapsed_time = end_time - start_time
         print("Time for union operation on sets with 100,000 elements: {:.4f} seconds".format(elapsed_time))
