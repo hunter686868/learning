@@ -71,7 +71,7 @@ class TestPowerSet(unittest.TestCase):
         # Генерируем два множества из десятков тысяч элементов
         power_set1 = PowerSet(10010, 1)
         power_set2 = PowerSet(10010, 1)
-        for i in range(10000):
+        for i in range(20000):
             power_set1.put(i)
         start_time = time.time()
         set = power_set2.issubset(power_set1)
