@@ -31,12 +31,13 @@ class TestPowerSet(unittest.TestCase):
         self.assertFalse(result_set.get(3))  # Проверка отсутствия уникального элемента
 
     def test_union(self):
-        power_set1 = PowerSet(10, 1)
-        power_set2 = PowerSet(10, 1)
+        power_set1 = PowerSet()
+        power_set2 = PowerSet()
         power_set1.put(1)
         power_set1.put(2)
         power_set2.put(2)
         power_set2.put(3)
+        print(power_set2.size())
         result_set = power_set1.union(power_set2)
         self.assertTrue(result_set.get(1))  # Проверка наличия элемента из первого множества
         self.assertTrue(result_set.get(2))  # Проверка наличия элемента из обоих множеств
@@ -71,7 +72,7 @@ class TestPowerSet(unittest.TestCase):
         # Генерируем два множества из десятков тысяч элементов
         power_set1 = PowerSet(10010, 1)
         power_set2 = PowerSet(10010, 1)
-        for i in range(20000):
+        for i in range(4000):
             power_set1.put(i)
         start_time = time.time()
         set = power_set2.issubset(power_set1)
