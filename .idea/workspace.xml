@@ -92,7 +92,7 @@
       <recent name="$PROJECT_DIR$/files/dir2/dir21" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.archive">
+  <component name="RunManager">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
       <option name="ENV_FILES" value="" />

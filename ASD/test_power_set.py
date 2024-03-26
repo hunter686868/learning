@@ -7,20 +7,20 @@ from power_set import PowerSet
 
 class TestPowerSet(unittest.TestCase):
     def test_put(self):
-        power_set = PowerSet(10, 1)
+        power_set = PowerSet()
         power_set.put(1)
         self.assertTrue(power_set.get(1))  # Проверка наличия добавленного элемента
         self.assertIsNone(power_set.put(1))  # Попытка добавить дубликат
 
     def test_remove(self):
-        power_set = PowerSet(10, 1)
+        power_set = PowerSet()
         power_set.put(1)
         self.assertTrue(power_set.remove(1))  # Проверка удаления существующего элемента
         self.assertFalse(power_set.remove(2))  # Попытка удалить отсутствующий элемент
 
     def test_intersection(self):
-        power_set1 = PowerSet(10, 1)
-        power_set2 = PowerSet(10, 1)
+        power_set1 = PowerSet()
+        power_set2 = PowerSet()
         power_set1.put(1)
         power_set1.put(2)
         power_set2.put(2)
