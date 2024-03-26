@@ -44,8 +44,8 @@ class TestPowerSet(unittest.TestCase):
         self.assertTrue(result_set.get(3))  # Проверка наличия элемента из второго множества
 
     def test_difference(self):
-        power_set1 = PowerSet(10, 1)
-        power_set2 = PowerSet(10, 1)
+        power_set1 = PowerSet()
+        power_set2 = PowerSet()
         power_set1.put(1)
         power_set1.put(2)
         power_set2.put(2)
@@ -56,8 +56,8 @@ class TestPowerSet(unittest.TestCase):
         self.assertFalse(result_set.get(3))  # Проверка отсутствия элемента из второго множества
 
     def test_issubset(self):
-        power_set1 = PowerSet(10, 1)
-        power_set2 = PowerSet(10, 1)
+        power_set1 = PowerSet()
+        power_set2 = PowerSet()
         power_set1.put(1)
         power_set1.put(2)
         power_set2.put(1)
@@ -65,14 +65,14 @@ class TestPowerSet(unittest.TestCase):
         power_set2.put(3)
         self.assertTrue(power_set2.issubset(power_set1))  # Проверка, что все элементы первого множества входят во второе
         self.assertFalse(power_set1.issubset(power_set2))  # Проверка, что не все элементы второго множества входят в первое
-        self.assertTrue(power_set1.issubset(PowerSet(10, 1)))  # Проверка, что все элементы пустого множества входят в первое
+        self.assertTrue(power_set1.issubset(PowerSet()))  # Проверка, что все элементы пустого множества входят в первое
 
     def test_performance(self):
 
         # Генерируем два множества из десятков тысяч элементов
-        power_set1 = PowerSet(10010, 1)
-        power_set2 = PowerSet(10010, 1)
-        for i in range(4000):
+        power_set1 = PowerSet()
+        power_set2 = PowerSet()
+        for i in range(20000):
             power_set1.put(i)
         start_time = time.time()
         set = power_set2.issubset(power_set1)
