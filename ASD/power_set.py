@@ -42,7 +42,11 @@ class HashTable:
 
 
 class PowerSet(HashTable):
-    def __init__(self, sz, stp):
+    def __init__(self, sz=None, stp=None):
+        if sz is None:
+            sz = 10
+        if stp is None:
+            stp = 1
         super().__init__(sz, stp)
         self.slots = [None] * sz
 
@@ -108,3 +112,4 @@ class PowerSet(HashTable):
             if i is not None and self.get(i) is False:
                 return False
         return True
+
