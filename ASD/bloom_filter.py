@@ -19,7 +19,12 @@ class BloomFilter:
         return val
 
     def add(self, str1):
-        # добавляем строку str1 в фильтр
+        val1 = self.hash1(str1)
+        val2 = self.hash2(str1)
+        self.filter |= (1 << val1) | (1 << val2)
 
     def is_value(self, str1):
-        # проверка, имеется ли строка str1 в фильтре
+        val1 = self.hash1(str1)
+        val2 = self.hash2(str1)
+        return (self.filter & (1 << val1)) and (self.filter & (1 << val2)) != 0
+
