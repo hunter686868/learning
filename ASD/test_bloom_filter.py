@@ -15,11 +15,9 @@ class TestBloomFilter(unittest.TestCase):
         for string in test_strings:
             self.assertTrue(self.bloom_filter.is_value(string))
 
-        # Проверяем наличие строки, которая не была добавлена
-        self.assertFalse(self.bloom_filter.is_value("abcdefghij"))  # Отсутствует в фильтре
+        self.assertFalse(self.bloom_filter.is_value("abcdefghij"))
 
-        # Проверяем наличие строк, которые были добавлены
         for string in test_strings:
-            self.assertTrue(self.bloom_filter.is_value(string))  # Должны быть присутствующими
+            self.assertTrue(self.bloom_filter.is_value(string))
 
 
