@@ -22,5 +22,14 @@ cnt - unique_count
 max_sum - max_submatrix_sum  
 // максимальная сумма подматрицы
 
+curr_sum - current_submatrix_sum  
+//текущая сумма подматрицы
 
+zero - zero_count  
+// количество нулей
 
+max_len - max_substring_length  
+// максимальная длина подстроки
+
+diff - zero_one_difference_indices  
+// словарь, который используется для хранения индексов и значений разности между 0 и 1
