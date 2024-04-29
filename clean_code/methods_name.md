@@ -10,16 +10,16 @@ load - load_unit_on_ship
 unload - unload_unit_from_ship  
 // Разгружает юнит с корабля
 
-repair (в классе Building1) - repair_building  
+repair - repair_building  
 // Ремонтирует здание
 
-product (в классе Mine) - produce_resources  
+product - produce_resources  
 // Производит ресурсы
 
-produce (в классе Barracks) - produce_unit  
+produce - produce_unit  
 // Производит юнита
 
-speed_up (в классе Train) - increase_speed  
+speed_up - increase_speed  
 // Увеличивает скорость
 
 get_mean - calculate_mean  
