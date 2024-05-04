@@ -1,3 +1,4 @@
+MIN_NUMBER = 10
 def exponentiation(n, m):
     if m == 0:
         return 1
@@ -9,10 +10,10 @@ def exponentiation(n, m):
 
 
 def digits_sum(number):
-    if number < 10:
+    if number < MIN_NUMBER:
         return number
 
-    return number % 10 + digits_sum(number // 10)
+    return number % MIN_NUMBER + digits_sum(number // MIN_NUMBER)
 
 
 #print(digits_sum(13333))

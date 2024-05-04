@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/clean_code/oop_interfaces.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_code/constant.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,33 +56,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests in test_hash_table.py.executor": "Run",
-    "Python tests.Python tests in test_linked_list2.py.executor": "Run",
-    "Python tests.Python tests in test_linked_list_dummy.py.executor": "Run",
-    "Python tests.Python tests in test_queue.py.executor": "Run",
-    "Python tests.Python tests in test_stack.py.executor": "Run",
-    "Python.archive.executor": "Run",
-    "Python.cyberpunk.executor": "Run",
-    "Python.cyberpunk_1993.executor": "Run",
-    "Python.cyberpunk_1995.executor": "Run",
-    "Python.linked_list.executor": "Run",
-    "Python.linked_list2.executor": "Run",
-    "Python.stack.executor": "Run",
-    "Python.sum_lists.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.test_linked_list.executor": "Run",
-    "Python.test_linked_list2.executor": "Run",
-    "Python.walkers.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_hash_table.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_linked_list2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_linked_list_dummy.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_queue.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.archive.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
+    &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stack.executor&quot;: &quot;Run&quot;,
+    &quot;Python.sum_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_linked_list.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.walkers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files/dir1/6456" />
@@ -91,7 +92,7 @@
       <recent name="$PROJECT_DIR$/files/dir2/dir21" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.archive">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
       <option name="ENV_FILES" value="" />
@@ -402,14 +403,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
-    </task>
-    <task id="LOCAL-00049" summary="update">
-      <option name="closed" value="true" />
-      <created>1703598431325</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1703598431325</updated>
     </task>
     <task id="LOCAL-00050" summary="update">
       <option name="closed" value="true" />
@@ -795,7 +788,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714422575420</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="update">
+      <option name="closed" value="true" />
+      <created>1714586248101</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1714586248102</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
