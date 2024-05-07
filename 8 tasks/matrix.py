@@ -9,7 +9,8 @@ def digital_rain(col):
             zero += 1
         else:
             one += 1
-        if zero == one:
+        equality = zero == one
+        if equality:
             curr_len = zero + one
             if i + curr_len > max_len:
                 max_len = curr_len

@@ -1,3 +1,5 @@
+HASH_CONST_1 = 17
+HASH_CONST_2 = 223
 class BloomFilter:
 
     def __init__(self, f_len):
@@ -8,14 +10,14 @@ class BloomFilter:
         val = 0
         for c in str1:
             code = ord(c)
-            val = (val * 17 + code) % self.filter_len
+            val = (val * HASH_CONST_1 + code) % self.filter_len
         return val
 
     def hash2(self, str1):
         val = 0
         for c in str1:
             code = ord(c)
-            val = (val * 223 + code) % self.filter_len
+            val = (val * HASH_CONST_2 + code) % self.filter_len
         return val
 
     def add(self, str1):
