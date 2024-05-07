@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/clean_code/constant.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_code/data_types.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="7f548334-3b68-48d8-908d-1fa6ab7d3a71" />
+        <option name="accountId" value="bb16b9c7-cc85-445b-ae8f-7f98824a17e3" />
         <option name="url" value="https://github.com/hunter686868/learning.git" />
       </UrlAndAccount>
     </option>
@@ -64,7 +63,6 @@
     &quot;Python tests.Python tests in test_linked_list_dummy.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_queue.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.archive.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
@@ -95,7 +93,6 @@
   <component name="RunManager" selected="Python.archive">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -117,14 +114,12 @@
     </configuration>
     <configuration name="cyberpunk" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -140,14 +135,12 @@
     </configuration>
     <configuration name="cyberpunk_1993" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -163,7 +156,6 @@
     </configuration>
     <configuration name="files" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -185,7 +177,6 @@
     </configuration>
     <configuration name="files_and_catalogues" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -207,14 +198,12 @@
     </configuration>
     <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -230,14 +219,12 @@
     </configuration>
     <configuration name="linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -253,7 +240,6 @@
     </configuration>
     <configuration name="log" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -275,14 +261,12 @@
     </configuration>
     <configuration name="stack" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -298,14 +282,12 @@
     </configuration>
     <configuration name="test_linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -321,14 +303,12 @@
     </configuration>
     <configuration name="test_linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11 (pythonProject)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ASD" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -344,7 +324,6 @@
     </configuration>
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -366,14 +345,12 @@
     </configuration>
     <configuration name="walkers" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
-      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8 tasks" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -403,6 +380,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update">
+      <option name="closed" value="true" />
+      <created>1703597853508</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1703597853508</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598169283</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598169283</updated>
+    </task>
+    <task id="LOCAL-00048" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598244971</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598244971</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598431325</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598431325</updated>
     </task>
     <task id="LOCAL-00050" summary="update">
       <option name="closed" value="true" />
@@ -764,39 +773,7 @@
       <option name="project" value="LOCAL" />
       <updated>1713690234985</updated>
     </task>
-    <task id="LOCAL-00095" summary="update">
-      <option name="closed" value="true" />
-      <created>1713708389529</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1713708389529</updated>
-    </task>
-    <task id="LOCAL-00096" summary="update">
-      <option name="closed" value="true" />
-      <created>1714422499501</created>
-      <option name="number" value="00096" />
-      <option name="presentableId" value="LOCAL-00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1714422499501</updated>
-    </task>
-    <task id="LOCAL-00097" summary="update">
-      <option name="closed" value="true" />
-      <created>1714422575420</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1714422575420</updated>
-    </task>
-    <task id="LOCAL-00098" summary="update">
-      <option name="closed" value="true" />
-      <created>1714586248101</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1714586248102</updated>
-    </task>
-    <option name="localTasksCounter" value="99" />
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
