@@ -17,6 +17,7 @@ class Unit:
 
     def take_damage(self, damage):
         self.health -= damage * (1 - self.armor)
+        self.health = max(0, self.health)
         print(f'У {self.name} осталось {self.health} здоровья')
 
     def heal(self, heal):

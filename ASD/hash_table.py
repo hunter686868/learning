@@ -5,7 +5,7 @@ class HashTable:
         self.slots = [None] * self.size
 
     def hash_fun(self, value):
-        summ = 0
+        summ: int = 0
         for i in value.encode():
             summ += i
         return summ % self.size

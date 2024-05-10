@@ -1,4 +1,6 @@
 def tr_matrix(top, bottom, left, right, mx, result):
+    assert top <= bottom
+    assert left <= right
     if top > bottom or left > right:
         return result
     for i in range(left, right + 1):
@@ -19,4 +21,5 @@ def tr_matrix(top, bottom, left, right, mx, result):
 
 
 def matrix(n, m, matrix):
+    assert n >= 0 and m >= 0
     return tr_matrix(0, m - 1, 0, n - 1, matrix, [])

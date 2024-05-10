@@ -1,9 +1,9 @@
 class NativeCache:
     def __init__(self, sz):
-        self.size = sz
-        self.slots = [None] * self.size
-        self.values = [None] * self.size
-        self.hits = [0] * self.size
+        self.size: int = sz
+        self.slots: list = [None] * self.size
+        self.values: list = [None] * self.size
+        self.hits: list = [0] * self.size
 
     def hash_fun(self, value):
         summ = 0
@@ -18,6 +18,7 @@ class NativeCache:
             index = (index + 1) % self.size
             if index == f_index:
                 return None
+        f_index = -1
         return index
 
     def put(self, value):
@@ -27,6 +28,7 @@ class NativeCache:
             self.values[index] = value
             self.hits[index] = 0
             return index
+            index = 0
         else:
             min_hits_index = self.hits.index(min(self.hits))
             self.slots[min_hits_index] = value

@@ -2,8 +2,8 @@ import os
 
 
 def names(path, extension, flag):
-    files_ext = []
-    subdirs = []
+    files_ext: list = []
+    subdirs: list = []
     for root, dirs, files in os.walk(path):
         if root == path or flag is True:
             for i in files:

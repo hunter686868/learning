@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clean_code/variables.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8 tasks/matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 tasks/matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASD/bloom_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/bloom_filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_code/data_types.md" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/data_types.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 tasks/cyberpunk_1994.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 tasks/cyberpunk_1994.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 tasks/matrix_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 tasks/matrix_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASD/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASD/hash_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/hash_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASD/postfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/postfix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_p.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_p.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files_and_catalogues.py" beforeDir="false" afterPath="$PROJECT_DIR$/files_and_catalogues.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,17 +65,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests in test_cache.py.executor": "Run",
     "Python tests.Python tests in test_hash_table.py.executor": "Run",
     "Python tests.Python tests in test_linked_list2.py.executor": "Run",
     "Python tests.Python tests in test_linked_list_dummy.py.executor": "Run",
     "Python tests.Python tests in test_queue.py.executor": "Run",
     "Python tests.Python tests in test_stack.py.executor": "Run",
+    "Python.OOP_p.2.executor": "Run",
     "Python.cyberpunk.executor": "Run",
     "Python.cyberpunk_1993.executor": "Run",
+    "Python.cyberpunk_1994.executor": "Run",
     "Python.cyberpunk_1995.executor": "Run",
     "Python.linked_list.executor": "Run",
     "Python.linked_list2.executor": "Run",
     "Python.matrix.executor": "Run",
+    "Python.matrix_1.executor": "Run",
+    "Python.postfix.executor": "Run",
     "Python.stack.executor": "Run",
     "Python.sum_lists.executor": "Run",
     "Python.test.executor": "Run",
@@ -398,14 +406,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
-    </task>
-    <task id="LOCAL-00046" summary="update">
-      <option name="closed" value="true" />
-      <created>1703597853508</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1703597853508</updated>
     </task>
     <task id="LOCAL-00047" summary="update">
       <option name="closed" value="true" />
@@ -791,7 +791,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713690234985</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="update">
+      <option name="closed" value="true" />
+      <created>1715111462009</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1715111462009</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

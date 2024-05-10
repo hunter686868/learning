@@ -1,7 +1,7 @@
 def digital_rain(col):
     zero = 0
     one = 0
-    max_len = 0
+    max_len: int = 0
     max_str = ""
     diff = {0: 0}
 

@@ -2,7 +2,7 @@ from stack import Stack
 
 def calculation(eq):
     stack2 = Stack()
-    while eq != '=':
+    while eq[0] != '=':
         v = eq.pop()
         if v.isdigit():
             stack2.push(int(v))
