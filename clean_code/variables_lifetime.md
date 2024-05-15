@@ -153,26 +153,106 @@ def process_dict(data):
     return keys, values
 ```
 
+Было:
 ```
-
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+        self.total_price = 0
+    
+    def add_item(self, item, price):
+        self.items.append(item)
+        self.total_price += price
+        print(f"{item} added to cart.")
 ```
-
+Стало:
 ```
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+        self.total_price = 0
+    
+    def add_item(self, item, price):
+        self._update_cart(item, price)
+        print(f"{item} added to cart.")
 
+    def _update_cart(self, item, price):
+        self.items.append(item)
+        self.total_price += price
 ```
-
+12 Вынес логику обновления корзины в отдельный метод _update_cart, чтобы add_item отвечал только за добавление товара.
+  
+Было:
 ```
-
+def get_discount_price(price, is_member):
+    discount = 0
+    if is_member:
+        discount = 0.1
+    discounted_price = price * (1 - discount)
+    return discounted_price
 ```
-
+Стало:
 ```
-
+def get_discount_price(price, is_member):
+    if is_member:
+        discount = 0.1
+    else:
+        discount = 0
+    discounted_price = price * (1 - discount)
+    return discounted_price
 ```
+13 Ограничена область видимости переменной
 
+Было:
 ```
-
+def calculate_discount(price, is_member):
+    discount = 0
+    if is_member:
+        discount = 0.1
+    return price * (1 - discount)
 ```
+Стало:
+```
+def calculate_discount(price, is_member):
+    if is_member:
+        discount = 0.1
+    else:
+        discount = 0
+    return price * (1 - discount)
+```
+14 Определил переменную внутри цикла
 
+Было:
+```
+class Customer:
+    def __init__(self, name):
+        self.name = name
+        self.orders = []
+        self.total_spent = 0
+
+    def add_order(self, order):
+        self.orders.append(order)
+        self.total_spent += order.total_cost
+```
+Стало
+```
+class Customer:
+    def __init__(self, name):
+        self.name = name
+        self.orders = []
+        self.total_spent = 0
+
+    def add_order(self, order):
+        self._update_orders(order)
+        self._update_total_spent(order.total_cost)
+
+    def _update_orders(self, order):
+        self.orders.append(order)
+
+    def _update_total_spent(self, cost):
+        self.total_spent += cost
+```
+15 Для лучшей наглядности методы были разделены
 
 
 
