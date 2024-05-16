@@ -57,7 +57,7 @@ class Building:
 
 class Squad:
 
-    def __init__(self, player, name, gold):
+    def __init__(self, player, name= 'Random player', gold= 10000):
         self.player = player # чей отряд
         self.name = name # название отряда
         self.gold = gold # количество золота на старте
