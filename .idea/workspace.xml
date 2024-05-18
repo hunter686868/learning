@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/clean_code/massives.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASD/postfix.py" beforeDir="false" afterPath="$PROJECT_DIR$/ASD/postfix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clean_code/variables_lifetime.md" beforeDir="false" afterPath="$PROJECT_DIR$/clean_code/variables_lifetime.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +58,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_cache.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_hash_table.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_linked_list2.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_linked_list_dummy.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_queue.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OOP_p.2.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1994.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
     &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
     &quot;Python.linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.postfix.executor&quot;: &quot;Run&quot;,
     &quot;Python.stack.executor&quot;: &quot;Run&quot;,
     &quot;Python.sum_lists.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -91,9 +96,10 @@
       <recent name="$PROJECT_DIR$/files/dir2/dir21" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.archive">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -115,6 +121,7 @@
     </configuration>
     <configuration name="cyberpunk" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -136,6 +143,7 @@
     </configuration>
     <configuration name="cyberpunk_1993" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -157,6 +165,7 @@
     </configuration>
     <configuration name="files" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -178,6 +187,7 @@
     </configuration>
     <configuration name="files_and_catalogues" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -199,6 +209,7 @@
     </configuration>
     <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -220,6 +231,7 @@
     </configuration>
     <configuration name="linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -241,6 +253,7 @@
     </configuration>
     <configuration name="log" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -262,6 +275,7 @@
     </configuration>
     <configuration name="stack" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -283,6 +297,7 @@
     </configuration>
     <configuration name="test_linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -304,6 +319,7 @@
     </configuration>
     <configuration name="test_linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -325,6 +341,7 @@
     </configuration>
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -346,6 +363,7 @@
     </configuration>
     <configuration name="walkers" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -768,11 +786,11 @@
     </task>
     <task id="LOCAL-00095" summary="update">
       <option name="closed" value="true" />
-      <created>1715590120882</created>
+      <created>1715111462009</created>
       <option name="number" value="00095" />
       <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1715590120882</updated>
+      <updated>1715111462009</updated>
     </task>
     <option name="localTasksCounter" value="96" />
     <servers />
