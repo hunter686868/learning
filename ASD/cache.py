@@ -28,7 +28,6 @@ class NativeCache:
             self.values[index] = value
             self.hits[index] = 0
             return index
-            index = 0
         else:
             min_hits_index = self.hits.index(min(self.hits))
             self.slots[min_hits_index] = value
