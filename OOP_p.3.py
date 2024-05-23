@@ -253,10 +253,8 @@ class Mine(Building1):
             self.player.set_gold(-amount)
             self.pr_rate *= 2
             return True
-            #print(f'{self.player.get_name()} улучшает {self.name}, производство ресурсов удвоено')
         else:
             return False
-            #print(f'Нужно больше золота')
 
     def product(self):
         self.player.set_gold(self.pr_rate)
@@ -272,10 +270,8 @@ class Barracks(Building1):
             self.player.set_gold(-amount)
             self.tr_rate *= 2
             return True
-            #print(f'{self.player.get_name()} улучшает {self.name}, производство войск удвоено')
         else:
             return False
-            #print(f'Нужно больше золота')
 
     def produce(self, unit):
         if self.player.get_gold() >= unit.get_cost():
@@ -283,10 +279,8 @@ class Barracks(Building1):
             self.player.add_unit(unit)
             days = unit.get_cost() / self.tr_rate
             return True
-            #print(f'{self.player.get_name()} обучил {unit.get_name()} за {days} дней')
         else:
             return False
-            #print(f'Нужно больше золота')
 
 
 mine2 = Mine('Mine', 500, 1000, squad)

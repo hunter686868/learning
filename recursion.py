@@ -1,4 +1,6 @@
 MIN_NUMBER = 10
+
+
 def exponentiation(n, m):
     if m == 0:
         return 1
@@ -98,12 +100,6 @@ def find_second_max(lst: list, i: int, m1: int, m2: int) -> int:
 
 
 import os
-
-
-#def files(path):
-#    lst = []
-#    find_files(path, lst)
-#    return lst
 
 
 def find_files(path, lst):
