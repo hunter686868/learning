@@ -35,8 +35,10 @@ class SimpleTree:
 
         CollectNodes(self.Root)
         return all_nodes
+
     def FindNodesByValue(self, val):
         all_value_nodes = []
+
         def CollectNodesValue(node):
             if node:
                 if node.NodeValue == val:
