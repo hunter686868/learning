@@ -13,7 +13,6 @@ class BSTFind:  # промежуточный результат поиска
     def __init__(self):
         self.Node = None  # None если
         # в дереве вообще нету узлов
-
         self.NodeHasKey = False  # True если узел найден
         self.ToLeft = False  # True, если родительскому узлу надо
         # добавить новый узел левым потомком
@@ -26,6 +25,7 @@ class BST:
 
     def FindNodeByKey(self, key):
         # ищем в дереве узел и сопутствующую информацию по ключу
+
         return None  # возвращает BSTFind
 
     def AddKeyValue(self, key, val):
@@ -35,7 +35,8 @@ class BST:
     def FinMinMax(self, FromNode, FindMax):
         # ищем максимальный/минимальный ключ в поддереве
         # возвращается объект типа BSTNode
-        return None
+        if FromNode is None:
+            return None
 
     def DeleteNodeByKey(self, key):
         # удаляем узел по ключу
