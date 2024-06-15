@@ -144,3 +144,51 @@ class BST:
             return 1 + count_nodes(node.LeftChild) + count_nodes(node.RightChild)
         return count_nodes(self.Root)
 
+    def WideAllNodes(self):
+        if self.Root is None:
+            return ()
+
+        nodes_list = []
+        queue = [self.Root]
+
+        while queue:
+            current_node = queue.pop(0)
+            nodes_list.append(current_node)
+            if current_node.LeftChild:
+                queue.append(current_node.LeftChild)
+            if current_node.RightChild:
+                queue.append(current_node.RightChild)
+
+        result = tuple(nodes_list)
+        return result
+
+    def DeepAllNodes(self, order):
+        if self.Root is None:
+            return ()
+        nodes_list = []
+
+        def in_order(node):
+            if node:
+                in_order(node.LeftChild)
+                nodes_list.append(node)
+                in_order(node.RightChild)
+
+        def post_order(node):
+            if node:
+                post_order(node.LeftChild)
+                post_order(node.RightChild)
+                nodes_list.append(node)
+
+        def pre_order(node):
+            if node:
+                nodes_list.append(node)
+                pre_order(node.LeftChild)
+                pre_order(node.RightChild)
+
+        if order == 0:
+            in_order(self.Root)
+        if order == 1:
+            post_order(self.Root)
+        if order == 2:
+            pre_order(self.Root)
+
