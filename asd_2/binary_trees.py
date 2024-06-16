@@ -192,3 +192,5 @@ class BST:
         if order == 2:
             pre_order(self.Root)
 
+        result = tuple(nodes_list)
+        return result

@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/asd_2/test_searches.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asd_2/binary_trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/asd_2/binary_trees.py" afterDir="false" />
     </list>
@@ -59,16 +60,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in test_cache.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_hash_table.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_linked_list2.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_linked_list_dummy.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_queue.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OOP_p.2.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cyberpunk_1994.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
     &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
     &quot;Python.linked_list2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.postfix.executor&quot;: &quot;Run&quot;,
     &quot;Python.stack.executor&quot;: &quot;Run&quot;,
     &quot;Python.sum_lists.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -94,6 +101,7 @@
   <component name="RunManager">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -115,6 +123,7 @@
     </configuration>
     <configuration name="cyberpunk" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -136,6 +145,7 @@
     </configuration>
     <configuration name="cyberpunk_1993" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -157,6 +167,7 @@
     </configuration>
     <configuration name="files" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -178,6 +189,7 @@
     </configuration>
     <configuration name="files_and_catalogues" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -199,6 +211,7 @@
     </configuration>
     <configuration name="linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -220,6 +233,7 @@
     </configuration>
     <configuration name="linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -241,6 +255,7 @@
     </configuration>
     <configuration name="log" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -262,6 +277,7 @@
     </configuration>
     <configuration name="stack" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -283,6 +299,7 @@
     </configuration>
     <configuration name="test_linked_list" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -304,6 +321,7 @@
     </configuration>
     <configuration name="test_linked_list2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -325,6 +343,7 @@
     </configuration>
     <configuration name="testing" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -346,6 +365,7 @@
     </configuration>
     <configuration name="walkers" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -381,6 +401,54 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
+    </task>
+    <task id="LOCAL-00049" summary="update">
+      <option name="closed" value="true" />
+      <created>1703598431325</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1703598431325</updated>
+    </task>
+    <task id="LOCAL-00050" summary="update">
+      <option name="closed" value="true" />
+      <created>1703708036784</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1703708036784</updated>
+    </task>
+    <task id="LOCAL-00051" summary="update">
+      <option name="closed" value="true" />
+      <created>1703758558789</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1703758558789</updated>
+    </task>
+    <task id="LOCAL-00052" summary="update">
+      <option name="closed" value="true" />
+      <created>1703764466748</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1703764466748</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update">
+      <option name="closed" value="true" />
+      <created>1703764841637</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1703764841638</updated>
+    </task>
+    <task id="LOCAL-00054" summary="update">
+      <option name="closed" value="true" />
+      <created>1704785972338</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1704785972338</updated>
     </task>
     <task id="LOCAL-00055" summary="update">
       <option name="closed" value="true" />
@@ -704,77 +772,29 @@
     </task>
     <task id="LOCAL-00095" summary="update">
       <option name="closed" value="true" />
-      <created>1715590120882</created>
+      <created>1715111462009</created>
       <option name="number" value="00095" />
       <option name="presentableId" value="LOCAL-00095" />
       <option name="project" value="LOCAL" />
-      <updated>1715590120882</updated>
+      <updated>1715111462009</updated>
     </task>
     <task id="LOCAL-00096" summary="update">
       <option name="closed" value="true" />
-      <created>1716221413500</created>
+      <created>1716028712122</created>
       <option name="number" value="00096" />
       <option name="presentableId" value="LOCAL-00096" />
       <option name="project" value="LOCAL" />
-      <updated>1716221413500</updated>
+      <updated>1716028712123</updated>
     </task>
     <task id="LOCAL-00097" summary="update">
       <option name="closed" value="true" />
-      <created>1716323977676</created>
+      <created>1718182518396</created>
       <option name="number" value="00097" />
       <option name="presentableId" value="LOCAL-00097" />
       <option name="project" value="LOCAL" />
-      <updated>1716323977676</updated>
+      <updated>1718182518396</updated>
     </task>
-    <task id="LOCAL-00098" summary="update">
-      <option name="closed" value="true" />
-      <created>1716473111694</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1716473111694</updated>
-    </task>
-    <task id="LOCAL-00099" summary="update">
-      <option name="closed" value="true" />
-      <created>1716476925100</created>
-      <option name="number" value="00099" />
-      <option name="presentableId" value="LOCAL-00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1716476925100</updated>
-    </task>
-    <task id="LOCAL-00100" summary="update">
-      <option name="closed" value="true" />
-      <created>1716485999513</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1716485999513</updated>
-    </task>
-    <task id="LOCAL-00101" summary="update">
-      <option name="closed" value="true" />
-      <created>1717927146716</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1717927146717</updated>
-    </task>
-    <task id="LOCAL-00102" summary="update">
-      <option name="closed" value="true" />
-      <created>1717927395750</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1717927395750</updated>
-    </task>
-    <task id="LOCAL-00103" summary="update">
-      <option name="closed" value="true" />
-      <created>1718225001004</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1718225001004</updated>
-    </task>
-    <option name="localTasksCounter" value="104" />
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
