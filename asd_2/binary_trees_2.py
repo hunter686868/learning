@@ -7,7 +7,6 @@ class aBST:
 
     def FindIndex(self, key):
         index = 0
-
         while index < self.tree_size:
             if self.Tree[index] is None:
                 return -index
@@ -33,5 +32,5 @@ class aBST:
             return -1
         else:
             self.Tree[-index] = key
-            return index
+            return -index
         # индекс добавленного/существующего ключа или -1 если не удалось
