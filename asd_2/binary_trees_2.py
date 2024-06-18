@@ -22,14 +22,14 @@ class aBST:
     def FindKeyIndex(self, key):
         # ищем в массиве индекс ключа
         index = self.FindIndex(key)
-        if index >= 0:
+        if index is not None and index >= 0:
             return index
         return None  # не найден
 
     def AddKey(self, key):
         # добавляем ключ в массив
         index = self.FindIndex(key)
-        if index >= 0:
+        if index is None or index > 0:
             return -1
         else:
             self.Tree[-index] = key
