@@ -20,9 +20,9 @@ class aBST:
 
     def FindKeyIndex(self, key):
         index = self.FindIndex(key)
-        if index is not None and index >= 0 and self.Tree[index] == key:
-            return index
-        return None  # не найден
+        if index == 0 and self.Tree[index] is None:
+            return None
+        return index
 
     def AddKey(self, key):
         index = self.FindIndex(key)
