@@ -12,24 +12,24 @@ class aBST:
                 return -index
             if self.Tree[index] == key:
                 return index
-            elif key < self.Tree[index]:
+            if key < self.Tree[index]:
                 index = (2 * index) + 1
             else:
                 index = (2 * index) + 2
         return None
 
     def FindKeyIndex(self, key):
-        # ищем в массиве индекс ключа
         index = self.FindIndex(key)
         if index is not None and index >= 0:
             return index
         return None  # не найден
 
     def AddKey(self, key):
-        # добавляем ключ в массив
         index = self.FindIndex(key)
-        if index is None or index > 0:
+        if index is None:
             return -1
+        if index > 0:
+            return index
         else:
             self.Tree[-index] = key
             return -index
