@@ -20,7 +20,7 @@ class aBST:
 
     def FindKeyIndex(self, key):
         index = self.FindIndex(key)
-        if index is not None and index >= 0:
+        if index is not None and self.Tree[index] == key:
             return index
         return None  # не найден
 
