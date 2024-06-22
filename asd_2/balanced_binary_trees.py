@@ -10,6 +10,6 @@ def GenerateBBSTArray(a):
         middle_item = a[middle_index]
         left_subtree = create_bbst(a, start, middle_index - 1)
         right_subtree = create_bbst(a, middle_index + 1, end)
-        return [middle_item] + left_subtree + right_subtree
+        return left_subtree + [middle_item] + right_subtree
     return create_bbst(a, 0, len(a) - 1)
 

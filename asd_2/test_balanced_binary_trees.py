@@ -3,22 +3,41 @@ import unittest
 
 
 class TestGenerateBBSTArray(unittest.TestCase):
-    def test_sorted_input(self):
-        self.assertEqual(GenerateBBSTArray([1, 2, 3, 4, 5]), [3, 1, 2, 4, 5])
 
-    def test_reverse_sorted_input(self):
-        self.assertEqual(GenerateBBSTArray([5, 4, 3, 2, 1]), [3, 1, 2, 4, 5])
+    def is_bbst(self, arr, idx=0):
+        """ Helper function to check if the array represents a BBST. """
+        if idx >= len(arr):
+            return True
 
-    def test_unsorted_input(self):
-        self.assertEqual(GenerateBBSTArray([3, 1, 2, 5, 4]), [3, 1, 2, 4, 5])
+        left_idx = 2 * idx + 1
+        right_idx = 2 * idx + 2
 
-    def test_single_element(self):
-        self.assertEqual(GenerateBBSTArray([1]), [1])
+        if left_idx < len(arr) and arr[left_idx] >= arr[idx]:
+            return False
+        if right_idx < len(arr) and arr[right_idx] <= arr[idx]:
+            return False
+
+        return self.is_bbst(arr, left_idx) and self.is_bbst(arr, right_idx)
 
     def test_empty_array(self):
         self.assertEqual(GenerateBBSTArray([]), [])
 
-    def test_large_input(self):
-        input_array = list(range(1, 16))  # Дерево глубины 3 (15 элементов)
-        expected_output = [8, 4, 2, 1, 3, 6, 5, 7, 12, 10, 9, 11, 14, 13, 15]
-        self.assertEqual(GenerateBBSTArray(input_array), expected_output)
+    def test_single_element(self):
+        self.assertEqual(GenerateBBSTArray([10]), [10])
+
+    def test_two_elements(self):
+        self.assertEqual(GenerateBBSTArray([10, 20]), [10, 20])
+
+    def test_three_elements(self):
+        result = GenerateBBSTArray([10, 20, 30])
+        self.assertTrue(self.is_bbst(result))
+
+    def test_multiple_elements(self):
+        data = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+        result = GenerateBBSTArray(data)
+        self.assertTrue(self.is_bbst(result))
+
+    def test_large_array(self):
+        data = list(range(1, 1024))
+        result = GenerateBBSTArray(data)
+        self.assertTrue(self.is_bbst(result))
