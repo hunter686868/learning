@@ -3,13 +3,17 @@ def GenerateBBSTArray(a):
         return []
     a.sort()
 
-    def create_bbst(a, start, end):
+    def create_bbst(arr, start, end):
         if start > end:
             return []
-        middle_index = (start + end)//2
-        middle_item = a[middle_index]
-        left_subtree = create_bbst(a, start, middle_index - 1)
-        right_subtree = create_bbst(a, middle_index + 1, end)
-        return left_subtree + [middle_item] + right_subtree
+        middle_index = (end + start)//2
+        middle_item = arr[middle_index]
+        left_subtree = create_bbst(arr, start, middle_index - 1)
+        right_subtree = create_bbst(arr, middle_index + 1, end)
+        return [middle_item] + left_subtree + right_subtree
     return create_bbst(a, 0, len(a) - 1)
+
+
+t = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+print(GenerateBBSTArray(t))
 
