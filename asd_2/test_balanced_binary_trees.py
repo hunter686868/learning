@@ -3,22 +3,19 @@ import unittest
 
 
 class TestGenerateBBSTArray(unittest.TestCase):
-    def test_sorted_input(self):
-        self.assertEqual(GenerateBBSTArray([1, 2, 3, 4, 5]), [3, 1, 4, 2, 5])
 
-    def test_reverse_sorted_input(self):
-        self.assertEqual(GenerateBBSTArray([5, 4, 3, 2, 1]), [3, 1, 4, 2, 5])
-
-    def test_unsorted_input(self):
-        self.assertEqual(GenerateBBSTArray([3, 1, 2, 5, 4]), [3, 1, 4, 2, 5])
-
-    def test_single_element(self):
+    def test_balanced_bst(self):
+        self.assertEqual(GenerateBBSTArray([3, 1, 2, 5, 4]), [3, 2, 5, 1, None, 4, None])
+        self.assertEqual(GenerateBBSTArray([1, 2, 3, 4, 5, 6, 7]), [4, 2, 6, 1, 3, 5, 7])
+        self.assertEqual(GenerateBBSTArray([7, 6, 5, 4, 3, 2, 1]), [4, 2, 6, 1, 3, 5, 7])
+        self.assertEqual(GenerateBBSTArray([1, 2, 3]), [2, 1, 3])
         self.assertEqual(GenerateBBSTArray([1]), [1])
-
-    def test_empty_array(self):
         self.assertEqual(GenerateBBSTArray([]), [])
 
-    def test_large_input(self):
-        input_array = list(range(1, 16))  # Дерево глубины 3 (15 элементов)
-        expected_output = [8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]
-        self.assertEqual(GenerateBBSTArray(input_array), expected_output)
+    def test_large_balanced_bst(self):
+        arr = list(range(1, 16))  # 1 to 15
+        expected_result = [8, 4, 12, 2, 6, 10, 14, 1, 3, 5, 7, 9, 11, 13, 15]
+        self.assertEqual(GenerateBBSTArray(arr), expected_result)
+
+    def test_unbalanced_input(self):
+        self.assertEqual(GenerateBBSTArray([1, 2, 3, 4, 5, 6]), [4, 2, 6, 1, 3, 5])
