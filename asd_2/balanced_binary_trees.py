@@ -18,5 +18,3 @@ def GenerateBBSTArray(a):
     create_bbst(a, 0, len(a) - 1, result_array, 0)
     return result_array
 
-
-
