@@ -45,8 +45,6 @@ class BalancedBST:
                 return True
             deep_left = get_deep(node.LeftChild)
             deep_right = get_deep(node.RightChild)
-            print(f"Node {node.NodeKey}: left depth = {deep_left}, right depth = {deep_right}")
-
             if abs(deep_right - deep_left) > 1:
                 return False
             return check_balance(node.LeftChild) and check_balance(node.RightChild)
