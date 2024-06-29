@@ -36,7 +36,6 @@ class Heap:
         # добавляем новый элемент key в кучу и перестраиваем её
         if None not in self.HeapArray:
             return False  # если куча вся заполнена
-
         # Найти первый свободный слот
         index = self.HeapArray.index(None)
         self.HeapArray[index] = key
