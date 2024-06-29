@@ -37,7 +37,9 @@ class Heap:
         if None not in self.HeapArray:
             return False  # если куча вся заполнена
         # Найти первый свободный слот
-        index = self.HeapArray.index(None)
+        index = 0
+        while index < len(self.HeapArray) and self.HeapArray[index] is not None:
+            index += 1
         self.HeapArray[index] = key
         self.heap_up(index)
         return True
