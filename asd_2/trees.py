@@ -71,3 +71,6 @@ class SimpleTree:
             child.Level = node.Level + 1
             self._update_levels(child)
 
+    def EvenTrees(self):
+        return []
+
