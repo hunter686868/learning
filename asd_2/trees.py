@@ -72,5 +72,28 @@ class SimpleTree:
             self._update_levels(child)
 
     def EvenTrees(self):
-        return []
+        if not self.Root:
+            return []
+
+        result = []
+        subtree_sizes_dict = {}
+
+        def subtrees_sizes(node):
+            size = 1
+            for child in node.Children:
+                size += subtrees_sizes(child)
+            subtree_sizes_dict[node] = size
+            return size
+
+        def find_edges(node):
+            for child in node.Children:
+                find_edges(child)
+                if subtree_sizes_dict[child] % 2 == 0:
+                    result.append(node)
+                    result.append(child)
+
+        subtrees_sizes(self.Root)
+        find_edges(self.Root)
+
+        return result
 

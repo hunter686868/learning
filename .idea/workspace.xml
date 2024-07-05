@@ -101,7 +101,7 @@
       <recent name="$PROJECT_DIR$/files/dir2/dir21" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.archive">
+  <component name="RunManager">
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
       <option name="ENV_FILES" value="" />
@@ -404,14 +404,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
-    </task>
-    <task id="LOCAL-00054" summary="update">
-      <option name="closed" value="true" />
-      <created>1704785972338</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1704785972338</updated>
     </task>
     <task id="LOCAL-00055" summary="update">
       <option name="closed" value="true" />
@@ -797,7 +789,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719911975495</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="update">
+      <option name="closed" value="true" />
+      <created>1720098030231</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1720098030231</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
