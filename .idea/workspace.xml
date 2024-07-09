@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asd_2/trees.py" beforeDir="false" afterPath="$PROJECT_DIR$/asd_2/trees.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asd_2/simple_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/asd_2/simple_graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asd_2/test_simple_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/asd_2/test_simple_graph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,8 @@
     &quot;Python tests.Python tests in test_searches.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_simple_graph.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_trees.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in trees.py.executor&quot;: &quot;Run&quot;,
     &quot;Python.OOP_p.2.executor&quot;: &quot;Run&quot;,
     &quot;Python.balanced_binary_trees.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
@@ -404,14 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699603776699</updated>
-    </task>
-    <task id="LOCAL-00055" summary="update">
-      <option name="closed" value="true" />
-      <created>1704796123937</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1704796123937</updated>
     </task>
     <task id="LOCAL-00056" summary="update">
       <option name="closed" value="true" />
@@ -797,7 +792,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720098030231</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="update">
+      <option name="closed" value="true" />
+      <created>1720169640290</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1720169640290</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
