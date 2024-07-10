@@ -125,7 +125,7 @@ class SimpleGraph:
 
             if current_vertex.Hit is False:
                 current_vertex.Hit = True
-                path.append(current_index)
+                path.append(current_vertex)
 
             if current_index == VTo:
                 return path
