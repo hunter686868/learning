@@ -6,11 +6,18 @@ class TestSimpleGraph(unittest.TestCase):
 
     def setUp(self):
         self.graph = SimpleGraph(5)
-        self.graph.AddVertex(0)
-        self.graph.AddVertex(1)
-        self.graph.AddVertex(2)
-        self.graph.AddVertex(3)
-        self.graph.AddVertex(4)
+        self.v0 = Vertex(0)
+        self.v1 = Vertex(1)
+        self.v2 = Vertex(2)
+        self.v3 = Vertex(3)
+        self.v4 = Vertex(4)
+
+        self.graph.AddVertex(self.v0.Value)
+        self.graph.AddVertex(self.v1.Value)
+        self.graph.AddVertex(self.v2.Value)
+        self.graph.AddVertex(self.v3.Value)
+        self.graph.AddVertex(self.v4.Value)
+
         self.graph.AddEdge(0, 1)
         self.graph.AddEdge(1, 2)
         self.graph.AddEdge(2, 3)
@@ -38,13 +45,13 @@ class TestSimpleGraph(unittest.TestCase):
         self.assertFalse(self.graph.IsEdge(1, 2))
 
     def test_depth_first_search(self):
-        path = self.graph.DepthFirstSearch(0, 4)
-        self.assertEqual(path, [0, 1, 2, 3, 4])
+        path = self.graph.DepthFirstSearch(self.v0, self.v4)
+        self.assertEqual([vertex.Value for vertex in path], [0, 1, 2, 3, 4])
 
         self.graph.RemoveEdge(2, 3)
-        path = self.graph.DepthFirstSearch(0, 4)
+        path = self.graph.DepthFirstSearch(self.v0, self.v4)
         self.assertEqual(path, [])
 
         self.graph.AddEdge(1, 3)
-        path = self.graph.DepthFirstSearch(0, 4)
-        self.assertEqual(path, [0, 1, 3, 4])
+        path = self.graph.DepthFirstSearch(self.v0, self.v4)
+        self.assertEqual([vertex.Value for vertex in path], [0, 1, 3, 4])

@@ -35,17 +35,6 @@ class Stack:
             return None
         return self.stack[0]
 
-    def brackets(self, string):
-        if self.stack:
-            raise IndexError('Stack is not empty')
-        for i in string:
-            if i == '(':
-                self.push(i)
-            elif i == ')':
-                if self.size() == 0 or self.pop() != '(':
-                    return False
-        return self.size() == 0
-
 
 class SimpleGraph:
 
@@ -120,21 +109,22 @@ class SimpleGraph:
         path = []
 
         while stack.size() > 0:
-            current_index = stack.peek()
-            current_vertex = self.vertex[current_index]
+            current_vertex = stack.peek()
 
             if current_vertex.Hit is False:
                 current_vertex.Hit = True
                 path.append(current_vertex)
 
-            if current_index == VTo:
+            if current_vertex == VTo:
                 return path
 
             found_vertex = False
+            current_index = self.vertex.index(current_vertex)
             for index in range(len(self.vertex)):
                 if self.m_adjacency[current_index][index] == 1 and not self.vertex[index].Hit:
-                    stack.push(index)
+                    stack.push(self.vertex[index])
                     found_vertex = True
+                    break
 
             if found_vertex is False:
                 stack.pop()
