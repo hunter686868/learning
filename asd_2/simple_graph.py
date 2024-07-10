@@ -113,3 +113,11 @@ class SimpleGraph:
 
         return []
 
+    def BreadthFirstSearch(self, VFrom, VTo):
+        # узлы задаются позициями в списке vertex
+        # возвращается список узлов -- путь из VFrom в VTo
+        # или [] если пути нету
+        for vertex in self.vertex:
+            if vertex is not None:
+                vertex.Hit = False
+
