@@ -10,30 +10,20 @@ class Stack:
         self.stack = []
 
     def size(self):
-        if not self.stack:
-            return 0
-        count = 0
-        for _ in self.stack:
-            count += 1
-        return count
+        return len(self.stack)
 
     def pop(self):
         if self.size() == 0:
             return None
-        value = self.stack[0]
-        new_stack = []
-        for i in range(1, self.size()):
-            new_stack.append(self.stack[i])
-        self.stack = new_stack
-        return value
+        return self.stack.pop()
 
     def push(self, value):
-        self.stack = [value] + self.stack
+        self.stack.append(value)
 
     def peek(self):
         if self.size() == 0:
             return None
-        return self.stack[0]
+        return self.stack[-1]
 
 
 class SimpleGraph:
@@ -102,32 +92,24 @@ class SimpleGraph:
         # возвращается список узлов -- путь из VFrom в VTo
         # или [] если пути нету
         for vertex in self.vertex:
-            if vertex:
+            if vertex is not None:
                 vertex.Hit = False
         stack = Stack()
-        stack.push(VFrom)
-        path = []
+        stack.push((VFrom, [VFrom]))
 
         while stack.size() > 0:
-            current_vertex = stack.peek()
+            current_index, current_path = stack.pop()
+            current_vertex = self.vertex[current_index]
 
             if current_vertex.Hit is False:
                 current_vertex.Hit = True
-                path.append(current_vertex)
 
-            if current_vertex == VTo:
-                return path
+            if current_index == VTo:
+                return [self.vertex[i] for i in current_path]
 
-            found_vertex = False
-            current_index = self.vertex.index(current_vertex)
             for index in range(len(self.vertex)):
-                if self.m_adjacency[current_index][index] == 1 and not self.vertex[index].Hit:
-                    stack.push(self.vertex[index])
-                    found_vertex = True
-                    break
-
-            if found_vertex is False:
-                stack.pop()
-                path.pop()
+                if self.m_adjacency[current_index][index] == 1 and self.vertex[index].Hit is False:
+                    stack.push((index, current_path + [index]))
 
         return []
+
