@@ -5,6 +5,22 @@ class Vertex:
         self.Hit = False
 
 
+class Queue:
+    def __init__(self):
+        self.queue = []
+
+    def enqueue(self, item):
+        self.queue.append(item)
+
+    def dequeue(self):
+        if self.size() == 0:
+            return None
+        return self.queue.pop(0)
+
+    def size(self):
+        return len(self.queue)
+
+
 class Stack:
     def __init__(self):
         self.stack = []
@@ -121,10 +137,11 @@ class SimpleGraph:
             if vertex is not None:
                 vertex.Hit = False
 
-        vertex_queue = [(VFrom, [VFrom])]
+        vertex_queue = Queue()
+        vertex_queue.enqueue((VFrom, [VFrom]))
 
-        while len(vertex_queue) > 0:
-            current_index, current_path = vertex_queue.pop(0)
+        while vertex_queue.size() > 0:
+            current_index, current_path = vertex_queue.dequeue()
             current_vertex = self.vertex[current_index]
 
             if current_vertex.Hit is False:
@@ -135,7 +152,7 @@ class SimpleGraph:
 
             for index in range(len(self.vertex)):
                 if self.m_adjacency[current_index][index] == 1 and self.vertex[index].Hit is False:
-                    vertex_queue.append((index, current_path + [index]))
+                    vertex_queue.enqueue((index, current_path + [index]))
 
         return []
 
