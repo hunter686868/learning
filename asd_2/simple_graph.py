@@ -121,3 +121,21 @@ class SimpleGraph:
             if vertex is not None:
                 vertex.Hit = False
 
+        vertex_queue = [(VFrom, [VFrom])]
+
+        while len(vertex_queue) > 0:
+            current_index, current_path = vertex_queue.pop(0)
+            current_vertex = self.vertex[current_index]
+
+            if current_vertex.Hit is False:
+                current_vertex.Hit = True
+
+            if current_index == VTo:
+                return [self.vertex[i] for i in current_path]
+
+            for index in range(len(self.vertex)):
+                if self.m_adjacency[current_index][index] == 1 and self.vertex[index].Hit is False:
+                    vertex_queue.append((index, current_path + [index]))
+
+        return []
+

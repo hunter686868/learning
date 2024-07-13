@@ -50,3 +50,21 @@ class TestSimpleGraph(unittest.TestCase):
     def test_depth_first_search_same_node(self):
         path = self.graph.DepthFirstSearch(0, 0)
         self.assertEqual([v.Value for v in path], [0])
+
+    def test_breadth_first_search_path_exists(self):
+        self.graph.AddEdge(0, 1)
+        self.graph.AddEdge(1, 2)
+        self.graph.AddEdge(2, 3)
+        self.graph.AddEdge(3, 4)
+        path = self.graph.BreadthFirstSearch(0, 4)
+        self.assertEqual([v.Value for v in path], [0, 1, 2, 3, 4])
+
+    def test_breadth_first_search_no_path(self):
+        self.graph.AddEdge(0, 1)
+        self.graph.AddEdge(1, 2)
+        path = self.graph.BreadthFirstSearch(0, 4)
+        self.assertEqual(path, [])
+
+    def test_breadth_first_search_same_node(self):
+        path = self.graph.BreadthFirstSearch(0, 0)
+        self.assertEqual([v.Value for v in path], [0])
