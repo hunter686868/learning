@@ -168,7 +168,7 @@ class SimpleGraph:
     def _find_neibourgs(self, node_index):
         for index in range(len(self.vertex)):
             if self.m_adjacency[node_index][index] == 1:
-                for second_index in range(len((self.vertex))):
+                for second_index in range(len(self.vertex)):
                     if self.m_adjacency[index][second_index] == 1:
                         return True
         return False
