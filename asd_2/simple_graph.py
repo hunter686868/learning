@@ -160,12 +160,11 @@ class SimpleGraph:
         # возвращает список узлов вне треугольников
         no_triangle_nodes = []
         for index in range(len(self.vertex)):
-            if self._find_neibourgs(index) is False:
-                no_triangle_nodes.append(self.vertex(index))
-
+            if self.vertex[index] is not None and not self._is_triangle(index):
+                no_triangle_nodes.append(self.vertex[index])
         return no_triangle_nodes
 
-    def _find_neibourgs(self, node_index):
+    def _is_triangle(self, node_index):
         for index in range(len(self.vertex)):
             if self.m_adjacency[node_index][index] == 1:
                 for second_index in range(len(self.vertex)):
