@@ -165,10 +165,10 @@ class SimpleGraph:
         return no_triangle_nodes
 
     def _is_triangle(self, node_index):
-        for index in range(len(self.vertex)):
-            if self.m_adjacency[node_index][index] == 1:
-                for second_index in range(len(self.vertex)):
-                    if self.m_adjacency[index][second_index] == 1:
-                        return True
+        neighbors = [i for i in range(len(self.vertex)) if self.m_adjacency[node_index][i] == 1]
+        for i in range(len(neighbors)):
+            for j in range(i + 1, len(neighbors)):
+                if self.m_adjacency[neighbors[i]][neighbors[j]] == 1:
+                    return True
         return False
 
