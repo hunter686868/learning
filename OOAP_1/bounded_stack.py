@@ -1,28 +1,57 @@
 class BoundedStack:
-    def __init__(self):
-        self.items = []
-        self.top = None
-        self.is_empty = True
+    POP_NIL = 0
+    POP_OK = 1
+    POP_ERR = 2
+    PEEK_NIL = 0
+    PEEK_OK = 1
+    PEEK_ERR = 2
+    PUSH_NIL = 0
+    PUSH_OK = 1
+    PUSH_ERR = 2
+    def __init__(self, max_capacity: int = 32) -> None:
+        if max_capacity <= 0:
+            raise ValueError("max_capacity must be more than 0")
+        self._capacity = max_capacity
+        self.clear()
 
-    def push(self, item):
-        self.items.append(item)
-        self.is_empty = False
-        self.top = item
+    def clear(self) -> None:
+        self._stack = []
+        self._pop_status = self.POP_NIL
+        self._peek_status = self.PEEK_NIL
+        self._push_status = self.PUSH_NIL
+
+    def push(self, value) -> None:
+        if self.size() < self._capacity:
+            self._stack.append(value)
+            self._push_status = self.PUSH_OK
+        else:
+            self._push_status = self.PUSH_ERR
+
     def pop(self):
-        if self.is_empty:
-            raise IndexError("Stack is empty")
+        if self.size() > 0:
+            self._stack.pop()
+            self._pop_status = self.POP_OK
         else:
-            self.is_empty = False
-            self.top = self.items.pop()
-            self.is_empty = True
-            return self.top
-    def peek(self):
-        if self.is_empty:
-            raise IndexError("Stack is empty")
-        else:
-            self.is_empty = False
-            self.top = self.items[-1]
-            self.is_empty = True
-            return self.top
+            self._pop_status = self.POP_ERR
 
+    def peek(self):
+        if self.size() > 0:
+            result = self._stack[-1]
+            self._peek_status = self.PEEK_OK
+        else:
+            result = None
+            self._peek_status = self.PEEK_ERR
+        return result
+
+    def size(self) -> int:
+        return len(self._stack)
+
+    def get_pop_status(self) -> int:
+        return self._pop_status
+
+    def get_peek_status(self) -> int:
+        return self._peek_status
+
+    def get_push_status(self) -> int:
+        return self._push_status
 
