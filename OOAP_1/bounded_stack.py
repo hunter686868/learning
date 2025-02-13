@@ -13,13 +13,15 @@ class BoundedStack:
             raise ValueError("max_capacity must be more than 0")
         self._capacity = max_capacity
         self.clear()
-
+    # Постусловие - создан пусто стек
     def clear(self) -> None:
         self._stack = []
         self._pop_status = self.POP_NIL
         self._peek_status = self.PEEK_NIL
         self._push_status = self.PUSH_NIL
 
+    # Предусловие - в стеке есть свободное место
+    # Постусловие - добавлен новый элемент
     def push(self, value) -> None:
         if self.size() < self._capacity:
             self._stack.append(value)
@@ -27,6 +29,8 @@ class BoundedStack:
         else:
             self._push_status = self.PUSH_ERR
 
+    # Предусловие - стек не пустой
+    # Постусловие - удален элемент
     def pop(self):
         if self.size() > 0:
             self._stack.pop()
@@ -34,6 +38,7 @@ class BoundedStack:
         else:
             self._pop_status = self.POP_ERR
 
+    # Предусловие - стек не пустой
     def peek(self):
         if self.size() > 0:
             result = self._stack[-1]
