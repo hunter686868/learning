@@ -6,6 +6,8 @@ class LinkedList:
         self.head = None
 
     # КОМАНДЫ
+    # Предусловие - список не пустой
+    # Постусловие - курсор на первом узле
     def head(self):
         # установить курсор на первый узел в списке
         if self.head is None:
@@ -13,6 +15,8 @@ class LinkedList:
         else:
             return self.head
 
+    # Предусловие - список не пустой
+    # Постусловие - курсор на последнем узле
     def tail(self):
         # установить курсор на последний узел в списке
         if self.head is None:
@@ -20,6 +24,8 @@ class LinkedList:
         else:
             return self.head
 
+    # Предусловие - список не пустой, курсор не на последнем узле
+    # Постусловие - курсор смещен направо
     def right(self):
         # сдвинуть курсор на один узел вправо
         if self.head is None:
@@ -27,6 +33,7 @@ class LinkedList:
         else:
             return self.head.right
 
+    # Предусловие - список не пустой
     def put_right(self, data):
         # вставить следом за текущим узлом
         # новый узел с заданным значением
@@ -39,6 +46,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+    # Предусловие - список не пустой
     def put_left(self, data):
         # вставить перед текущим узлом
         # новый узел с заданным значением
@@ -51,6 +59,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+    # Предусловие - список не пустой
     def remove(self):
         # удалить текущий узел
         # (курсор смещается к правому соседу, если он есть,
@@ -62,6 +71,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+    # Предусловие - список не пустой
     def clear(self):
         # очистить список
         if self.head is None:
@@ -70,6 +80,7 @@ class LinkedList:
             self.head = None
             return
 
+    # Предусловие - список не пустой
     def add_to_empty(self, data):
         # добавить новый узел в пустой список
         if self.head is None:
@@ -88,6 +99,7 @@ class LinkedList:
             self.head.next = Node(data)
             return
 
+    # Предусловие - список не пустой
     def replace(self, data):
         # заменить значение текущего узла на заданное
         if self.head is None:
@@ -96,6 +108,7 @@ class LinkedList:
             self.head = self.head.next
             return
 
+    # Предусловие - список не пустой
     def find(self, data):
         # установить курсор на следующий узел
         # с искомым значением (по отношению к текущему узлу);
@@ -104,6 +117,7 @@ class LinkedList:
         else:
             return self.head.data
 
+    # Предусловие - список не пустой
     def remove_all(self, data):
         # удалить в списке все узлы с заданным значением
         if self.head is None:
@@ -113,6 +127,7 @@ class LinkedList:
             return
 
     # ЗАПРОСЫ
+    # Предусловие - список не пустой
     def get(self):
         # получить значение текущего узла
         if self.head is None:
