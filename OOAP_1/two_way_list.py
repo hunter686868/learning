@@ -11,7 +11,6 @@ class ParentList:
         self.head = None
         self.tail = None
         self.cursor = None
-        self._size = 0
 
         # Статусы
         self._head_status = self.NIL
@@ -20,6 +19,7 @@ class ParentList:
         self._put_right_status = self.NIL
         self._put_left_status = self.NIL
         self._remove_status = self.NIL
+        self._add_status = self.NIL
         self._replace_status = self.NIL
         self._find_status = self.NIL
         self._get_status = self.NIL
@@ -62,121 +62,90 @@ class ParentList:
         new_node = Node(value)
         new_node.prev = self.cursor
         new_node.next = self.cursor.next
-        if self.cursor.next is not None:
+
+        if self.cursor.next:
             self.cursor.next.prev = new_node
         else:
-            # Если текущий был последним, обновляем tail
             self.tail = new_node
         self.cursor.next = new_node
-        self._size += 1
         self._put_right_status = self.OK
 
     def put_left(self, value):
         # Список не пуст
         # Слева от курсора добавлен новый узел
-
         if self.cursor is None:
             self._put_left_status = self.EMP
             return
         new_node = Node(value)
         new_node.next = self.cursor
         new_node.prev = self.cursor.prev
-        if self.cursor.prev is not None:
+
+        if self.cursor.prev:
             self.cursor.prev.next = new_node
         else:
-            # Если текущий был первым, обновляем head
             self.head = new_node
         self.cursor.prev = new_node
-        self._size += 1
         self._put_left_status = self.OK
 
     def remove(self):
         # Список не пуст
         # Текущий узел удален
         # Курсор смещен вправо или влево (приоритет право -> лево)
-
         if self.cursor is None:
             self._remove_status = self.EMP
             return
         removed = self.cursor
-        # Определяем, куда сдвинуть курсор
-        if removed.next is not None:
+
+        if removed.next:
             new_cursor = removed.next
-        elif removed.prev is not None:
+        elif removed.prev:
             new_cursor = removed.prev
         else:
             new_cursor = None
 
-        # Обновляем связи
-        if removed.prev is not None:
+        if removed.prev:
             removed.prev.next = removed.next
         else:
-            # Если удаляемый был первым узлом
             self.head = removed.next
-        if removed.next is not None:
+        if removed.next:
             removed.next.prev = removed.prev
         else:
-            # Если удаляемый был последним узлом
             self.tail = removed.prev
 
         self.cursor = new_cursor
-        self._size -= 1
         self._remove_status = self.OK
 
     def clear(self):
         # Список пустой
-
         self.head = None
         self.tail = None
         self.cursor = None
-        self._size = 0
+
+    def add_to_empty(self, data):
+        # Список не пустой
+        if self.head:
+            self._add_status = self.EMP
+            return
+        new_node = Node(data)
+        self.head = new_node
+        self.tail = new_node
+        self.cursor = new_node
+        self._add_status = self.OK
 
     def add_tail(self, value):
         # Добавлен узел в конец списка
-
-        new_node = Node(value)
         if self.head is None:
-            # Если список пуст, новый узел становится и head, и tail, и курсором
-            self.head = new_node
-            self.tail = new_node
-            self.cursor = new_node
+            self.add_to_empty(value)
         else:
+            new_node = Node(value)
             new_node.prev = self.tail
             self.tail.next = new_node
             self.tail = new_node
-        self._size += 1
-
-    def remove_all(self, value):
-        # Все узлы с заданным значением удалены
-
-        node = self.head
-        while node is not None:
-            next_node = node.next  # сохраняем ссылку на следующий узел
-            if node.value == value:
-                # Если удаляется текущий узел, обновляем курсор
-                if node == self.cursor:
-                    if node.next is not None:
-                        self.cursor = node.next
-                    elif node.prev is not None:
-                        self.cursor = node.prev
-                    else:
-                        self.cursor = None
-                # Обновляем связи
-                if node.prev is not None:
-                    node.prev.next = node.next
-                else:
-                    self.head = node.next
-                if node.next is not None:
-                    node.next.prev = node.prev
-                else:
-                    self.tail = node.prev
-                self._size -= 1
-            node = next_node
+            self._add_status = self.OK
 
     def replace(self, value):
         # Список не пуст
         # Значение узла изменено
-
         if self.cursor is None:
             self._replace_status = self.EMP
             return
@@ -190,8 +159,9 @@ class ParentList:
         if self.cursor is None:
             self._find_status = self.ERR
             return
+
         node = self.cursor.next
-        while node is not None:
+        while node:
             if node.value == value:
                 self.cursor = node
                 self._find_status = self.OK
@@ -199,28 +169,67 @@ class ParentList:
             node = node.next
         self._find_status = self.ERR
 
+    def remove_all(self, value):
+        # Все узлы с заданным значением удалены
+        if self.cursor is None:
+            self._remove_status = self.OK
+            return
+
+        self.cursor = self.head
+        while self.cursor:
+            next_node = self.cursor.next
+            if self.cursor.value != value:
+                self.cursor = next_node
+                continue
+
+            if self.cursor.prev:
+                self.cursor.prev.next = self.cursor.next
+            else:
+                self.head = self.cursor.next
+
+            if self.cursor.next:
+                self.cursor.next.prev = self.cursor.prev
+            else:
+                self.tail = self.cursor.prev
+
+            self.cursor = next_node
+
+        self.cursor = self.head
+        self._remove_status = self.OK
+
     # Запросы
 
     def get(self):
         # Список не пуст
-
         if self.cursor is None:
             self._get_status = self.EMP
             return None
         self._get_status = self.OK
         return self.cursor.value
 
+    def size(self):
+        if self.head is None:
+            return 0
+        else:
+            count = 0
+            node = self.head
+            while node:
+                count += 1
+                node = node.next
+            return count
+
     def is_head(self):
-        return self.cursor is not None and self.cursor == self.head
+        if self.head == self.cursor:
+            self._head_status = self.OK
+        self._head_status = self.ERR
 
     def is_tail(self):
-        return self.cursor is not None and self.cursor == self.tail
+        if self.tail == self.cursor:
+            self._tail_status = self.OK
+        self._tail_status = self.ERR
 
     def is_value(self):
         return self.cursor is not None
-
-    def size(self):
-        return self._size
 
     # Запросы статусов
 
@@ -238,6 +247,9 @@ class ParentList:
 
     def get_put_left_status(self):
         return self._put_left_status
+
+    def get_add_status(self):
+        return self._add_status
 
     def get_remove_status(self):
         return self._remove_status
