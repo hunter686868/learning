@@ -36,10 +36,8 @@ class ParentList:
             self._head_status = self.OK
 
     def tail(self):
-        """
-        Перемещает курсор на последний узел.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+        # Курсор установлен на последний узел
         if self.tail is None:
             self._tail_status = self.EMP
         else:
@@ -47,21 +45,17 @@ class ParentList:
             self._tail_status = self.OK
 
     def right(self):
-        """
-        Сдвигает курсор вправо (на следующий узел).
-        Предусловие: справа от текущего узла есть элемент.
-        """
+        # Правее есть элемент
+        # Курсор сдвинут на один узел правее
         if self.cursor is None or self.cursor.next is None:
-            self._right_status = ParentList.NO_RIGHT
+            self._right_status = self.ERR
         else:
             self.cursor = self.cursor.next
             self._right_status = self.OK
 
     def put_right(self, value):
-        """
-        Вставляет новый узел со значением value после текущего.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+        # Справа от курсора добавлен новый узел
         if self.cursor is None:
             self._put_right_status = self.EMP
             return
@@ -78,10 +72,9 @@ class ParentList:
         self._put_right_status = self.OK
 
     def put_left(self, value):
-        """
-        Вставляет новый узел со значением value перед текущим.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+        # Слева от курсора добавлен новый узел
+
         if self.cursor is None:
             self._put_left_status = self.EMP
             return
@@ -98,12 +91,10 @@ class ParentList:
         self._put_left_status = self.OK
 
     def remove(self):
-        """
-        Удаляет текущий узел. Курсор после удаления перемещается:
-          – к правому соседу, если он есть;
-          – иначе – к левому.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+        # Текущий узел удален
+        # Курсор смещен вправо или влево (приоритет право -> лево)
+
         if self.cursor is None:
             self._remove_status = self.EMP
             return
@@ -133,18 +124,16 @@ class ParentList:
         self._remove_status = self.OK
 
     def clear(self):
-        """
-        Очищает список – удаляет все узлы.
-        """
+        # Список пустой
+
         self.head = None
         self.tail = None
         self.cursor = None
         self._size = 0
 
     def add_tail(self, value):
-        """
-        Добавляет новый узел со значением value в конец списка.
-        """
+        # Добавлен узел в конец списка
+
         new_node = Node(value)
         if self.head is None:
             # Если список пуст, новый узел становится и head, и tail, и курсором
@@ -158,9 +147,8 @@ class ParentList:
         self._size += 1
 
     def remove_all(self, value):
-        """
-        Удаляет из списка все узлы, содержащие значение value.
-        """
+        # Все узлы с заданным значением удалены
+
         node = self.head
         while node is not None:
             next_node = node.next  # сохраняем ссылку на следующий узел
@@ -186,10 +174,9 @@ class ParentList:
             node = next_node
 
     def replace(self, value):
-        """
-        Заменяет значение текущего узла на value.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+        # Значение узла изменено
+
         if self.cursor is None:
             self._replace_status = self.EMP
             return
@@ -197,10 +184,9 @@ class ParentList:
         self._replace_status = self.OK
 
     def find(self, value):
-        """
-        Ищет следующий узел, значение которого равно value.
-        Если найден, курсор перемещается на этот узел.
-        """
+        # Курсор установлен на следующий узел
+        # с искомым значением (если найден).
+
         if self.cursor is None:
             self._find_status = self.ERR
             return
@@ -213,13 +199,11 @@ class ParentList:
             node = node.next
         self._find_status = self.ERR
 
-    # === Запросы (операции, возвращающие данные) ===
+    # Запросы
 
     def get(self):
-        """
-        Возвращает значение текущего узла.
-        Предусловие: список не пуст.
-        """
+        # Список не пуст
+
         if self.cursor is None:
             self._get_status = self.EMP
             return None
@@ -227,22 +211,18 @@ class ParentList:
         return self.cursor.value
 
     def is_head(self):
-        """Возвращает True, если текущий узел является первым в списке."""
         return self.cursor is not None and self.cursor == self.head
 
     def is_tail(self):
-        """Возвращает True, если текущий узел является последним в списке."""
         return self.cursor is not None and self.cursor == self.tail
 
     def is_value(self):
-        """Возвращает True, если курсор установлен (то есть список не пуст)."""
         return self.cursor is not None
 
     def size(self):
-        """Возвращает количество узлов в списке."""
         return self._size
 
-    # === Методы для запроса статусов операций ===
+    # Запросы статусов
 
     def get_head_status(self):
         return self._head_status
@@ -272,32 +252,23 @@ class ParentList:
         return self._get_status
 
 
-# ================================================================
-# Класс LinkedList – наследник ParentList, но не предоставляет метод left()
-# ================================================================
-
+# Связный список
 class LinkedList(ParentList):
     def __init__(self):
         super().__init__()
-    # Метод left() не доступен пользователю данного класса.
 
-
-# ================================================================
-# Класс TwoWayList – наследник ParentList, добавляет операцию left()
-# ================================================================
-
+# Двунаправленный связный список
 class TwoWayList(ParentList):
     def __init__(self):
         super().__init__()
-        self._left_status = None  # статус для метода left
+        self._left_status = None
 
     def left(self):
-        """
-        Сдвигает курсор влево (на предыдущий узел).
-        Предусловие: список не пуст и существует узел слева.
-        """
+        # Правее есть элемент
+        # Курсор сдвинут на один узел левее
+
         if self.cursor is None or self.cursor.prev is None:
-            self._left_status = ParentList.NO_LEFT
+            self._left_status = self.ERR
         else:
             self.cursor = self.cursor.prev
             self._left_status = self.OK
