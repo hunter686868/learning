@@ -1,5 +1,6 @@
 import ctypes
 
+
 class DynArray:
 
     MIN_CAPACITY = 16
