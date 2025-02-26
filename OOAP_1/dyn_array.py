@@ -1,6 +1,3 @@
-import ctypes
-
-
 class DynArray:
     # Минимальная емкость
     MIN_CAPACITY = 16
