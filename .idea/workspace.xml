@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/OOAP_1/dyn_array.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,6 +66,7 @@
     &quot;Python tests.Python tests in test_searches.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_simple_graph.py.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.OOP p.1.executor&quot;: &quot;Run&quot;,
     &quot;Python.OOP_p.2.executor&quot;: &quot;Run&quot;,
     &quot;Python.balanced_binary_trees.executor&quot;: &quot;Run&quot;,
     &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
@@ -430,15 +432,8 @@
       <workItem from="1739984678714" duration="2850000" />
       <workItem from="1740249286081" duration="4094000" />
       <workItem from="1740382076875" duration="960000" />
-      <workItem from="1740596956964" duration="2249000" />
-    </task>
-    <task id="LOCAL-00077" summary="update">
-      <option name="closed" value="true" />
-      <created>1705063786728</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1705063786728</updated>
+      <workItem from="1740596956964" duration="3463000" />
+      <workItem from="1740939759840" duration="351000" />
     </task>
     <task id="LOCAL-00078" summary="update">
       <option name="closed" value="true" />
@@ -824,7 +819,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740598645437</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="update">
+      <option name="closed" value="true" />
+      <created>1740599290008</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1740599290008</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -892,5 +895,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/learning$OOP_p_1.coverage" NAME="OOP p.1 Coverage Results" MODIFIED="1740599827564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
