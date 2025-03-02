@@ -1,7 +1,6 @@
 # Основная концепция очереди - FIFO
 # first-in first-out
 # Соответственно реализуем на основе списка, добавим необходимые методы
-#
 
 class Queue:
     # Статусы
@@ -12,7 +11,7 @@ class Queue:
 
     def __init__(self):
         # постусловие: создана пустая очередь
-        self.array = []
+        self.queue = []
         self._enqueue_status = self.NIL
         self._dequeue_status = self.NIL
         self._peek_status = self.NIL
@@ -21,17 +20,17 @@ class Queue:
 
     def enqueue(self, value):
         # постусловие: элемент добавлен в конец очереди
-        self.array.append(value)
+        self.queue.append(value)
         self._enqueue_status = self.OK
 
     def dequeue(self):
         # предусловие: очередь не пуста
         # постусловие: первый элемент удалён из очереди и возвращён
-        if not self.array:
+        if not self.queue:
             self._dequeue_status = self.EMP
             return
 
-        value = self.array.pop(0)
+        value = self.queue.pop(0)
         self._dequeue_status = self.OK
         return value
 
@@ -40,15 +39,15 @@ class Queue:
     def peek_front(self):
         # предусловие: очередь не пуста
         # постусловие: возвращён первый элемент без удаления
-        if not self.array:
+        if not self.queue:
             self._peek_status = self.EMP
             return
 
         self._peek_status = self.OK
-        return self.array[0]
+        return self.queue[0]
 
     def current_size(self):
-        return len(self.array)
+        return len(self.queue)
 
     def get_enqueue_status(self):
         return self._enqueue_status
