@@ -4,7 +4,7 @@
 # Расширим класс, добавив эти два метода.
 # Также добавим запросы статусов этих методов.
 
-class Queue:
+class ParentQueue:
     # Статусы
     NIL = 0  # Функция/запрос не вызывался
     EMP = 1  # Очередь пуста
@@ -60,7 +60,13 @@ class Queue:
     def get_peek_status(self):
         return self._peek_status
 
-class Deque(Queue):
+# Очередь
+class Queue(ParentQueue):
+    def __init__(self):
+        super().__init__()
+
+# Двухсторонняя очередь
+class Deque(ParentQueue):
     def __init__(self):
         super().__init__()
         self._enqueue_front_status = self.NIL
