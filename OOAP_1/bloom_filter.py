@@ -1,11 +1,11 @@
 class BloomFilter:
 
-    def __init__(self, m: int, k: int):
-        # Предусловие: m > 0, k > 0
+    def __init__(self, filter_len: int, k: int):
+        # Предусловие: filter_len > 0, k > 0
         # Постусловие: создан пустой битовый массив длиной m, все биты равны 0
 
-        assert m > 0 and k > 0
-        self.m = m
+        assert filter_len > 0 and k > 0
+        self.filter_len = filter_len
         self.k = k
         self.bit_array = 0
 
@@ -17,7 +17,7 @@ class BloomFilter:
         for seed in range(1, self.k + 1):
             hash_value = 0
             for char in item:
-                hash_value = (hash_value * seed + ord(char)) % self.m
+                hash_value = (hash_value * seed + ord(char)) % self.filter_len
             hashes.append(hash_value)
         return hashes
 

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/OOAP_1/bloom_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOAP_1/power_set.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOAP_1/bloom_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOAP_1/bloom_filter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -436,15 +435,7 @@
       <workItem from="1740596956964" duration="3463000" />
       <workItem from="1740939759840" duration="2554000" />
       <workItem from="1740947242791" duration="2107000" />
-      <workItem from="1742847843279" duration="1547000" />
-    </task>
-    <task id="LOCAL-00088" summary="update">
-      <option name="closed" value="true" />
-      <created>1709582996564</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1709582996564</updated>
+      <workItem from="1742847843279" duration="2320000" />
     </task>
     <task id="LOCAL-00089" summary="update">
       <option name="closed" value="true" />
@@ -830,7 +821,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742737035274</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="update">
+      <option name="closed" value="true" />
+      <created>1742849606101</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1742849606102</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
