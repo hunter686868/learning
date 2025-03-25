@@ -4,7 +4,6 @@ class BloomFilter:
         # Предусловие: filter_len > 0, k > 0
         # Постусловие: создан пустой битовый массив длиной filter_len, все биты равны 0
 
-        assert filter_len > 0 and k > 0
         self.filter_len = filter_len
         self.k = k # Количество хэш функций
         self.bit_array = 0
