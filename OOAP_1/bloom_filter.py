@@ -2,11 +2,11 @@ class BloomFilter:
 
     def __init__(self, filter_len: int, k: int):
         # Предусловие: filter_len > 0, k > 0
-        # Постусловие: создан пустой битовый массив длиной m, все биты равны 0
+        # Постусловие: создан пустой битовый массив длиной filter_len, все биты равны 0
 
         assert filter_len > 0 and k > 0
         self.filter_len = filter_len
-        self.k = k
+        self.k = k # Количество хэш функций
         self.bit_array = 0
 
     def _hashes(self, item: str):
