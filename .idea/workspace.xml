@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOAP_2/module_contradiction.md" beforeDir="false" afterPath="$PROJECT_DIR$/OOAP_2/module_contradiction.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -465,15 +464,7 @@
       <workItem from="1747915693309" duration="999000" />
       <workItem from="1748036544288" duration="3000" />
       <workItem from="1748350603079" duration="5348000" />
-      <workItem from="1748867474211" duration="601000" />
-    </task>
-    <task id="LOCAL-00103" summary="update">
-      <option name="closed" value="true" />
-      <created>1720098030231</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1720098030231</updated>
+      <workItem from="1748867474211" duration="3918000" />
     </task>
     <task id="LOCAL-00104" summary="update">
       <option name="closed" value="true" />
@@ -859,7 +850,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748426475543</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="update">
+      <option name="closed" value="true" />
+      <created>1748871884510</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1748871884510</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
