@@ -59,3 +59,4 @@ class General(object):
 # Базовый класс для всех остальных классов
 class Any(General):
     pass
+
