@@ -60,3 +60,52 @@ class General(object):
 class Any(General):
     pass
 
+# Промежуточные классы-листья
+class A(General, Any):
+    def a_specific(self):
+        print("A: специфичная для A операция")
+
+
+class B(General, Any):
+    def b_specific(self):
+        print("B: специфичная для B операция")
+
+
+# Замыкание иерархии снизу: класс None_, играющий роль Void
+class None_(A, B):
+    def __getattr__(self, name):
+        # Любой вызов метода возвращает сам объект
+        return lambda *args, **kwargs: self
+
+    def __str__(self):
+        return "Void(None_)"
+
+# Глобальный экземпляр Void
+Void = None_()
+
+# --- Пример полиморфного использования Void ---
+def process_general(g: General):
+    g.general_op()
+
+def process_any(a: Any):
+    a.any_op()
+
+def process_a(a: A):
+    a.a_specific()
+
+def process_b(b: B):
+    b.b_specific()
+
+real_a = A()
+real_b = B()
+
+# Реальные объекты
+process_general(real_a)   # General: выполняется общая операция
+process_any   (real_a)    # Any: выполняется любая операция
+process_a     (real_a)    # A: специфичная для A операция
+
+# Void можно передать в любые функции без ошибок
+process_general(Void)
+process_any   (Void)
+process_a     (Void)
+process_b     (Void)
