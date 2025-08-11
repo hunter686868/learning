@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/OOAP_2/vector_t.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOAP_2/inheritance_problem.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOAP_2/vector_t.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOAP_2/vector_t.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,62 +54,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python tests.Python tests in test_balanced_binary_trees.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_binary_trees_2.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_cache.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_hash_table.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_linked_list2.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_linked_list_dummy.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_queue.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_searches.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_simple_graph.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests in test_stack.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.OOP p.1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.OOP_p.2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.balanced_binary_trees.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cyberpunk.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cyberpunk_1993.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cyberpunk_1994.executor&quot;: &quot;Run&quot;,
-    &quot;Python.cyberpunk_1995.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dynamic_linking.executor&quot;: &quot;Run&quot;,
-    &quot;Python.limebot.executor&quot;: &quot;Run&quot;,
-    &quot;Python.linked_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.linked_list2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
-    &quot;Python.matrix_1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.overrive_prohibit.executor&quot;: &quot;Run&quot;,
-    &quot;Python.postfix.executor&quot;: &quot;Run&quot;,
-    &quot;Python.stack.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sum_lists.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_linked_list.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test_linked_list2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.walkers.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests in test_balanced_binary_trees.py.executor": "Run",
+    "Python tests.Python tests in test_binary_trees_2.py.executor": "Run",
+    "Python tests.Python tests in test_cache.py.executor": "Run",
+    "Python tests.Python tests in test_hash_table.py.executor": "Run",
+    "Python tests.Python tests in test_linked_list2.py.executor": "Run",
+    "Python tests.Python tests in test_linked_list_dummy.py.executor": "Run",
+    "Python tests.Python tests in test_queue.py.executor": "Run",
+    "Python tests.Python tests in test_searches.py.executor": "Run",
+    "Python tests.Python tests in test_simple_graph.py.executor": "Run",
+    "Python tests.Python tests in test_stack.py.executor": "Run",
+    "Python.OOP p.1.executor": "Run",
+    "Python.OOP_p.2.executor": "Run",
+    "Python.balanced_binary_trees.executor": "Run",
+    "Python.bot.executor": "Run",
+    "Python.cyberpunk.executor": "Run",
+    "Python.cyberpunk_1993.executor": "Run",
+    "Python.cyberpunk_1994.executor": "Run",
+    "Python.cyberpunk_1995.executor": "Run",
+    "Python.dynamic_linking.executor": "Run",
+    "Python.limebot.executor": "Run",
+    "Python.linked_list.executor": "Run",
+    "Python.linked_list2.executor": "Run",
+    "Python.matrix.executor": "Run",
+    "Python.matrix_1.executor": "Run",
+    "Python.overrive_prohibit.executor": "Run",
+    "Python.postfix.executor": "Run",
+    "Python.stack.executor": "Run",
+    "Python.sum_lists.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test_linked_list.executor": "Run",
+    "Python.test_linked_list2.executor": "Run",
+    "Python.vector_t.executor": "Run",
+    "Python.walkers.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/files/dir1/6456" />
@@ -479,14 +481,6 @@
       <workItem from="1750672033603" duration="8000" />
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
-    </task>
-    <task id="LOCAL-00121" summary="update">
-      <option name="closed" value="true" />
-      <created>1739958093288</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1739958093288</updated>
     </task>
     <task id="LOCAL-00122" summary="update">
       <option name="closed" value="true" />
@@ -872,7 +866,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753566828343</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="update">
+      <option name="closed" value="true" />
+      <created>1754640693767</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1754640693768</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
