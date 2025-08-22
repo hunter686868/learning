@@ -45,3 +45,5 @@ class Tree(Plant):
 # Функция принимает теплицу с любым растением
 def describe_greenhouse(g: Greenhouse[Plant]) -> None:
     print("В теплице растёт:", g.get())
+
+tree_house: Greenhouse[Tree] = Greenhouse(Tree())
