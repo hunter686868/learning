@@ -97,7 +97,7 @@ class Weapon {
     }
 }
 
-// 1.3 Побочный эффект
+// 1.3 Побочный эффект, в методе получения урона изменяется состояние warrior
 
 public class Main {
     static void damageUnit(Unit unit, int damage) {
