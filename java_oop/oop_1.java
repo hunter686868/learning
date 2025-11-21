@@ -1,62 +1,25 @@
-// Класс для мессенджера
-class Message {
-    String text;
-    String sender;
-    String receiver;
-    String format; // текст, фото, видео
+// 1.1 Классы
+//Мессенджер.
+//Класс Message - в нем текст, отправитель, получатель, формат
+//Класс Chat - в нем пользователь1, пользователь2, название чата
+//Класс Аватар - в нем изображение, пользователь, последняя дата обновления
 
-    Message(String text, String sender, String receiver, String format) {
-        this.text = text;
-        this.sender = sender;
-        this.receiver = receiver;
-        this.format = format;
-    }
+// Банковское приложение
+// Класс User - в нем Имя, Фамилия, ID, список счетов
+// Класс Account - в нем номер, тип, баланс, валюта
+// Класс Card - в нем номер, срок действия, привязанный счет, тип
 
-    void display() {
-        System.out.println("От: " + sender + ", К: " + receiver + ", Формат: " + format + ", Сообщение: " + text);
-    }
-}
 
-class Chat {
-    String user1;
-    String user2;
-    String chatName;
 
-    Chat(String user1, String user2, String chatName) {
-        this.user1 = user1;
-        this.user2 = user2;
-        this.chatName = chatName;
-    }
+// 1.2 Игра - стратегия
 
-    void display() {
-        System.out.println("Чат: " + chatName + " между " + user1 + " и " + user2);
-    }
-}
-
-class Avatar {
-    String image;
-    String owner;
-    String lastUpdate;
-
-    Avatar(String image, String owner, String lastUpdate) {
-        this.image = image;
-        this.owner = owner;
-        this.lastUpdate = lastUpdate;
-    }
-
-    void display() {
-        System.out.println("Аватар пользователя: " + owner + ", Файл: " + image + ", Обновлён: " + lastUpdate);
-    }
-}
-
-// Абстрактная стратегия
 class Unit {
     String name;
     int health;
     int mana;
     int cost;
     String[] abilities;
-    Weapon weapon; // связь с оружием
+    Weapon weapon;
 
     Unit(String name, int health, int mana, int cost, String[] abilities) {
         this.name = name;
@@ -85,7 +48,7 @@ class Building {
     int health;
     int armor;
     int resourceProduction;
-    Unit[] producesUnits; // какие юниты строит
+    Unit[] producesUnits;
 
     Building(String name, String type, int health, int armor, int resourceProduction, Unit[] producesUnits) {
         this.name = name;
@@ -111,7 +74,7 @@ class Weapon {
     String name;
     int attack;
     String quality;
-    String[] usableByUnits; // какие юниты могут использовать
+    String[] usableByUnits;
     String damageType;
     int attackSpeed;
 
@@ -134,42 +97,29 @@ class Weapon {
     }
 }
 
+// 1.3 Побочный эффект
+
 public class Main {
-    // Метод для демонстрации побочного эффекта
     static void damageUnit(Unit unit, int damage) {
         unit.health -= damage;
         System.out.println(unit.name + " получил урон " + damage);
     }
 
     public static void main(String[] args) {
-        // === Пример мессенджера ===
-        Message msg1 = new Message("Привет!", "Alice", "Bob", "текст");
-        Chat chat1 = new Chat("Alice", "Bob", "Друзья");
-        Avatar avatar1 = new Avatar("alice.png", "Alice", "2025-11-21");
-
-        System.out.println("=== Мессенджер ===");
-        msg1.display();
-        chat1.display();
-        avatar1.display();
-
-        // === Пример стратегии ===
         Weapon sword = new Weapon("Меч", 15, "Обычный", new String[]{"Воин"}, "Физический", 5);
         Unit warrior = new Unit("Воин", 100, 50, 20, new String[]{"Удар", "Блок"});
         warrior.weapon = sword;
 
         Building barracks = new Building("Казарма", "Военное здание", 500, 50, 100, new Unit[]{warrior});
 
-        System.out.println("\n=== Стратегия ===");
         sword.display();
         warrior.display();
         barracks.display();
 
-        // === Демонстрация побочного эффекта ===
-        System.out.println("\n=== Побочный эффект ===");
         System.out.println("До атаки:");
         warrior.display();
 
-        damageUnit(warrior, 30); // метод изменяет объект
+        damageUnit(warrior, 30);
 
         System.out.println("После атаки:");
         warrior.display();
