@@ -109,7 +109,6 @@ public class Main {
         Weapon sword = new Weapon("Меч", 15, "Обычный", new String[]{"Воин"}, "Физический", 5);
         Unit warrior = new Unit("Воин", 100, 50, 20, new String[]{"Удар", "Блок"});
         warrior.weapon = sword;
-
         Building barracks = new Building("Казарма", "Военное здание", 500, 50, 100, new Unit[]{warrior});
 
         sword.display();
