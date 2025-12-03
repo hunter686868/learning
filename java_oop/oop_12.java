@@ -173,15 +173,6 @@ public class Main {
         Unit[] mageTowerUnits = {mage};
         Building mageTower = new Building("Башня магов", "Магическое", 300, 5, 10, mageTowerUnits);
 
-        System.out.println("=== СОЗДАНЫ ОБЪЕКТЫ ===");
-        warrior.display();
-        mage.display();
-        barracks.display();
-        mageTower.display();
-        sword.display();
-        staff.display();
-
-
         // Тесты
         System.out.println("\n1. Работа с оружием:");
         sword.upgrade();
