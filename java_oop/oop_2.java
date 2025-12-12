@@ -102,10 +102,9 @@ class Animal {
 
     public class Main {
 
-        // Функция, которая очищает список и наполняет его 500 объектами
+        // Наполняем список 500 объектами
         static void fillAnimals(Animal[] animals) {
             for (int i = 0; i < animals.length; i++) {
-                // случайно выбираем тип
                 if (Math.random() < 0.5) {
                     animals[i] = new Cat();
                 } else {
@@ -120,7 +119,6 @@ class Animal {
 
             fillAnimals(animals);
 
-            // вызываем foo(), не зная где Cat, а где Bird
             for (int i = 0; i < animals.length; i++) {
                 animals[i].foo();
             }
