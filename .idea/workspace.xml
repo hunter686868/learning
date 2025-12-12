@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_oop/oop_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_oop/oop_2.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +120,14 @@
       <recent name="$PROJECT_DIR$/files/dir2/21" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Java Scratch.Unnamed">
+    <configuration name="Unnamed" type="Java Scratch" nameIsGenerated="true">
+      <module name="learning" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="archive" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="learning" />
       <option name="ENV_FILES" value="" />
@@ -423,6 +427,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Java Scratch.Unnamed" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -477,22 +484,6 @@
       <workItem from="1750672033603" duration="8000" />
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
-    </task>
-    <task id="LOCAL-00145" summary="update">
-      <option name="closed" value="true" />
-      <created>1746965742303</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1746965742303</updated>
-    </task>
-    <task id="LOCAL-00146" summary="update">
-      <option name="closed" value="true" />
-      <created>1747417862508</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1747417862508</updated>
     </task>
     <task id="LOCAL-00147" summary="update">
       <option name="closed" value="true" />
@@ -870,7 +861,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765439219400</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="update">
+      <option name="closed" value="true" />
+      <created>1765534346881</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1765534346881</updated>
+    </task>
+    <task id="LOCAL-00195" summary="update">
+      <option name="closed" value="true" />
+      <created>1765534379601</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1765534379601</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
