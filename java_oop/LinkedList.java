@@ -38,6 +38,8 @@ public class LinkedList
     public boolean remove(int _value)
     {
         // здесь будет ваш код удаления одного узла по заданному значению
+        if (head == null) return false;
+
         return true; // если узел был удалён
     }
 
