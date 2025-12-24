@@ -29,32 +29,32 @@ public class LinkedList
         return null;
     }
 
-    // (4) Поиск всех узлов по значению
+    // (4) Поиск всех узлов по значению. Сложность 0(n)
     public ArrayList<Node> findAll(int _value) {
         ArrayList<Node> nodes = new ArrayList<>();
         Node node = this.head;
         while (node != null) {
-            if (node.value == value) nodes.add(node);
+            if (node.value == _value) nodes.add(node);
             node = node.next;
         }
         return nodes;
     }
 
-    // (1) Удаление одного (первого) узла по значению
+    // (1) Удаление одного (первого) узла по значению. Сложность 0(n)
     public boolean remove(int _value)
     {
         if (head == null) return false;
 
-        if (head.value == value) {
+        if (head.value == _value) {
             head = head.next;
-            if (head == null) tail = null; // список стал пустым
+            if (head == null) tail = null;
             return true;
         }
         Node prev = head;
         Node cur = head.next;
 
         while (cur != null) {
-            if (cur.value == value) {
+            if (cur.value == _value) {
                 prev.next = cur.next;
                 if (cur == tail) tail = prev;
                 return true;
@@ -65,10 +65,10 @@ public class LinkedList
         return false;
     }
 
-    // (2) Удаление всех узлов по значению
+    // (2) Удаление всех узлов по значению. Сложность 0(n)
     public void removeAll(int _value)
     {
-        while (head != null && head.value == value) {
+        while (head != null && head.value == _value) {
             head = head.next;
         }
 
@@ -81,7 +81,7 @@ public class LinkedList
         Node cur = head.next;
 
         while (cur != null) {
-            if (cur.value == value) {
+            if (cur.value == _value) {
                 prev.next = cur.next;
                 if (cur == tail) tail = prev;
                 cur = prev.next;
@@ -92,14 +92,14 @@ public class LinkedList
         }
     }
 
-    // (3) Очистка списка
+    // (3) Очистка списка. Сложность 0(1)
     public void clear()
     {
         head = null;
         tail = null;
     }
 
-    // (5) Длина списка
+    // (5) Длина списка. Сложность 0(n)
     public int count()
     {
         return 0; // здесь будет ваш код подсчёта количества элементов в списке
@@ -114,27 +114,28 @@ public class LinkedList
         return c;
     }
 
-    // (6) Вставка после заданного узла
+    // (6) Вставка после заданного узла. Сложность 0(1)
     public void insertAfter(Node _nodeAfter, Node _nodeToInsert)
     {
-        if (nodeToInsert == null) return;
+        if (_nodeToInsert == null) return;
 
-        if (nodeAfter == null) {
+        if (_nodeAfter == null) {
             if (head == null) {
-                head = nodeToInsert;
-                tail = nodeToInsert;
-                nodeToInsert.next = null;
+                head = _nodeToInsert;
+                tail = _nodeToInsert;
+                _nodeToInsert.next = null;
             } else {
-                nodeToInsert.next = head;
-                head = nodeToInsert;
+                _nodeToInsert.next = head;
+                head = _nodeToInsert;
             }
             return;
         }
-        nodeToInsert.next = nodeAfter.next;
-        nodeAfter.next = nodeToInsert;
 
-        if (tail == nodeAfter) {
-            tail = nodeToInsert;
+        _nodeToInsert.next = _nodeAfter.next;
+        _nodeAfter.next = _nodeToInsert;
+
+        if (tail == _nodeAfter) {
+            tail = _nodeToInsert;
         }
     }
 }
