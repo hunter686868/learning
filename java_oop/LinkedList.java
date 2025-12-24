@@ -29,43 +29,114 @@ public class LinkedList
         return null;
     }
 
+    // (4) Поиск всех узлов по значению
     public ArrayList<Node> findAll(int _value) {
-        ArrayList<Node> nodes = new ArrayList<Node>();
-        // здесь будет ваш код поиска всех узлов
+        ArrayList<Node> nodes = new ArrayList<>();
+        Node node = this.head;
+        while (node != null) {
+            if (node.value == value) nodes.add(node);
+            node = node.next;
+        }
         return nodes;
     }
 
+    // (1) Удаление одного (первого) узла по значению
     public boolean remove(int _value)
     {
-        // здесь будет ваш код удаления одного узла по заданному значению
         if (head == null) return false;
 
-        return true; // если узел был удалён
+        if (head.value == value) {
+            head = head.next;
+            if (head == null) tail = null; // список стал пустым
+            return true;
+        }
+        Node prev = head;
+        Node cur = head.next;
+
+        while (cur != null) {
+            if (cur.value == value) {
+                prev.next = cur.next;
+                if (cur == tail) tail = prev;
+                return true;
+            }
+            prev = cur;
+            cur = cur.next;
+        }
+        return false;
     }
 
+    // (2) Удаление всех узлов по значению
     public void removeAll(int _value)
     {
-        // здесь будет ваш код удаления всех узлов по заданному значению
+        while (head != null && head.value == value) {
+            head = head.next;
+        }
+
+        if (head == null) {
+            tail = null;
+            return;
+        }
+
+        Node prev = head;
+        Node cur = head.next;
+
+        while (cur != null) {
+            if (cur.value == value) {
+                prev.next = cur.next;
+                if (cur == tail) tail = prev;
+                cur = prev.next;
+            } else {
+                prev = cur;
+                cur = cur.next;
+            }
+        }
     }
 
+    // (3) Очистка списка
     public void clear()
     {
-        // здесь будет ваш код очистки всего списка
+        head = null;
+        tail = null;
     }
 
+    // (5) Длина списка
     public int count()
     {
         return 0; // здесь будет ваш код подсчёта количества элементов в списке
     }
-
-    public void insertAfter(Node _nodeAfter, Node _nodeToInsert)
     {
-        // здесь будет ваш код вставки узла после заданного
-
-        // если _nodeAfter = null ,
-        // добавьте новый элемент первым в списке
+        int c = 0;
+        Node node = head;
+        while (node != null) {
+            c++;
+            node = node.next;
+        }
+        return c;
     }
 
+    // (6) Вставка после заданного узла
+    public void insertAfter(Node _nodeAfter, Node _nodeToInsert)
+    {
+        if (nodeToInsert == null) return;
+
+        if (nodeAfter == null) {
+            if (head == null) {
+                head = nodeToInsert;
+                tail = nodeToInsert;
+                nodeToInsert.next = null;
+            } else {
+                nodeToInsert.next = head;
+                head = nodeToInsert;
+            }
+            return;
+        }
+        nodeToInsert.next = nodeAfter.next;
+        nodeAfter.next = nodeToInsert;
+
+        if (tail == nodeAfter) {
+            tail = nodeToInsert;
+        }
+    }
 }
 
 class Node
