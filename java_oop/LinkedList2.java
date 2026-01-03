@@ -13,17 +13,18 @@ public class LinkedList2
         tail = null;
     }
 
-    public void addInTail(Node _item)
-    {
+    public void addInTail(Node _item) {
+        // Вставка в хвост, сложность O(1)
+        if (_item == null) return;
+
         if (head == null) {
-            this.head = _item;
-            this.head.next = null;
-            this.head.prev = null;
+            head = _item;
+            tail = _item;
         } else {
-            this.tail.next = _item;
+            tail.next = _item;
             _item.prev = tail;
+            tail = _item;
         }
-        this.tail = _item;
     }
 
     public Node find(int _value)
@@ -152,55 +153,34 @@ public class LinkedList2
         return cnt;
     }
 
-    public void insertAfter(Node _nodeAfter, Node _nodeToInsert)
-    {
-        // Вставка узла после заданного, сложность O(1) (если _nodeAfter уже известен/дан ссылкой)
 
+    public void insertAfter(Node _nodeAfter, Node _nodeToInsert) {
+        // Вставка узла после заданного, сложность O(1) (если _nodeAfter уже известен/дан ссылкой)
         if (_nodeToInsert == null) return;
 
-        // если _nodeAfter = null - добавляем новый элемент первым в списке
-        if (_nodeAfter == null)
-        {
-            if (head == null)
-            {
-                head = _nodeToInsert;
-                tail = _nodeToInsert;
-                _nodeToInsert.prev = null;
-                _nodeToInsert.next = null;
-                return;
-            }
-
+        if (_nodeAfter == null) {
             _nodeToInsert.prev = null;
             _nodeToInsert.next = head;
-            head.prev = _nodeToInsert;
+            if (head != null) {
+                head.prev = _nodeToInsert;
+            } else {
+                tail = _nodeToInsert;
+            }
             head = _nodeToInsert;
             return;
         }
 
         if (head == null) return;
 
-        if (_nodeAfter == tail)
-        {
-            _nodeToInsert.prev = tail;
-            _nodeToInsert.next = null;
-            tail.next = _nodeToInsert;
-            tail = _nodeToInsert;
-            return;
-        }
-
-        Node afterNext = _nodeAfter.next;
-        if (afterNext == null)
-        {
-            _nodeToInsert.prev = _nodeAfter;
-            _nodeToInsert.next = null;
-            _nodeAfter.next = _nodeToInsert;
-            tail = _nodeToInsert;
-            return;
-        }
-
         _nodeToInsert.prev = _nodeAfter;
-        _nodeToInsert.next = afterNext;
-        afterNext.prev = _nodeToInsert;
+        _nodeToInsert.next = _nodeAfter.next;
+
+        if (_nodeAfter.next != null) {
+            _nodeAfter.next.prev = _nodeToInsert;
+        } else {
+            tail = _nodeToInsert;
+        }
+
         _nodeAfter.next = _nodeToInsert;
     }
 }
