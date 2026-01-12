@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_oop/LinkedList2.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_oop/LinkedList2.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +124,7 @@
       <recent name="$PROJECT_DIR$/files/dir2/21" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Unnamed">
+  <component name="RunManager">
     <configuration name="Unnamed" type="Java Scratch" nameIsGenerated="true">
       <module name="learning" />
       <shortenClasspath name="NONE" />
@@ -491,14 +488,6 @@
       <workItem from="1750672033603" duration="8000" />
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
-    </task>
-    <task id="LOCAL-00159" summary="update">
-      <option name="closed" value="true" />
-      <created>1751059197225</created>
-      <option name="number" value="00159" />
-      <option name="presentableId" value="LOCAL-00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1751059197225</updated>
     </task>
     <task id="LOCAL-00160" summary="update">
       <option name="closed" value="true" />
@@ -884,7 +873,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767478679630</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="update">
+      <option name="closed" value="true" />
+      <created>1767479495150</created>
+      <option name="number" value="00208" />
+      <option name="presentableId" value="LOCAL-00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1767479495150</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
