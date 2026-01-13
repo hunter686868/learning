@@ -35,7 +35,7 @@ public class DynArray<T>
     // Сложность 0(1)
     public T getItem(int index)
     {
-        if (index < 0 || index >= count) return null;
+        if (index < 0 || index >= count) throw new IndexOutOfBoundsException();
         return array[index];
     }
 
