@@ -21,7 +21,7 @@ public class DynArray<T>
     {
         T[] old = array;
 
-        array = (T[]) Array.newInstance(this.clazz, new_capacity);
+        array = (T[]) java.lang.reflect.Array.newInstance(this.clazz, new_capacity);
         int lim = Math.min(count, new_capacity);
         if (old != null && lim > 0)
         {
@@ -50,7 +50,7 @@ public class DynArray<T>
     // Сложность 0(n), делаем сдвиг массива
     public void insert(T itm, int index)
     {
-        if (index < 0 || index > count) return null;
+        if (index < 0 || index > count) throw new IndexOutOfBoundsException();
 
         if (count == capacity) makeArray(capacity * 2);
 
@@ -77,12 +77,12 @@ public class DynArray<T>
         array[count - 1] = null;
         count--;
 
-        if (capacity > 16 && count < (capacity / 2))
-        {
-            int newCap = (int)(capacity / 1.5);
+        if (capacity > 16 && count < (capacity / 2)) {
+            int newCap = (int) (capacity / 1.5);
             if (newCap < 16) newCap = 16;
             if (newCap < count) newCap = count;
             makeArray(newCap);
+        }
     }
 
 }
