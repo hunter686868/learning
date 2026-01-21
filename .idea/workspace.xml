@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java_oop/Stek.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_oop/Stek.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,14 +491,6 @@
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
     </task>
-    <task id="LOCAL-00164" summary="update">
-      <option name="closed" value="true" />
-      <created>1752094804030</created>
-      <option name="number" value="00164" />
-      <option name="presentableId" value="LOCAL-00164" />
-      <option name="project" value="LOCAL" />
-      <updated>1752094804030</updated>
-    </task>
     <task id="LOCAL-00165" summary="update">
       <option name="closed" value="true" />
       <created>1752271085178</created>
@@ -883,7 +875,15 @@
       <option name="project" value="LOCAL" />
       <updated>1768377124120</updated>
     </task>
-    <option name="localTasksCounter" value="213" />
+    <task id="LOCAL-00213" summary="update">
+      <option name="closed" value="true" />
+      <created>1768476921519</created>
+      <option name="number" value="00213" />
+      <option name="presentableId" value="LOCAL-00213" />
+      <option name="project" value="LOCAL" />
+      <updated>1768476921519</updated>
+    </task>
+    <option name="localTasksCounter" value="214" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
