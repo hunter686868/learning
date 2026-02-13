@@ -36,15 +36,32 @@
 
 Основные эндпоинты:
 
+Аунтификация  
+`/api-token-auth/`
+
+Автомобили  
 ```
-/api/enterprises/
 /api/vehicles/
-/api/drivers/
-/api/trips/
-/api/reports/
-/api/export/
-/api/import/
-/api/gps-track/
+/api/enterprises/<int:enterprise_id>/vehicles/
+/api/vehicles/<int:pk>/info/
+/api/vehicles/<int:pk>/edit/
+/api/vehicles/<int:pk>/delete/
+```
+Трекинг поездок
+```
+/api/vehicles/<int:vehicle_id>/track/
+/api/vehicles/<int:vehicle_id>/trips/
+/api/vehicles/<int:vehicle_id>/trip_summary/
+/api/vehicles/<int:vehicle_id>/upload_trip/
+```
+Отчеты
+```
+/report-api/
+```
+Экспорт/импорт
+```
+/api/export-data/
+/api/import-data/
 ```
 Документация:
 
