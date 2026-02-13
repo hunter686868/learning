@@ -24,8 +24,8 @@
 [![Снимок экрана 2026-02-14 в 00.29.31.png](https://iimg.su/s/13/gEJ8sbvxzDRuUmX1yZ9LG8ze1JqkoBnKdGWzaeac.png)](https://iimg.su/i/EJ8sbv)
 
 
-### Архитектура
-
+## Архитектура
+  
 Проект реализован на Django и PostgreSQL (GeoDjango).  
 Тажке используется Django REST Framework, Kafka, Redis, Prometheus + Grafana
 Функционал сервиса частично (отчеты и уведомления) доступен через telegram бота
