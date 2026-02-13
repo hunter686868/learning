@@ -27,7 +27,7 @@
 ## Архитектура
   
 #### Проект реализован на Django и PostgreSQL (GeoDjango).  
-Тажке используется Django REST Framework, Kafka, Redis, Prometheus + Grafana
+#### Тажке используется Django REST Framework, Kafka, Redis, Prometheus + Grafana
 Функционал сервиса частично (отчеты и уведомления) доступен через telegram бота
 Развертка сервиса через Github Actions и Docker
 ---
