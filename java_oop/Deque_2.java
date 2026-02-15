@@ -127,7 +127,6 @@ public class ArrayDeque<T> {
 
     public T removeFront() {
         if (size == 0) return null;
-        @SuppressWarnings("unchecked")
         T v = (T) a[head];
         a[head] = null;
         head = inc(head, a.length);
@@ -139,7 +138,6 @@ public class ArrayDeque<T> {
     public T removeTail() {
         if (size == 0) return null;
         tail = dec(tail, a.length);
-        @SuppressWarnings("unchecked")
         T v = (T) a[tail];
         a[tail] = null;
         size--;
