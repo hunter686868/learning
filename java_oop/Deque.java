@@ -36,11 +36,9 @@ public class Deque<T> {
         return list.removeLast();
     }
 
-    public int size()
+    public int size() {
         // Сложность 0(1)
         return list.size();
-    {
-        return 0; // размер очереди
     }
 }
 
