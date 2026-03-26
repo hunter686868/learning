@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/java_oop/NativeDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/java_oop/NativeDictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_oop/PowerSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_oop/PowerSet_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java_oop/PowerSet_3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +128,7 @@
       <recent name="$PROJECT_DIR$/files/dir2/21" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Unnamed">
+  <component name="RunManager">
     <configuration name="Unnamed" type="Java Scratch" nameIsGenerated="true">
       <module name="learning" />
       <shortenClasspath name="NONE" />
@@ -490,22 +492,6 @@
       <workItem from="1750672033603" duration="8000" />
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
-    </task>
-    <task id="LOCAL-00193" summary="update">
-      <option name="closed" value="true" />
-      <created>1765439219400</created>
-      <option name="number" value="00193" />
-      <option name="presentableId" value="LOCAL-00193" />
-      <option name="project" value="LOCAL" />
-      <updated>1765439219400</updated>
-    </task>
-    <task id="LOCAL-00194" summary="update">
-      <option name="closed" value="true" />
-      <created>1765534346881</created>
-      <option name="number" value="00194" />
-      <option name="presentableId" value="LOCAL-00194" />
-      <option name="project" value="LOCAL" />
-      <updated>1765534346881</updated>
     </task>
     <task id="LOCAL-00195" summary="update">
       <option name="closed" value="true" />
@@ -883,7 +869,23 @@
       <option name="project" value="LOCAL" />
       <updated>1773612301306</updated>
     </task>
-    <option name="localTasksCounter" value="242" />
+    <task id="LOCAL-00242" summary="update">
+      <option name="closed" value="true" />
+      <created>1773612606776</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1773612606776</updated>
+    </task>
+    <task id="LOCAL-00243" summary="update">
+      <option name="closed" value="true" />
+      <created>1773612723809</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1773612723809</updated>
+    </task>
+    <option name="localTasksCounter" value="244" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
