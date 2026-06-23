@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d5dc8cc-16e7-480b-9da0-d05fbd8acd00" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/java_oop/Building.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/EconomicBuilding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/MeleeWeapon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/MilitaryBuilding.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/RangedWeapon.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/Unit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java_oop/Weapon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOAP_3/system_description.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java_oop/oop_13.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +33,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/hunter686868/learning&quot;,
+    &quot;url&quot;: &quot;https://github.com/hunter686868/learning.git&quot;,
     &quot;accountId&quot;: &quot;7f548334-3b68-48d8-908d-1fa6ab7d3a71&quot;
   }
 }</component>
@@ -441,20 +433,27 @@
     </configuration>
     <list>
       <item itemvalue="Python.archive" />
-      <item itemvalue="Python.cyberpunk" />
       <item itemvalue="Python.cyberpunk_1993" />
+      <item itemvalue="Python.cyberpunk" />
       <item itemvalue="Python.files" />
       <item itemvalue="Python.files_and_catalogues" />
-      <item itemvalue="Python.linked_list" />
       <item itemvalue="Python.linked_list2" />
+      <item itemvalue="Python.linked_list" />
       <item itemvalue="Python.log" />
-      <item itemvalue="Python.recursion" />
       <item itemvalue="Python.stack" />
-      <item itemvalue="Python.test_linked_list" />
       <item itemvalue="Python.test_linked_list2" />
+      <item itemvalue="Python.test_linked_list" />
       <item itemvalue="Python.testing" />
       <item itemvalue="Python.walkers" />
+      <item itemvalue="Python.recursion" />
     </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-e0ed3721d81e-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.159" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -509,30 +508,6 @@
       <workItem from="1750672033603" duration="8000" />
       <workItem from="1750841241155" duration="3000" />
       <workItem from="1751057579741" duration="7229000" />
-    </task>
-    <task id="LOCAL-00148" summary="update">
-      <option name="closed" value="true" />
-      <created>1747816004891</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1747816004891</updated>
-    </task>
-    <task id="LOCAL-00149" summary="update">
-      <option name="closed" value="true" />
-      <created>1747908959276</created>
-      <option name="number" value="00149" />
-      <option name="presentableId" value="LOCAL-00149" />
-      <option name="project" value="LOCAL" />
-      <updated>1747908959276</updated>
-    </task>
-    <task id="LOCAL-00150" summary="update">
-      <option name="closed" value="true" />
-      <created>1747915700945</created>
-      <option name="number" value="00150" />
-      <option name="presentableId" value="LOCAL-00150" />
-      <option name="project" value="LOCAL" />
-      <updated>1747915700945</updated>
     </task>
     <task id="LOCAL-00151" summary="update">
       <option name="closed" value="true" />
@@ -902,7 +877,31 @@
       <option name="project" value="LOCAL" />
       <updated>1765796033060</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="update">
+      <option name="closed" value="true" />
+      <created>1765807347929</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1765807347929</updated>
+    </task>
+    <task id="LOCAL-00198" summary="update">
+      <option name="closed" value="true" />
+      <created>1765807368446</created>
+      <option name="number" value="00198" />
+      <option name="presentableId" value="LOCAL-00198" />
+      <option name="project" value="LOCAL" />
+      <updated>1765807368446</updated>
+    </task>
+    <task id="LOCAL-00199" summary="update">
+      <option name="closed" value="true" />
+      <created>1765807522619</created>
+      <option name="number" value="00199" />
+      <option name="presentableId" value="LOCAL-00199" />
+      <option name="project" value="LOCAL" />
+      <updated>1765807522619</updated>
+    </task>
+    <option name="localTasksCounter" value="200" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
