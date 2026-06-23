@@ -314,7 +314,7 @@ class Unit {
     public int getCost() { return cost; }
 }
 
-public class Main {
+class Main {
     public static void main(String[] args) {
 
         // Создаем оружие разных типов
